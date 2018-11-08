@@ -1,0 +1,36 @@
+.table
+    width: 100%
+    margin-bottom: 55px
+    border-spacing: 0
+
+    tr
+        display: flex
+        width: 100%
+        border-bottom: 1px solid $light
+
+    th, td
+        font-weight: 300
+        font-weight: $main-light
+
+        &:not(:last-child)
+            width: 180px
+            flex-basis: 180px
+        
+        &:first-child
+            padding-left: 19px
+
+        &:last-child
+            flex-grow: 1
+
+    th
+        background-color: $accent
+        color: #ffffff
+        padding: 5px 0
+        text-align: left
+        display: flex
+        align-items: center
+
+    td
+        padding: 14px 0
+        
+

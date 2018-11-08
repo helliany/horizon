@@ -1,0 +1,51 @@
+.mobile-menu
+    +col(2.15)
+    display: flex
+    justify-content: center
+
+    @media #{$sm}
+        display: none
+
+.mobile-btn
+    width: 70px
+    height: 70px
+    position: relative
+    border: 0
+    background-color: $light
+
+    span
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        height: 5px
+        width: 40px
+        background-color: $gray
+
+    &:focus
+        outline: 0
+
+    @media #{$_xsm}
+        width: 50px
+        height: 50px
+
+        span
+            width: 20px
+            height: 3px
+
+.mobile-btn__top
+    top: 25px
+
+    @media #{$_xsm}
+        top: 18px
+
+.mobile-btn__middle
+    top: 35px
+
+    @media #{$_xsm}
+        top: 25px
+
+.mobile-btn__bottom
+    top: 45px
+
+    @media #{$_xsm}
+        top: 32px

@@ -1,0 +1,157 @@
+.header
+    @media #{$_sm}
+        display: flex
+
+        .container
+            width: 100%
+
+    .header__bottom-container
+        +container()
+    
+.header__top
+    background-color: $light
+    padding: 6px 0
+
+    @media #{$_sm}
+        display: none
+
+.header__logo
+    +col(2)
+
+    @media #{$_md}
+        +col(2.5)
+
+    @media #{$_sm}
+        +col(4)
+
+    @media (max-width: 576px)
+        +col(5)
+
+    @media #{$_xs}
+        +col(5.5)
+    
+.logo
+    display: block
+
+.menu
+    +col(9)
+
+.menu__list
+    display: flex
+    flex-wrap: wrap
+
+.menu__item
+    &:not(:last-child)
+        margin-right: 15px
+
+.menu__link
+    font-size: 12px
+    color: $dark-gray
+
+    &:hover
+        text-decoration: underline
+
+.header__socials
+    +col(3)
+
+    .socials__list
+        justify-content: flex-end
+
+.header__bottom
+    padding: 15px 0
+
+    @media #{$_sm}
+        width: 100%
+        padding: 0
+
+
+
+.header__contacts
+    +col(6)
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-around
+
+    a.header__link
+        &:hover
+            text-decoration: underline
+
+    @media #{$_md}
+        +col(5.5)
+
+    @media #{$_sm}
+        display: none
+
+.header__link
+    display: block
+    color: $main-color
+    font-family: $main-semibold
+    line-height: 1.6
+
+
+.header__location,
+.header__phones
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+.header__contacts-icon
+    margin-right: 10px
+
+    img
+        width: 34px
+
+    @media #{$_md}
+        display: none
+    
+.header__actions
+    +col(4)
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+    @media #{$_sm}
+        display: none
+
+.header__bottom-row
+    align-items: center
+
+.header__buttons
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+
+    .button
+        &:first-child
+            margin-bottom: 10px
+
+.header__basket
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+
+    &:hover
+        .header__basket-goods
+            text-decoration: none
+
+.header__basket-left
+    margin-right: 9px
+
+.header__basket-price
+    font-family: $main-semibold
+    margin-bottom: 5px
+    color: $main-color
+
+.header__basket-goods
+    display: inline-block
+    color: $gray
+    text-decoration: underline
+
+.header__basket-icon
+    width: 36px

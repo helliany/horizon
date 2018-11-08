@@ -1,0 +1,271 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main.page 
+
+                // begin page-section 
+                section.page-section.basket-section
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    span Корзина
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="#") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title Корзина
+                            
+                            .basket-info
+                                .basket-info__text
+                                    | В корзине: 
+                                    b 8 товара на сумму 15200 ₽
+                                .basket-info__button
+                                    button.button Очистить корзину
+
+                    .basket-wrapper
+                        header.basket-wrapper__header
+                            .container.basket-wrapper__header-container
+                                .basket-wrapper__header-item Товар
+                                .basket-wrapper__header-item Артикул
+                                .basket-wrapper__header-item Цена
+                                .basket-wrapper__header-item Количество
+                                .basket-wrapper__header-item Сумма
+                        .container
+                            ul.basket-list
+                                li.basket-list__row
+                                    .basket-list__item.basket-product
+                                        .basket-product__text
+                                            .basket-product__number №00000000
+                                            a(href="#").basket-product__title Ежедневник BRAND, недатированный, синий
+                                        .basket-product__img
+                                            img(src="img/basket/image.jpg", alt="Basket image")
+                                    .basket-list__item.basket-vendor-code
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                    .basket-list__item.basket-price.
+                                        380 ₽
+                                    .basket-list__item.basket-quantity
+                                        button.basket-quantity__btn -
+                                        input(type="text" value="5").basket-quantity__number
+                                        button.basket-quantity__btn +
+                                    .basket-list__item.basket-sum
+                                        .basket-sum__amount 1900 ₽
+                                        button.basket-clear
+                                            span.basket-clear__top
+                                            span.basket-clear__bottom
+                                li.basket-list__row
+                                    .basket-list__item.basket-product
+                                        .basket-product__text
+                                            .basket-product__number №00000000
+                                            a(href="#").basket-product__title Ежедневник BRAND, недатированный, синий
+                                        .basket-product__img
+                                            img(src="img/basket/image.jpg", alt="Basket image")
+                                    .basket-list__item.basket-vendor-code
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                    .basket-list__item.basket-price.
+                                        380 ₽
+                                    .basket-list__item.basket-quantity
+                                        button.basket-quantity__btn -
+                                        input(type="text" value="5").basket-quantity__number
+                                        button.basket-quantity__btn +
+                                    .basket-list__item.basket-sum
+                                        .basket-sum__amount 1900 ₽
+                                        button.basket-clear
+                                            span.basket-clear__top
+                                            span.basket-clear__bottom
+                                li.basket-list__row
+                                    .basket-list__item.basket-product
+                                        .basket-product__text
+                                            .basket-product__number №00000000
+                                            a(href="#").basket-product__title Ежедневник BRAND, недатированный, синий
+                                        .basket-product__img
+                                            img(src="img/basket/image.jpg", alt="Basket image")
+                                    .basket-list__item.basket-vendor-code
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                    .basket-list__item.basket-price.
+                                        380 ₽
+                                    .basket-list__item.basket-quantity
+                                        button.basket-quantity__btn -
+                                        input(type="text" value="5").basket-quantity__number
+                                        button.basket-quantity__btn +
+                                    .basket-list__item.basket-sum
+                                        .basket-sum__amount 1900 ₽
+                                        button.basket-clear
+                                            span.basket-clear__top
+                                            span.basket-clear__bottom
+                                li.basket-list__row
+                                    .basket-list__item.basket-product
+                                        .basket-product__text
+                                            .basket-product__number №00000000
+                                            a(href="#").basket-product__title Ежедневник BRAND, недатированный, синий
+                                        .basket-product__img
+                                            img(src="img/basket/image.jpg", alt="Basket image")
+                                    .basket-list__item.basket-vendor-code
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                    .basket-list__item.basket-price.
+                                        380 ₽
+                                    .basket-list__item.basket-quantity
+                                        button.basket-quantity__btn -
+                                        input(type="text" value="5").basket-quantity__number
+                                        button.basket-quantity__btn +
+                                    .basket-list__item.basket-sum
+                                        .basket-sum__amount 1900 ₽
+                                        button.basket-clear
+                                            span.basket-clear__top
+                                            span.basket-clear__bottom
+                                li.basket-list__row
+                                    .basket-list__item.basket-product
+                                        .basket-product__text
+                                            .basket-product__number №00000000
+                                            a(href="#").basket-product__title Ежедневник BRAND, недатированный, синий
+                                        .basket-product__img
+                                            img(src="img/basket/image.jpg", alt="Basket image")
+                                    .basket-list__item.basket-vendor-code
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                    .basket-list__item.basket-price.
+                                        380 ₽
+                                    .basket-list__item.basket-quantity
+                                        button.basket-quantity__btn -
+                                        input(type="text" value="5").basket-quantity__number
+                                        button.basket-quantity__btn +
+                                    .basket-list__item.basket-sum
+                                        .basket-sum__amount 1900 ₽
+                                        button.basket-clear
+                                            span.basket-clear__top
+                                            span.basket-clear__bottom
+                                li.basket-list__row
+                                    .basket-list__item.basket-product
+                                        .basket-product__text
+                                            .basket-product__number №00000000
+                                            a(href="#").basket-product__title Ежедневник BRAND, недатированный, синий
+                                        .basket-product__img
+                                            img(src="img/basket/image.jpg", alt="Basket image")
+                                    .basket-list__item.basket-vendor-code
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                    .basket-list__item.basket-price.
+                                        380 ₽
+                                    .basket-list__item.basket-quantity
+                                        button.basket-quantity__btn -
+                                        input(type="text" value="5").basket-quantity__number
+                                        button.basket-quantity__btn +
+                                    .basket-list__item.basket-sum
+                                        .basket-sum__amount 1900 ₽
+                                        button.basket-clear
+                                            span.basket-clear__top
+                                            span.basket-clear__bottom
+                                li.basket-list__row
+                                    .basket-list__item.basket-product
+                                        .basket-product__text
+                                            .basket-product__number №00000000
+                                            a(href="#").basket-product__title Ежедневник BRAND, недатированный, синий
+                                        .basket-product__img
+                                            img(src="img/basket/image.jpg", alt="Basket image")
+                                    .basket-list__item.basket-vendor-code
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                    .basket-list__item.basket-price.
+                                        380 ₽
+                                    .basket-list__item.basket-quantity
+                                        button.basket-quantity__btn -
+                                        input(type="text" value="5").basket-quantity__number
+                                        button.basket-quantity__btn +
+                                    .basket-list__item.basket-sum
+                                        .basket-sum__amount 1900 ₽
+                                        button.basket-clear
+                                            span.basket-clear__top
+                                            span.basket-clear__bottom
+
+                            .basket-total
+                                .basket-total__info
+                                    .basket-total__item
+                                        | Вес заказа:
+                                        br
+                                        b 3,24 кг
+                                    .basket-total__item
+                                        | Объем м
+                                        sup 2
+                                        | :
+                                        br
+                                        b 0,01
+                                    .basket-total__item
+                                        | Общий тираж:
+                                        br
+                                        b 40 шт
+                                    .basket-total__item
+                                        b Сумма заказа:
+                                        br
+                                        b 15200 ₽
+                                .basket-checkout
+                                    a(href="#").button.button--blue Офформить заказ
+
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        include ../modules/footer
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

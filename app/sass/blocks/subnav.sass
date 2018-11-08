@@ -1,0 +1,52 @@
+.subnav
+    position: absolute
+    width: calc(100% - 30px)
+    top: 100%
+    left: 50%
+    background-color: #ffffff
+    box-shadow: 0 0 50px rgba(#000, .3)
+    transform: translate(-50%)
+    padding: 35px 60px 70px 35px
+    display: none
+
+    &.active
+        display: block
+
+    @media #{$_lg}
+        padding: 30px 30px 60px
+
+.subnav-list__item
+    margin-bottom: 30px
+
+.subnav-list__heading
+    font-size: 16px
+    font-family: $main-semibold
+    margin-bottom: 13px
+
+.subnav-list__icon
+    margin-right: 20px
+    width: 60px
+    flex-shrink: 0
+
+.subnav-list__body
+    display: flex
+    align-items: flex-start
+
+.subnav-list__item
+    page-break-inside: avoid
+    break-inside: avoid
+
+.subnav-list__link
+    font-size: 15px
+    line-height: 2
+    color: $accent
+    font-family: $main-medium
+
+    &:hover
+        text-decoration: underline
+
+    @media #{$_lg}
+        font-size: 13px
+
+.subnav-list
+    column-count: 3

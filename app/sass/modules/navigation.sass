@@ -1,0 +1,113 @@
+.navigation
+    background-color: $accent
+
+    @media #{$_sm}
+        display: none
+    
+.navigation__container
+    display: flex
+    position: relative
+    
+.navigation__list
+    flex-grow: 1
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+.navigation__item
+    flex-grow: 1
+
+    &:hover
+        .navigation__link
+            border-color: $alt-accent
+
+        .dropdown
+            visibility: visible
+            opacity: 1
+
+.navigation__link
+    text-align: center
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    padding-top: 14px
+    padding-bottom: 11px
+    color: #ffffff
+    font-size: 16px
+    border-bottom: 3px solid transparent
+
+    .svg-inline--fa
+        margin-left: 6px
+
+    @media #{$_lg}
+        font-size: 14px
+
+.nav-button
+    background-color: $alt-accent
+    font-family: $main-bold
+    border: 0
+    border-bottom: 3px solid transparent
+    cursor: pointer
+
+    &:focus
+        outline: 0
+
+.navigation-search__input
+    position: absolute
+    right: 65px
+    height: 100%
+    border: 0
+    background-color: $light-accent
+    padding: 0 30px
+    top: 50%
+    transform: translateY(-50%)
+    color: #ffffff
+    font-family: $main-italic
+    letter-spacing: 0.5px
+    opacity: 0
+    visibility: hidden
+    width: 0
+    transition: width .3s ease, opacity .3s ease, visibility .3s ease
+
+    &::placeholder
+        opacity: 1
+
+    &:focus
+        outline: 0
+
+.burger
+    width: 14px
+    margin-right: 12px
+
+.sublist__link
+    color: $main-color
+    display: inline-block
+    line-height: 1.8
+
+    &:hover
+        text-decoration: underline
+
+.navigation-search__form
+    height: 100%
+
+.navigation-search__button
+    height: 100%
+    width: 50px
+    background-color: $light-accent
+    border: 0
+    cursor: pointer
+    transition: background-color .15s ease
+
+    &:hover
+        background-color: lighten($light-accent, 3%)
+
+    &:focus
+        outline: 0
+
+    &:active
+        background-color: darken($light-accent, 3%)
+
+    .svg-inline--fa
+        color: #ffffff
+        font-size: 16px

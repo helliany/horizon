@@ -1,0 +1,71 @@
+.news
+    width: 25%
+    transition: background-color .2s ease
+
+    h6
+        font-family: $main-bold
+        color: $accent
+        font-size: 14px
+        margin-bottom: 10px
+
+    p
+        color: $main-color
+
+    &:hover
+        background-color: $gainsboro
+
+        .hidden-arrow
+            opacity: 1
+            visibility: visible
+    
+
+    @media #{$_lg}
+        padding: 12px
+
+        h6
+            font-size: 12px
+
+        p
+            font-size: 12px
+
+    @media #{$_xsm}
+        background-color: $gainsboro
+
+    @media #{$_sm}
+        width: 33%
+
+    @media #{$_xsm}
+        width: calc(50% - 15px)
+        margin-bottom: 20px
+
+    @media #{$_large-phone}
+        width: 100%
+
+.news__left
+    flex-shrink: 0
+    margin-right: 30px
+    width: 255px
+
+    .last-news__list-img
+        width: 100%
+        display: flex
+        justify-content: center
+
+    img
+        width: 100%
+        object-fit: cover
+
+    @media #{$_xsm}
+        width: 100%
+        margin-right: 0
+        margin-bottom: 25px
+
+.news__right
+    max-width: 480px
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+    @media #{$_xsm}
+        width: 100%

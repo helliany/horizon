@@ -1,0 +1,19 @@
+.pagination__list
+    display: flex
+    align-items: center
+
+.pagination__item
+    &:not(:last-child)
+        margin-right: 9px
+
+    span
+        font-size: 16px
+        color: $gray
+
+    a
+        font-size: 16px
+        color: $gray
+
+        &:hover, &.active
+            color: $accent
+            text-decoration: underline

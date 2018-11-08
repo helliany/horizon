@@ -1,0 +1,72 @@
+.mobile-search
+    +col(2.15)
+    display: flex
+    justify-content: center
+
+    @media #{$sm}
+        display: none
+    
+.mobile-search__btn
+    background-color: transparent
+    border: 0
+    width: 70px
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    .svg-inline--fa
+        font-size: 32px
+        color: $gray
+
+    &:focus
+        outline: 0
+
+    &.active
+        background-color: $light
+
+    @media #{$_xsm}
+        width: 50px
+        height: 50px
+        .svg-inline--fa
+            font-size: 24px
+
+.mobile-search__form
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    z-index: 2
+    display: none
+
+    &.active
+        display: block
+
+    input
+        width: 100%
+        padding: 15px
+        border: 0
+        background-color: darken($gainsboro, 5%)
+
+        &::placeholder
+            font-style: italic
+
+        &:focus
+            outline: 0
+
+.mobile-search__form-btn
+    position: absolute
+    z-index: 3
+    background-color: transparent
+    top: 50%
+    transform: translateY(-50%)
+    right: 5px
+    background-color: transparent
+    border: 0
+
+    .svg-inline--fa
+        font-size: 25px
+        color: $accent
+
+    @media #{$_xsm}
+        .svg-inline--fa
+            font-size: 22px

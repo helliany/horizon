@@ -1,0 +1,54 @@
+.button
+    display: inline-block
+    border: 1px solid $accent
+    background-color: transparent
+    border-radius: 20px
+    font-size: 12px
+    cursor: pointer
+    font-weight: 600
+    color: $accent
+    padding: 5.5px 31px
+    min-width: 160px
+    text-align: center
+    transition: background-color .2s ease
+
+    &:focus
+        outline: 0
+
+.button:hover
+    background-color: $accent
+    color: #ffffff
+
+    &:active
+        color: $accent
+        background-color: transparent
+
+.button--orange
+	background-color: $alt-accent
+	color: #ffffff
+	border-color: $alt-accent
+
+	&:hover
+		background-color: darken($alt-accent, 5%)
+
+.button--blue
+	background-color: $accent
+	color: #ffffff
+
+	&:hover
+		background-color: darken($accent, 5%)
+    
+.button--white
+    background-color: #ffffff
+    color: $accent
+    border-color: #ffffff
+    padding-left: 22px
+    padding-right: 22px
+
+    &:hover
+        background-color: transparent
+        color: #ffffff
+
+    &:active
+        background-color: #ffffff
+        color: $accent

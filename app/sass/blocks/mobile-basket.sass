@@ -1,0 +1,26 @@
+.mobile-basket
+    +col(2.15)
+    display: flex
+    justify-content: center
+
+    a
+        width: 70px
+        height: 70px
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .svg-inline--fa
+            font-size: 32px
+            color: $gray
+
+    @media #{$sm}
+        display: none
+
+    @media #{$_xsm}
+        a
+            width: 50px
+            height: 50px
+
+            .svg-inline--fa
+                font-size: 24px

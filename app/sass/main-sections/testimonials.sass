@@ -1,0 +1,181 @@
+.testimonials
+    padding-top: 30px
+    padding-bottom: 30px
+    background-color: $gainsboro
+
+    @media #{$_sm}
+        background-color: #ffffff
+
+.testimonials__container
+    position: relative
+
+.testimonials__background
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+    img
+        height: 100%
+        width: 100%
+        object-fit: cover       
+
+.testimonials__wrapper
+    position: relative
+    
+.testis
+    max-width: 1000px
+    margin-left: auto
+    margin-right: auto
+
+    @media #{$_lg}
+        max-width: 860px
+
+.testimonials__prev,
+.testimonials__next
+    position: absolute
+    top: 0
+
+    @media #{$_sm}
+        top: -40px
+
+.testimonials__prev
+    left: 0
+
+.testimonials__next
+    right: 0
+
+.testi__wrapper
+    max-width: 980px
+    position: relative
+    display: flex
+    justify-content: space-between
+    background-color: #ffffff
+    padding: 15px 15px 15px 30px
+
+    @media #{$_lg}
+        max-width: 840px
+            
+    @media #{$_xsm}
+        flex-direction: column
+        padding: 0
+
+.testi__customer
+    width: 164px
+    flex-basis: 164px
+    flex-shrink: 0
+    margin-right: 20px
+    
+    > *
+        &:not(:last-child)
+            margin-bottom: 20px
+
+    @media #{$_lg}
+        margin-right: 10px
+
+    @media #{$_xsm}
+        width: 100%
+        flex-basis: initial
+        margin-right: 0
+        align-items: center
+        display: flex
+        flex-wrap: wrap
+
+.testi__customer-info
+    h5
+        font-size: 18px
+        font-family: $main-bold
+        line-height: 1
+
+    span
+        font-size: 12px
+        display: inline-block
+        font-family: $main-light
+        margin-bottom: 15px
+        line-height: 1
+
+    img
+        max-width: 160px
+
+        @media #{$_lg}
+            max-width: 135px
+
+        @media #{$_sm}
+            max-width: 160px
+
+        @media #{$_xs}
+            max-width: 140px
+
+    @media #{$_lg}
+        h5
+            font-size: 15px
+        
+        span
+            font-size: 10px
+
+    @media #{$_sm}
+        h5
+            font-size: 18px
+
+        span
+            font-size: 12px
+
+    @media #{$_xs}
+        h5
+            font-size: 16px
+
+        span
+            font-size: 11px
+
+.testi__customer-img
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    border: 3px solid $alt-accent
+    background-repeat: no-repeat
+    background-position: 50% 0
+    background-size: cover
+
+    @media #{$_xsm}
+        margin-right: 30px
+
+.testi__text
+    margin-right: 20px
+    p
+        color: $dark
+        margin-bottom: 1em
+
+    @media #{$_lg}
+        margin-right: 15px
+
+        p
+            font-size: 12px
+
+    @media #{$_sm}
+        margin-right: 0
+
+.testi__image
+    width: 285px
+    flex-basis: 285px
+    flex-shrink: 0
+
+    img
+        width: 100%
+        object-fit: cover
+
+    @media #{$_lg}
+        width: 240px
+        flex-basis: 240px
+
+    @media #{$_sm}
+        display: none
+
+.testi__quotes
+    position: absolute
+    right: -16px
+    top: 5px
+    z-index: 1
+
+    @media #{$_sm}
+        display: none

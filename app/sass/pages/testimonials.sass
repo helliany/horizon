@@ -1,0 +1,61 @@
+.testimonials-section__list
+
+    .testi
+        padding-bottom: 30px
+        border-bottom: 1px solid $light
+
+        &:not(:first-child)
+            padding-top: 30px
+
+    .testi__wrapper
+        max-width: 100%
+
+    .testi__customer
+        order: 0
+        margin-right: 30px
+
+    .testi__customer-img
+        width: 160px
+        height: 160px
+
+    .testi__image
+        width: 160px
+        order: 1
+        flex-basis: 160px
+        margin-right: 30px
+
+        img
+            height: 100%
+
+    .testi__customer-info
+        img
+            max-height: 100px
+            margin-left: auto
+            margin-right: auto
+
+    .testi__text
+        order: 2
+        margin-right: 0
+
+        p
+            &:last-child
+                margin-bottom: 0
+
+.leave-feedback
+    display: flex
+    align-items: center
+
+    > *
+        &:not(:last-child)
+            margin-right: 30px
+
+    @media #{$sm}
+        padding-top: 5px
+
+.leave-feedback__text
+    max-width: 300px
+    color: $gray
+    text-align: right
+
+    @media #{$_xsm}
+        display: none

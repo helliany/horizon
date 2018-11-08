@@ -1,0 +1,119 @@
+doctype html
+html(lang='ru')
+
+  title Горизонт
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main.page 
+ 
+        section.page-section
+        
+            .container
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a(href="index.html") Главная
+                        li.breadcrumbs__item
+                            span О компании
+                    ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                        li.breadcrumbs__item
+                            a(href="index.html") 
+                                i.fas.fa-angle-left
+                                |  Назад
+                // end breadcrumbs 
+
+                header.heading.page-section__header
+                    h1.page-title Новости и акции
+                
+                // begin news-list 
+                ul.news-list
+                    li.news
+                        .news__left
+                            .last-news__list-img
+                                img(src="img/main-sections/last-news/1.jpg", alt="Last news")
+                        .news__right
+                            time(datetime="2018-07-25").date 25.07.2018
+                            h6 Ежедневники, датированные на 2019 год, уже на складе
+                            p.
+                                Доступны для заказа несколько моделей ТМ «Адъютант»: два вида ежедневников, планинг и еженедельник.
+                            a.button(href="#") Подробнее
+                    li.news
+                        .news__left
+                            .last-news__list-img
+                                img(src="img/main-sections/last-news/2.jpg", alt="Last news")
+                        .news__right
+                            time(datetime="2018-07-25").date 25.07.2018
+                            h6 Жаркие скидки
+                            p.
+                                Только этим летом, скидки в размере 10% распростроняются 
+                                на все товары электроники! Успейте приобрести по уникальному предложению!
+                            a.button(href="#") Подробнее
+                    li.news
+                        .news__left
+                            .last-news__list-img
+                                img(src="img/main-sections/last-news/3.jpg", alt="Last news")
+                        .news__right
+                            time(datetime="2018-07-25").date 25.07.2018
+                            h6 Доброе утро с горизонтом
+                            p.
+                                Теперь утро может быть не только добрым, но и выгодным! 
+                                На все заказы оформленные до 12:00 дня скидка - 5% на все!  
+                            a.button(href="#") Подробнее
+                    li.news
+                        .news__left
+                            .last-news__list-img
+                                img(src="img/main-sections/last-news/4.jpg", alt="Last news")
+                        .news__right
+                            time(datetime="2018-07-25").date 25.07.2018
+                            h6 Запуск нового оборудования
+                            p.
+                                Теперь утро может быть не только добрым, но и выгодным! 
+                                На все заказы оформленные до 12:00 дня скидка - 5% на все!
+                            a.button(href="#") Подробнее
+                        
+                // end news-list 
+
+                // begin pagination 
+                .pagination
+                    ul.pagination__list
+                        li.pagination__item
+                            a.pagination__link(href="#")
+                                i.fas.fa-angle-left
+                        li.pagination__item
+                            a(href="#").active 01
+                        li.pagination__item
+                            a(href="#") 02
+                        li.pagination__item
+                            a(href="#") 03
+                        li.pagination__item
+                            a(href="#") 04
+                        li.pagination__item
+                            a(href="#") 05
+                        li.pagination__item
+                            span ...
+                        li.pagination__item
+                            a(href="#") 10
+                        li.pagination__item
+                            a.pagination__link(href="#")
+                                i.fas.fa-angle-right
+                // end pagination 
+        
+
+      // end page
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

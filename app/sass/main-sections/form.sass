@@ -1,0 +1,53 @@
+.form
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 5
+    display: none
+    width: 445px
+    padding: 36px
+    text-align: center
+    background-color: #fff
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3)
+    transform: translate(-50%, -50%)
+
+    &--open 
+        display: block
+
+    h2
+        font-size: 24px
+        font-family: $alt-bold
+
+    form
+        margin: 60px 0 8px
+
+.form__text 
+    font-size: 16px  
+
+.form__input 
+    width: 190px
+    margin: 0 0 20px
+    padding: 5px 20px
+    border: 1px solid $main-color 
+    border-radius: 12px
+
+.form__btn
+    width: 190px
+    margin: 12px 0 0
+    font-family: $main-semibold
+
+.form__offer
+    padding: 0 34px
+    font-size: 12px 
+    font-family: $main-light
+
+.form__btn-close
+    position: absolute
+    right: 15px
+    top: 15px
+    width: 20px
+    height: 20px
+    border: none
+    background-color: #fff
+    background-image: url("../img/icons/cancel.svg")
+    cursor: pointer

@@ -1,0 +1,177 @@
+.production
+    padding-top: 95px
+    padding-bottom: 95px
+
+    .tabs
+        justify-content: center
+
+        > *
+            margin-left: 0
+
+    @media #{$_xsm}
+        .tabs
+            display: block
+
+        .tabs__item
+            display: flex
+            justify-content: center
+
+.production-slider
+    @media #{$xsm}
+        display: flex
+        width: 100%
+        justify-content: center
+
+        > *
+            &:not(:first-child)
+                margin-left: 60px
+    
+.production__prev,
+.production__next
+    position: absolute
+    display: none
+    top: 0
+    z-index: 5
+
+    @media #{$_xsm}
+        display: block
+
+.production__prev
+    left: 0
+
+.production__next
+    right: 0
+
+.prods
+    display: flex
+    flex-wrap: wrap
+    margin-right: -30px
+    margin-bottom: 20px
+
+    @media #{$_xsm}
+        justify-content: center
+
+.product
+    width: calc(25% - 30px)
+    margin-right: 30px
+    margin-bottom: 30px
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        top: 20px
+        left: 20px
+        background-image: url(../img/main-sections/production/dots.png)
+        background-repeat: no-repeat
+        background-position: 100% 100%
+        z-index: 0
+        width: 100%
+        height: 100%
+
+    &:nth-child(2n)
+        .product__body
+            &:hover
+                background-color: $accent
+
+        .product__image::before
+            background-color: $accent
+
+    @media #{$_sm}
+        width: calc(33.3333% - 30px)
+
+    @media #{$_xsm}
+        width: calc(50% - 30px)
+        max-width: 290px
+
+        &::before
+            display: none
+
+    @media #{$_large-phone}
+        width: 100%
+
+.product__body
+    position: relative
+    padding: 23px 15px
+    display: block
+    overflow: hidden
+    height: 100%
+    display: flex
+    flex-direction: column
+    background-color: $gainsboro
+    transition: background-color .15s ease
+
+    .headline
+        color: $main-color
+        transition: color .15s ease
+
+        @media #{$_lg}
+            font-size: 16px
+
+    @media #{$_lg}
+        padding: 20px 12px
+    
+
+    &:hover
+        background-color: $alt-accent
+
+        .headline, .product__price
+            color: #ffffff
+
+        .product__next
+            opacity: 1
+
+        .product__image::before
+            background-color: #ffffff
+
+        .hidden-img
+            opacity: 1
+            visibility: visible
+
+.product__price
+    transition: color .15s ease
+    color: $main-color
+
+.product__next
+    width: 30px
+    opacity: 0
+    transition: opacity .15s ease
+
+.product__image
+    position: relative
+    top: 20px
+    right: -10px
+    margin-top: auto
+    margin-left: auto
+    width: 115px
+    display: flex
+    justify-content: center
+    position: relative
+
+    img
+        position: relative
+    
+    &::before
+        content: ''
+        position: absolute
+        width: 154px
+        height: 154px
+        border-radius: 50%
+        left: 50%
+        top: 50%
+        background-color: $alt-accent
+        z-index: 0
+        transform: translate(-50%, -50%)
+        transition: background-color .15s ease
+
+img.hidden-img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+    opacity: 0
+    visibility: hidden
+
+.production__button
+    text-align: center

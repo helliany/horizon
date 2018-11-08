@@ -1,0 +1,76 @@
+.question-section
+    padding: 30px 0
+    background-color: $gainsboro
+
+    @media #{$_sm}
+        background-color: #ffffff
+        background-image: none !important
+        
+    @media #{$_xsm}
+        padding-bottom: 95px
+        padding-top: 0
+
+.question-section__title
+    text-align: center
+    font-family: $alt-bold
+    font-weight: 700
+    font-size: 24px
+    margin-bottom: 25px
+
+    @media #{$_xsm}
+        text-align: left
+
+.question-form
+    max-width: 600px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
+    .button
+        flex-shrink: 0
+
+    @media #{$_xsm}
+        text-align: center
+
+        .button
+            margin-left: auto
+            margin-right: auto
+    
+.question-form__wrapper
+    align-items: flex-start
+    display: flex
+    margin-bottom: 10px
+
+    @media #{$_xsm}
+        flex-wrap: wrap
+        flex-direction: column
+
+.question-form__item
+    margin-right: 30px
+    padding: 5px 20px
+    max-width: 190px
+    border-radius: 15px
+    border: 1px solid $dark-gray
+    background-color: transparent
+    line-height: 1
+
+    &:focus
+        outline: 0
+        border-color: $accent
+
+    @media #{$_xsm}
+        width: 100%
+        margin-bottom: 20px
+        max-width: 290px
+
+.question-form__text
+    font-size: 10px
+    color: $dark-gray
+    text-align: center
+
+    a
+        text-decoration: underline
+        color: $dark-gray
+
+        &:hover
+            text-decoration: none

@@ -1,0 +1,32 @@
+.news-list
+    margin-bottom: 50px
+
+    .last-news__list-img
+        margin-bottom: 0
+
+    .news
+        display: flex
+        width: 100%
+        padding-left: 0
+        padding-right: 0
+
+        &:not(:first-child)
+            padding-top: 30px
+
+        &:not(:last-child)
+            border-bottom: 1px solid $light
+            padding-bottom: 30px
+
+        &:hover
+            background-color: transparent
+
+        .button
+            margin-top: auto
+
+        @media #{$_xsm}
+            flex-wrap: wrap
+            padding: 15px 12px
+
+            &:hover
+                background-color: $gainsboro
+            

@@ -1,0 +1,67 @@
+.hero
+    min-height: 500px
+
+.hero__slider
+    padding-top: 35px
+    padding-bottom: 20px
+
+.hero__item
+    position: relative
+    user-select: text
+
+.hero__item-wrapper
+    padding-top: 125px
+    padding-bottom: 100px
+
+    @media #{$_sm}
+        padding-top: 30px
+        padding-bottom: 30px
+    
+.hero__text
+    max-width: 490px
+
+    ul
+        margin-bottom: 30px
+
+    li
+        font-size: 18px
+        color: #000000
+
+    @media #{$_sm}
+        li
+            font-size: 14px
+
+.hero__img
+    position: absolute
+    top: 0
+    right: 0
+    width: 50%
+    
+    img
+        margin-left: auto
+        margin-right: auto
+
+    @media #{$_lg}
+        width: 45%
+        top: 50%
+        transform: translateY(-50%)
+
+    @media #{$_sm}
+        position: static
+        +container()
+        transform: translateY(0)
+
+    @media #{$_xsm}
+        padding: 0
+
+.hero__nav
+    +container
+
+.hero__buttons
+    .button
+        padding-left: 43px
+        padding-right: 43px
+        
+        &:hover
+            background-color: $accent
+            color: #ffffff

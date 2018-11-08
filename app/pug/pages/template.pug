@@ -1,0 +1,325 @@
+doctype html
+html(lang='ru')
+
+  title Горизонт
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main.page
+
+        .container
+        
+            // begin breadcrumbs 
+            .breadcrumbs
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item
+                        span Новости и акции
+                ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                    li.breadcrumbs__item
+                        a(href="index.html") 
+                            i.fas.fa-angle-left
+                            |  Назад
+            // end breadcrumbs 
+
+            // begin page-section 
+            section.page-section
+                header.heading.page-section__header
+                    h1.page-title О компании
+                .page-section__wrapper
+                    h2.hidden-sm Компания "Горизонт"
+                    .text
+                        p.
+                            Компания Горизонт работает на рынке с 2008 года. Типография по своей сути это отдельная компания, предприятие, производящее печатную продукцию различных форм и видов. Печать абсолютно на любой вкус. Процессы и технологии печати подразумевают несколько этапов 
+                            по производству. Сначала подготовка до печати, затем сама печать и обработка после печати.
+                        p.
+                            Типография, на сегодняшний день, важная составляющая рекламного бизнеса. К сожалению многие типографии предлагают только лишь печать продукции. Мы предоставляем заказчику полный комплекс услуг: от разработки визитки до корпоративного стиля, от широкоформатной печати 
+                            до офсетной. Полный цикл печатных услуг, оснащенность современным оборудованием, новейшие технологии, современный уровень всех полиграфических процессов — все это позволяет выполнять практически любые заказы в самые короткие сроки. Мы не только круто печатаем, 
+                            но и занимаемся комплексным решением Ваших творческих и бизнес задач.              
+                        p.
+                            Впервые обратились в типографию? Давно в деле? Вам будет одинаково просто и комфортно работать с нами. Парк новейшего оборудования, команда профессионалов и придирчивый отбор поставщиков сырья - всё это позволяет нам обещать наилучший результат работы в сжатые сроки.
+
+                    .hidden-sm
+                        h3 Что заказывают чаще всего
+                        // begin table 
+                        table.table
+                            tr
+                                th №
+                                th Месяц
+                                th 
+                                    | Количество 
+                                    br
+                                    |  клиентов
+                                th Популярная услуга
+                            tr
+                                td 1
+                                td Январь
+                                td 525
+                                td 
+                                    a(href="#").link Сувениры к праздникам
+                                    span ; 
+                                    a(href="#").link POS-материалы
+                            tr
+                                td 2
+                                td Февраль
+                                td 238
+                                td 
+                                    a(href="#").link Сувениры к праздникам
+                                    span ; 
+                                    a(href="#").link К мероприяютию
+                            tr
+                                td 3
+                                td Март
+                                td 470
+                                td 
+                                    a(href="#").link Сувениры к праздникам
+                                    span ; 
+                                    a(href="#").link Посуда
+                            tr
+                                td 4
+                                td Апрель
+                                td 650
+                                td 
+                                    a(href="#").link Сувениры к праздникам
+                            tr
+                                td 5
+                                td Май
+                                td 1026
+                                td 
+                                    a(href="#").link Дом
+                                    span ; 
+                                    a(href="#").link Для отдыха
+                            tr
+                                td 6
+                                td Июнь
+                                td 954
+                                td 
+                                    a(href="#").link Одежда
+                                    span ; 
+                                    a(href="#").link Сувениры на заказ
+                            tr
+                                td 7
+                                td Июль
+                                td 525
+                                td 
+                                    a(href="#").link Одежда
+                                    span ; 
+                                    a(href="#").link Для отдыха
+                            tr
+                                td 8
+                                td Август
+                                td 489
+                                td 
+                                    a(href="#").link Подарочные наборы
+                                    span ; 
+                                    a(href="#").link Широкоформатная печать
+                            tr
+                                td 9
+                                td Сентябрь
+                                td 364
+                                td 
+                                    a(href="#").link Зонты
+                                    span ; 
+                                    a(href="#").link Посуда
+                                    span ; 
+                                    a(href="#").link Дом
+                            tr
+                                td 10
+                                td Октябрь
+                                td 528
+                                td 
+                                    a(href="#").link Упаковка
+                                    span ; 
+                                    a(href="#").link Для офиса
+                            tr
+                                td 11
+                                td Ноябрь
+                                td 483
+                                td 
+                                    a(href="#").link Листовая продукция
+                                    span ; 
+                                    a(href="#").link POS-материалы
+                            tr
+                                td 12
+                                td Декабрь
+                                td 915
+                                td 
+                                    a(href="#").link Подарочные наборы
+                                    span ; 
+                                    a(href="#").link Корпоративные
+                        // end table 
+
+                        // begin cards 
+                        .cards
+                            header.cards__header
+                                h3 Примеры работ
+                                a(href="#")
+                                    | В портфолио
+                                    i.fas.fa-angle-right
+                            ul.cards__list
+                                li.card
+                                    a(href="#").card__link
+                                        img(src="img/template-page/image.jpg", alt="Card image")
+                                li.card
+                                    a(href="#").card__link
+                                        img(src="img/template-page/image.jpg", alt="Card image")
+                                li.card
+                                    a(href="#").card__link
+                                        img(src="img/template-page/image.jpg", alt="Card image")
+                        // end cards 
+
+                        h3 Что мы делаем
+
+                        ul.page-list
+                            li.page-list__item Продукция
+                                ul.subpage-list.two-col
+                                    li.subpage-list__item Печатная продукция:
+                                        ol.numbered-list
+                                            li.numbered-list__item
+                                                a(href="#").link.hovered Широкоформатная печать
+                                            li.numbered-list__item
+                                                a(href="#").link Наклейки и стикеры
+                                            li.numbered-list__item
+                                                a(href="#").link POS-материалы
+                                            li.numbered-list__item
+                                                a(href="#").link Конверты
+                                            li.numbered-list__item
+                                                a(href="#").link Блокноты
+                                            li.numbered-list__item
+                                                a(href="#").link Визитки
+                                            li.numbered-list__item
+                                                a(href="#").link Календари 2018
+                                            li.numbered-list__item
+                                                a(href="#").link Конверты
+                                            li.numbered-list__item
+                                                a(href="#").link Пакеты
+                                            li.numbered-list__item
+                                                a(href="#").link Упаковка
+                                            li.numbered-list__item
+                                                a(href="#").link Папки
+                                            li.numbered-list__item
+                                                a(href="#").link К меропрятию
+                                            li.numbered-list__item
+                                                a(href="#").link Многополосная продукция
+                                            li.numbered-list__item
+                                                a(href="#").link Листовая продукция
+                                            li.numbered-list__item
+                                                a(href="#").link Таблички
+                                            li.numbered-list__item
+                                                a(href="#").link Наградная продукция
+                                            li.numbered-list__item
+                                                a(href="#").link Прочная продукция
+                                    li.subpage-list__item Сувенирная продукция:
+                                        ol.numbered-list
+                                            li.numbered-list__item
+                                                a(href="#").link.hovered Сувениры к праздникам
+                                            li.numbered-list__item
+                                                a(href="#").link Сувениры к новому году
+                                            li.numbered-list__item
+                                                a(href="#").link Сувениры на заказ
+                                            li.numbered-list__item
+                                                a(href="#").link Корпоративные
+                                            li.numbered-list__item
+                                                a(href="#").link Электроника
+                                            li.numbered-list__item
+                                                a(href="#").link Визитки
+                                            li.numbered-list__item
+                                                a(href="#").link Промо
+                                            li.numbered-list__item
+                                                a(href="#").link Отдых
+                                            li.numbered-list__item
+                                                a(href="#").link Одежда
+                                            li.numbered-list__item
+                                                a(href="#").link Дом
+                                            li.numbered-list__item
+                                                a(href="#").link Упаковка
+                                            li.numbered-list__item
+                                                a(href="#").link Для офиса
+                                            li.numbered-list__item
+                                                a(href="#").link Ручки
+                                            li.numbered-list__item
+                                                a(href="#").link Элитные подарки
+                                            li.numbered-list__item
+                                                a(href="#").link Подарочные наборы
+                                            li.numbered-list__item
+                                                a(href="#").link Ежедневники и блокноты
+                                            li.numbered-list__item
+                                                a(href="#").link Посуда
+                                            li.numbered-list__item
+                                                a(href="#").link Сумки
+                                            li.numbered-list__item
+                                                a(href="#").link Зонты
+                            li.page-list__item Услуги
+                                ul.subpage-list
+                                    li.subpage-list__item Печать и постпечатная обработка:
+                                        ol.numbered-list
+                                            li.numbered-list__item
+                                                a.link.hovered(href="#") Цифровая оперативная печать
+                                            li.numbered-list__item
+                                                a.link(href="#") Широкоформатная печать
+                                            li.numbered-list__item
+                                                a.link(href="#") Офсетная печать
+                                            li.numbered-list__item
+                                                a.link(href="#") Шелкотрафаретная печать
+                                            li.numbered-list__item
+                                                a.link(href="#") Тампопечать
+                                            li.numbered-list__item
+                                                a.link(href="#") Термоперенос на одежду и ткань
+                                            li.numbered-list__item
+                                                a.link(href="#") Плоттерная резка
+                                            li.numbered-list__item
+                                                a.link(href="#") Обрамление в профиль
+                                            li.numbered-list__item
+                                                a.link(href="#") Круговая печать на сувенирах
+                                            li.numbered-list__item
+                                                a.link(href="#") Тиснение
+                                            li.numbered-list__item
+                                                a.link(href="#") Конгрев
+                                            li.numbered-list__item
+                                                a.link(href="#") Вырубка
+                                            li.numbered-list__item
+                                                a.link(href="#") УФ-лакировка
+                                            li.numbered-list__item
+                                                a.link(href="#") Накат на основу, пвх-пластик и пенокартон
+                                            li.numbered-list__item
+                                                a.link(href="#") УФ-печать
+                                            li.numbered-list__item
+                                                a.link(href="#") Закатные значки
+                                            li.numbered-list__item
+                                                a.link(href="#") Лазерная гравировка
+                                            li.numbered-list__item
+                                                a.link(href="#") Все виды постпечатной обработки тиражей
+            // end page-section 
+
+        // begin question-section 
+        section.question-section(style="background-image: url(img/template-page/dots.png)")
+            .container
+                h2.question-section__title Остались вопросы?
+                form.question-form
+                    .question-form__wrapper
+                        input(type="text" name="name" required="required" placeholder="Ваше имя").question-form__item
+                        input(type="text" name="phone" required="required" placeholder="Ваш телефон").question-form__item
+                        button(type="submit").button.button--blue Позвоните мне
+                    .question-form__text
+                        | Нажимая кнопку вы даете согласие на обработку своих 
+                        a(href="#") персональных данных
+
+        // end question-section 
+
+      // end page
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

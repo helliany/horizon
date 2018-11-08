@@ -1,0 +1,54 @@
+doctype html
+html(lang='ru')
+
+  title Горизонт
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main.page 
+
+        // begin error-page 
+        section.error-page.page-section(style="background-image: url(img/main-sections/testimonials/background.png);")
+        
+            .container
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                        li.breadcrumbs__item
+                            a(href="index.html") 
+                                i.fas.fa-angle-left
+                                |  Назад
+                // end breadcrumbs 
+
+                .error-page__wrapper
+                    header.error-page__header
+                        h1.error-page__title 404
+                        strong.flipped-text ошибка
+                    .error-page__text
+                        p.
+                            Страница, которую вы ищете, не существует.
+                        p
+                            | Вы можете 
+                            a(href="#") вернуться назад
+                            |  либо перейти на 
+                            a(href="index.html") главную.
+        // error-page 
+        
+            
+
+      // end page
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

@@ -1,0 +1,26 @@
+.dropdown
+    box-shadow: 0 5px 5px rgba(#000, .3)
+    visibility: hidden
+    opacity: 0
+    position: absolute
+    top: 100%
+    width: calc(100% - 30px)
+    left: 15px
+    background-color: #fff
+    transition: opacity .3s ease, visibility .3s ease
+
+.dropdown__wrapper
+    column-count: 3
+    padding: 40px 80px 70px
+
+.dropdown__item
+    margin-bottom: 10px
+
+.dropdown__link
+    display: inline-block
+    color: $accent
+    font-family: $main-semibold
+    
+    &:hover
+        text-decoration: underline
+        

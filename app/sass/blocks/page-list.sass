@@ -1,0 +1,40 @@
+.two-col
+    column-count: 2
+
+.page-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    margin-top: 35px
+
+.subpage-list
+    margin-top: 15px
+    column-gap: 50px
+
+.page-list__item,
+.subpage-list__item
+    page-break-inside: avoid
+    break-inside: avoid
+
+.page-list__item
+    font-size: 18px
+    font-weight: 600
+    font-family: $main-semibold
+
+.subpage-list__item
+    font-size: 16px
+
+.numbered-list
+    margin-top: 15px
+    padding-left: 15px
+
+.numbered-list__item
+    list-style: decimal
+    font-weight: 400
+    font-family: $main-regular
+    padding-left: 15px
+
+    a
+        
+        font-size: 14px

@@ -1,0 +1,55 @@
+.breadcrumbs
+    padding-top: 30px
+    margin-bottom: 45px
+
+    @media #{$_sm}
+        padding-top: 20px
+        margin-bottom: 20px
+
+.breadcrumbs__list
+    display: flex
+    flex-wrap: wrap
+
+    @media #{$_sm}
+        display: none
+
+.breadrcrumbs__list--hidden
+    display: flex
+    justify-content: space-between
+
+    .breadcrumbs__item
+        &::before
+            display: none
+
+        &:last-child
+            .svg-inline--fa
+                margin-left: 5px
+
+    @media #{$sm}
+        display: none
+    
+.breadcrumbs__item
+    position: relative
+
+    &:not(:first-child)
+        padding-left: 4px
+
+    &:not(:last-child)
+        padding-right: 7px
+
+        &::before
+            content: '|'
+            position: absolute
+            top: 0
+            right: 0
+
+    a, span
+        color: $gray
+        font-size: 12px
+        font-family: $main-regular
+
+    a
+        &:hover
+            text-decoration: underline
+
+    

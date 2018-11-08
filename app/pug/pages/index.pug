@@ -1,0 +1,39 @@
+doctype html
+html(lang='ru')
+
+  title Горизонт
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin main-content
+      main.main-content
+        
+        include ../modules/main/hero
+
+        include ../modules/main/production
+
+        include ../modules/main/features
+
+        include ../modules/main/clients
+
+        include ../modules/main/testimonials
+
+        include ../modules/main/last-news
+
+        include ../modules/main/about
+
+      // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

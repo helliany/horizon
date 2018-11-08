@@ -1,0 +1,71 @@
+.error-page
+    padding-top: 9%
+    padding-bottom: 11%
+    background-color: $gainsboro
+    background-image: url("../img/main-sections/testimonials/background.png")
+
+    .breadcrumbs
+        display: none
+
+    @media #{$_sm}
+        padding-top: 0
+        padding-bottom: 105px
+
+        .breadcrumbs
+            margin-bottom: 90px
+            display: block
+
+.error-page__header,
+.error-page__wrapper
+    max-width: 570px
+    margin: 0 auto
+
+.error-page__header
+    @media #{$_xsm}
+        max-width: 300px
+
+.error-page__title
+    font-size: 250px
+    color: $accent
+    font-family: $alt-bold
+    font-weight: 700
+    line-height: 1
+
+    @media #{$_xsm}
+        font-size: 130px
+        text-align: left
+        margin-bottom: 10px
+
+.error-page__text
+    text-align: left
+    p
+        color: #000000
+        font-weight: 600
+        font-family: $main-semibold
+        font-size: 18px
+        margin-bottom: 0
+
+    a
+        color: $alt-accent
+        text-decoration: underline
+
+        &:hover
+            text-decoration: none
+
+    @media #{$_xsm}
+        p
+            font-size: 16px
+
+.flipped-text
+    transform-origin: 69% 15%
+    font-size: 48px
+    color: $accent
+    font-family: $alt-bold
+    font-weight: 700
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%) rotate(-90deg)
+
+    @media #{$_xsm}
+        font-size: 24px
