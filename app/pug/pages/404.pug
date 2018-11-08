@@ -7,7 +7,7 @@ html(lang='ru')
   body
 
     // begin wrapper
-    .wrapper
+    .wrapper.wrapper--error
 
       include ../modules/header
 
@@ -35,8 +35,8 @@ html(lang='ru')
                         p.
                             Страница, которую вы ищете, не существует.
                         p
-                            | Вы можете 
-                            a(href="#") вернуться назад
+                            | Вы можете вернуться 
+                            a(href="#") назад
                             |  либо перейти на 
                             a(href="index.html") главную.
         // error-page 
@@ -48,6 +48,7 @@ html(lang='ru')
     // end wrapper
 
     include ../modules/footer
+    include ../modules/form
 
 
     // scripts 

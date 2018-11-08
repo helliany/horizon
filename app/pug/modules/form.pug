@@ -1,0 +1,21 @@
+// begin form
+section.form.form--write
+    h2 Заявка
+    .form__text Заполните форму и мы свяжемся с вами
+    form(method="post")
+        input(type="text" required="required" placeholder="Ваше имя" name="name").form__input
+        input(type="email" required="required" placeholder="Ваша почта" name="mail").form__input
+        button(type="submit").form__btn.button.button--orange Напишите мне
+    .form__offer Нажимая кнопку вы даете согласие на обработку своих персональных данных
+    button(type="button").form__btn-close
+
+section.form.form--call
+    h2 Заявка
+    .form__text Заполните форму и мы свяжемся с вами
+    form(method="post")
+        input(type="text" required="required" placeholder="Ваше имя" name="name").form__input
+        input(type="tel" required="required" placeholder="Ваш телефон" name="tel").form__input
+        button(type="submit").form__btn.button.button--blue Позвоните мне
+    .form__offer Нажимая кнопку вы даете согласие на обработку своих персональных данных
+    button(type="button").form__btn-close    
+// end form    
