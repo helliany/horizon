@@ -115,6 +115,10 @@ $('.mobile-search__btn').click(function() {
     $(this).toggleClass('active');
 });
 
+$('.mobile-btn').click(function() {
+    $('.header__top').toggleClass('header__top--active');
+});
+
 slick_slider();
 $(window).resize(slick_slider);
 

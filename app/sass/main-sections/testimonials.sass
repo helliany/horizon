@@ -66,6 +66,10 @@
     flex-basis: 164px
     flex-shrink: 0
     margin-right: 20px
+
+    @media #{$_sm}
+        width: 130px
+        flex-basis: 130px
     
     > *
         &:not(:last-child)
@@ -96,10 +100,7 @@
         line-height: 1
 
     img
-        max-width: 160px
-
-        @media #{$_lg}
-            max-width: 135px
+        max-width: 130px
 
         @media #{$_sm}
             max-width: 160px
@@ -127,6 +128,16 @@
 
         span
             font-size: 11px
+
+.testi__customer-data 
+    position: absolute
+    right: 0
+    top: 15px
+    font-size: 12px
+    color: $gray
+
+    @media #{$_xs}
+        top: 155px
 
 .testi__customer-img
     width: 100px

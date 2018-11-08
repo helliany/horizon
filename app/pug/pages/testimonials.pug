@@ -50,9 +50,11 @@ html(lang='ru')
                                         .testi__customer-info
                                             img(src="img/main-sections/testimonials/company.jpg", alt="Company")
                                     .testi__text
-                                        .testi__customer-info
+                                        .testi__customer-info.testi__customer-info--name
                                             h5 Иван Иванов
                                             span Компания "Компания"
+                                        .testi__customer-data
+                                            span 25.07.2018    
                                         p.
                                             Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
                                             мы всегда спокойны за результат! Ваши менеджеры улавливают идеи и наши пожелания на лету. Иногда кажется, что в эту компанию можно обратиться с любым вопросом: сувенирка, оформление офиса, макеты стендов. Перепробовала несколько полиграфий до этого, 
@@ -70,7 +72,7 @@ html(lang='ru')
                                         .testi__customer-info
                                             img(src="img/main-sections/testimonials/logo-dimov.png", alt="Company")
                                     .testi__text
-                                        .testi__customer-info
+                                        .testi__customer-info.testi__customer-info--name
                                             h5 Иван Иванов
                                             span Компания "Компания"
                                         p.
@@ -82,7 +84,7 @@ html(lang='ru')
                                             Специалисты высокого класса!  Хорошее качество, делают не «и так сойдет», а переживают за любой заказ – всегда рекомендуют проверенные материалы и форматы, отзывчивые, предупреждают, если будет задержка 
                                             в печати. В общем всем смело могу советовать!
                                     .testi__image
-                                        img(src="img/main-sections/testimonials/people.jpg", alt="People")
+                                        img(src="img/main-sections/testimonials/swatches.jpg", alt="Swatches")
                             li.testi
                                 .testi__wrapper
                                     .testi__customer
@@ -90,7 +92,7 @@ html(lang='ru')
                                         .testi__customer-info
                                             img(src="img/main-sections/testimonials/teremok_logo_new.png", alt="Company")
                                     .testi__text
-                                        .testi__customer-info
+                                        .testi__customer-info.testi__customer-info--name
                                             h5 Иван Иванов
                                             span Компания "Компания"
                                         p.
@@ -102,7 +104,7 @@ html(lang='ru')
                                             Специалисты высокого класса!  Хорошее качество, делают не «и так сойдет», а переживают за любой заказ – всегда рекомендуют проверенные материалы и форматы, отзывчивые, предупреждают, если будет задержка 
                                             в печати. В общем всем смело могу советовать!
                                     .testi__image
-                                        img(src="img/main-sections/testimonials/people.jpg", alt="People")
+                                        img(src="img/main-sections/testimonials/cups.jpg", alt="Cups")
                             li.testi
                                 .testi__wrapper
                                     .testi__customer
@@ -110,7 +112,7 @@ html(lang='ru')
                                         .testi__customer-info
                                             img(src="img/main-sections/testimonials/logostolplit.png", alt="Company")
                                     .testi__text
-                                        .testi__customer-info
+                                        .testi__customer-info.testi__customer-info--name
                                             h5 Иван Иванов
                                             span Компания "Компания"
                                         p.
@@ -122,9 +124,32 @@ html(lang='ru')
                                             Специалисты высокого класса!  Хорошее качество, делают не «и так сойдет», а переживают за любой заказ – всегда рекомендуют проверенные материалы и форматы, отзывчивые, предупреждают, если будет задержка 
                                             в печати. В общем всем смело могу советовать!
                                     .testi__image
-                                        img(src="img/main-sections/testimonials/people.jpg", alt="People")
+                                        img(src="img/main-sections/testimonials/sheldon.jpg", alt="Sheldon")
 
-                            
+                        // begin pagination 
+                        .pagination
+                            ul.pagination__list
+                                li.pagination__item
+                                    a.pagination__link(href="#")
+                                        i.fas.fa-angle-left
+                                li.pagination__item
+                                    a(href="#").active 01
+                                li.pagination__item
+                                    a(href="#") 02
+                                li.pagination__item
+                                    a(href="#") 03
+                                li.pagination__item
+                                    a(href="#") 04
+                                li.pagination__item
+                                    a(href="#") 05
+                                li.pagination__item
+                                    span ...
+                                li.pagination__item
+                                    a(href="#") 10
+                                li.pagination__item
+                                    a.pagination__link(href="#")
+                                        i.fas.fa-angle-right
+                        // end pagination     
 
                 // end page-section 
 
