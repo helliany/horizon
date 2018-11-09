@@ -37,7 +37,7 @@
     text-align: center
 
     &:first-child
-        width: 40.5%
+        width: 40%
         text-align: left
 
         @media #{$_sm}
@@ -153,6 +153,10 @@
     font-weight: 600
     font-family: $main-semibold
 
+    span
+        &:first-child
+                display: none
+
     @media #{$_sm}
         width: 13%
 
@@ -167,6 +171,7 @@
             font-size: 16px
 
             &:first-child
+                display: block
                 font-family: $main-light
 
 .basket-quantity
@@ -239,15 +244,20 @@
 .basket-sum__amount
     font-weight: 600
     font-family: $main-semibold
-    width: 50%
+    width: 100%
 
-    span 
-        display: block
-        width: 100%
-        font-size: 16px
-
+    span
         &:first-child
-            font-family: $main-light
+                display: none
+
+    @media #{$_xsm}    
+        span 
+            display: block
+            font-size: 16px
+
+            &:first-child
+                display: block
+                font-family: $main-light
 
 .basket-clear
     position: relative
@@ -293,22 +303,41 @@
     display: flex
     align-items: flex-start
     justify-content: space-between
+    font-size: 16px
+
+    @media #{$_sm}
+        width: calc(70% - 15px)
+        font-size: 14px
 
     @media #{$_xsm}
         position: relative
         width: 100%
 
+    @media #{$_xxs}
+        font-size: 12px
+
 .basket-total__item
     width: 25%
-
+    
     b
         font-weight: 600
         font-family: $main-semibold
 
     @media #{$_xsm}
+        width: 33.3%
+
         &:last-child
             position: absolute
-            top: 96px
+            top: 80px
+            width: 100%
+            font-size: 16px
 
 .basket-checkout
     width: calc(33.3333% - 10px)
+
+    @media #{$_sm}
+        width: calc(30% - 15px)
+
+    @media #{$_xsm}
+        width: 100%
+        margin: 90px 0 0

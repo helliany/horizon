@@ -42,6 +42,19 @@
 .production__next
     right: 0
 
+.production-content
+    display: none
+
+    &--open 
+        display: block
+
+    @media #{$_xsm}
+        display: block
+
+.production-content.slick-slide:not(.slick-active):not(:first-child)
+    @media #{$_xsm}
+        display: none
+
 .prods
     display: flex
     flex-wrap: wrap
@@ -175,3 +188,7 @@ img.hidden-img
 
 .production__button
     text-align: center
+
+.production-slider .slick-active
+    color: $alt-accent
+    text-decoration: underline

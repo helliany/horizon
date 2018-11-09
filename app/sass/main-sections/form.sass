@@ -2,7 +2,7 @@
     position: fixed
     top: 50%
     left: 50%
-    z-index: 5
+    z-index: 6
     display: none
     width: 445px
     padding: 36px
@@ -19,7 +19,12 @@
         font-family: $alt-bold
 
     form
-        margin: 60px 0 8px
+        margin: 50px 0 8px
+
+    &--testimonial
+        @media #{$_xsm}
+            width: 320px
+            padding: 26px 14px
 
 .form__text 
     font-size: 16px  
@@ -30,6 +35,49 @@
     padding: 5px 20px
     border: 1px solid $main-color 
     border-radius: 12px
+    font-size: 12px
+
+    &--file 
+        position: absolute
+        width: 1px
+        height: 1px
+        margin: -1px
+        border: 0
+        padding: 0
+        white-space: nowrap
+        clip-path: inset(100%)
+        clip: rect(0 0 0 0)
+        overflow: hidden
+
+        &:hover + .form__label, &:focus + .form__label
+            border: 1px solid $alt-accent
+            background-color: $alt-accent
+            color: #ffffff
+        
+    &--file-wrapper
+        display: flex
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 20px
+        padding: 2px 2px 2px 20px
+        font-family: $main-light
+
+    &--testi-text 
+        width: 350px
+        min-height: 120px
+
+    &--testi
+        @media #{$_xsm}
+            width: 100%
+
+.form__label
+    display: block
+    width: 116px
+    padding: 3px
+    margin: 0
+    border: 1px solid $accent
+    overflow: hidden
+    cursor: pointer
 
 .form__btn
     width: 190px
@@ -40,6 +88,9 @@
     padding: 0 34px
     font-size: 12px 
     font-family: $main-light
+
+    @media #{$_xsm}
+        padding: 0
 
 .form__btn-close
     position: absolute

@@ -744,7 +744,7 @@
                     Нам очень важно Ваше мнение.
                     Оставьте свой отзыв о нашей компании
                   </p>
-                </div><a class="button" href="#">Добавить отзыв</a>
+                </div><a class="button leave-feedback__btn" href="#">Добавить отзыв</a>
               </div>
             </header>
             <ul class="testimonials-section__list">
@@ -783,6 +783,7 @@
                     <div class="testi__customer-info testi__customer-info--name">
                       <h5>Иван Иванов</h5><span>Компания "Компания"</span>
                     </div>
+                    <div class="testi__customer-data"><span>25.07.2018</span></div>
                     <p>
                       Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
                       мы всегда спокойны за результат! Ваши менеджеры улавливают идеи и наши пожелания на лету. Иногда кажется, что в эту компанию можно обратиться с любым вопросом: сувенирка, оформление офиса, макеты стендов. Перепробовала несколько полиграфий до этого, 
@@ -807,6 +808,7 @@
                     <div class="testi__customer-info testi__customer-info--name">
                       <h5>Иван Иванов</h5><span>Компания "Компания"</span>
                     </div>
+                    <div class="testi__customer-data"><span>25.07.2018</span></div>
                     <p>
                       Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
                       мы всегда спокойны за результат! Ваши менеджеры улавливают идеи и наши пожелания на лету. Иногда кажется, что в эту компанию можно обратиться с любым вопросом: сувенирка, оформление офиса, макеты стендов. Перепробовала несколько полиграфий до этого, 
@@ -831,6 +833,7 @@
                     <div class="testi__customer-info testi__customer-info--name">
                       <h5>Иван Иванов</h5><span>Компания "Компания"</span>
                     </div>
+                    <div class="testi__customer-data"><span>25.07.2018</span></div>
                     <p>
                       Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
                       мы всегда спокойны за результат! Ваши менеджеры улавливают идеи и наши пожелания на лету. Иногда кажется, что в эту компанию можно обратиться с любым вопросом: сувенирка, оформление офиса, макеты стендов. Перепробовала несколько полиграфий до этого, 
@@ -868,6 +871,25 @@
       <!-- end page-->
     </div>
     <!-- end wrapper-->
+    <!-- begin form-->
+    <section class="form form--testimonial">
+      <h2>Оставьте свой отзыв</h2>
+      <div class="form__text">Нам очень важно Ваше мнение.</div>
+      <form method="post">
+        <input class="form__input form__input--testi" type="text" required="required" placeholder="Ваше имя" name="name">
+        <input class="form__input form__input--testi" type="text" placeholder="Название компании" name="company-name">
+        <div class="form__input form__input--testi form__input--file-wrapper">Файл
+          <input class="form__input form__input--file" type="file" multiple="multiple" accept=".jpg, .png" id="file" name="company-name">
+          <label class="form__input form__label" for="file">Выбрать файл</label>
+        </div>
+        <textarea class="form__input form__input--testi form__input--testi-text" required="required" placeholder="Текст отзыва" name="testimonial"></textarea>
+        <button class="form__btn button button--blue" type="submit">Отправить</button>
+      </form>
+      <div class="form__offer">Нажимая кнопку вы даете согласие на обработку своих персональных данных</div>
+      <button class="form__btn-close" type="button">   </button>
+    </section>
+    <!-- end form  -->
+    <div class="overlay"></div>
     <!-- begin footer -->
     <footer class="footer">
       <div class="footer__top">

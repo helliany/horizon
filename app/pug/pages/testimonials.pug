@@ -40,7 +40,7 @@ html(lang='ru')
                                     p.
                                         Нам очень важно Ваше мнение.
                                         Оставьте свой отзыв о нашей компании
-                                a(href="#").button Добавить отзыв
+                                a(href="#").button.leave-feedback__btn Добавить отзыв
                             
                         ul.testimonials-section__list
                             li.testi
@@ -75,6 +75,8 @@ html(lang='ru')
                                         .testi__customer-info.testi__customer-info--name
                                             h5 Иван Иванов
                                             span Компания "Компания"
+                                        .testi__customer-data
+                                            span 25.07.2018
                                         p.
                                             Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
                                             мы всегда спокойны за результат! Ваши менеджеры улавливают идеи и наши пожелания на лету. Иногда кажется, что в эту компанию можно обратиться с любым вопросом: сувенирка, оформление офиса, макеты стендов. Перепробовала несколько полиграфий до этого, 
@@ -95,6 +97,8 @@ html(lang='ru')
                                         .testi__customer-info.testi__customer-info--name
                                             h5 Иван Иванов
                                             span Компания "Компания"
+                                        .testi__customer-data
+                                            span 25.07.2018
                                         p.
                                             Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
                                             мы всегда спокойны за результат! Ваши менеджеры улавливают идеи и наши пожелания на лету. Иногда кажется, что в эту компанию можно обратиться с любым вопросом: сувенирка, оформление офиса, макеты стендов. Перепробовала несколько полиграфий до этого, 
@@ -115,6 +119,8 @@ html(lang='ru')
                                         .testi__customer-info.testi__customer-info--name
                                             h5 Иван Иванов
                                             span Компания "Компания"
+                                        .testi__customer-data
+                                            span 25.07.2018
                                         p.
                                             Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
                                             мы всегда спокойны за результат! Ваши менеджеры улавливают идеи и наши пожелания на лету. Иногда кажется, что в эту компанию можно обратиться с любым вопросом: сувенирка, оформление офиса, макеты стендов. Перепробовала несколько полиграфий до этого, 
@@ -156,6 +162,24 @@ html(lang='ru')
             // end page
 
         // end wrapper
+
+        // begin form
+        section.form.form--testimonial
+            h2 Оставьте свой отзыв
+            .form__text Нам очень важно Ваше мнение.
+            form(method="post")
+                input(type="text" required="required" placeholder="Ваше имя" name="name").form__input.form__input--testi
+                input(type="text" placeholder="Название компании" name="company-name").form__input.form__input--testi
+                .form__input.form__input--testi.form__input--file-wrapper Файл
+                    input(type="file" multiple="multiple" accept=".jpg, .png" id="file" name="company-name").form__input.form__input--file
+                    label(for="file").form__input.form__label Выбрать файл
+                textarea(required="required" placeholder="Текст отзыва" name="testimonial").form__input.form__input--testi.form__input--testi-text
+                button(type="submit").form__btn.button.button--blue Отправить
+            .form__offer Нажимая кнопку вы даете согласие на обработку своих персональных данных
+            button(type="button").form__btn-close    
+        // end form  
+
+        .overlay
 
         include ../modules/footer
         include ../modules/form
