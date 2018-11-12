@@ -1,8 +1,16 @@
 .navigation
     background-color: $accent
 
-    @media #{$_sm}
+    @media #{$_xsm}
         display: none
+        background-color: #ffffff
+        color: $main-color
+
+        &--active 
+            position: absolute
+            z-index: 2
+            display: block
+            width: 100%
     
 .navigation__container
     display: flex
@@ -14,16 +22,31 @@
     flex-wrap: wrap
     align-items: center
 
+    @media #{$_xsm}
+        display: block
+
 .navigation__item
     flex-grow: 1
+
+    &--mobile
+        display: none
 
     &:hover
         .navigation__link
             border-color: $alt-accent
 
+            &--mobile
+                border-color: transparent
+
         .dropdown
             visibility: visible
             opacity: 1
+
+    @media #{$_xsm}
+        border-bottom: 1px solid $light
+
+        &--mobile
+            display: block
 
 .navigation__link
     text-align: center
@@ -43,6 +66,32 @@
     @media #{$_lg}
         font-size: 14px
 
+    @media #{$_sm}
+        font-size: 11.5px
+
+    @media #{$_xsm}
+        justify-content: flex-start
+        padding-top: 12px
+        padding-bottom: 9px
+        color: $main-color
+        font-size: 12px
+
+        .svg-inline--fa
+            margin-left: 0
+            margin-right: 8px
+            
+            path
+                fill: $gray
+
+        .fa-angle-down
+            transform: rotate(270deg)
+            width: 6px
+            margin: 0 0 0 auto
+
+        &--mobile
+            .fa-phone
+                transform: rotate(90deg)
+
 .nav-button
     background-color: $alt-accent
     font-family: $main-bold
@@ -50,8 +99,34 @@
     border-bottom: 3px solid transparent
     cursor: pointer
 
+    &--back 
+        display: none
+
+    .fa-angle-down
+        display: none
+
     &:focus
         outline: 0
+
+    @media #{$_xsm}
+        padding: 12px 0 9px
+        font-family: $main-regular
+        background-color: #fff
+
+        .fa-angle-down
+            display: block
+
+        img 
+            display: none
+
+        &--back 
+            padding: 12px 0 9px 18px
+
+            .fa-angle-down
+                position: absolute
+                left: 5%
+                top: 15px
+                transform: rotate(90deg)
 
 .navigation-search__input
     position: absolute
@@ -111,3 +186,6 @@
     .svg-inline--fa
         color: #ffffff
         font-size: 16px
+
+    @media #{$_xsm}
+        display: none

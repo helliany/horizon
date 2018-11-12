@@ -7,7 +7,11 @@
         margin-left: 60px
         &:first-child
             margin-left: 0
-    
+
+    @media #{$_xs}
+        &--mobile
+            margin: 0
+
 .tabs__item
     font-size: 18px
     color: $gray
@@ -24,3 +28,13 @@
 
     &:focus
         outline: 0
+
+.tabs__wrapper--mobile .tabs__content
+     @media #{$_xs}
+        display: none
+
+        img 
+            display: none
+
+        .subnav-list__links
+            display: none

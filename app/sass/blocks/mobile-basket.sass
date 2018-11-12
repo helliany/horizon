@@ -1,6 +1,6 @@
 .mobile-basket
     +col(2.15)
-    display: flex
+    display: none
     justify-content: center
 
     a
@@ -14,10 +14,9 @@
             font-size: 32px
             color: $gray
 
-    @media #{$sm}
-        display: none
+    @media #{$_xs}
+        display: flex
 
-    @media #{$_xsm}
         a
             width: 50px
             height: 50px

@@ -3,22 +3,29 @@ nav.navigation
     .container.navigation__container
         ul.navigation__list
             li.navigation__item
+                button.nav-button.nav-button--back
+                    i.fas.fa-angle-down
+                    span Назад 
                 button.navigation__link.nav-button
                     img(src="img/header/burger.svg", alt="Burger icon").burger
                     |  Каталог
+                    i.fas.fa-angle-down
                 // begin subnav 
                 .subnav
                     // begin tabs 
-                    .tabs
-                        .tabs__item.subnav-tab Печатная продукция
-                        .tabs__item.subnav-tab Сувенирная продукция
+                    .tabs.tabs--mobile
+                        .tabs__item.subnav-tab.subnav-tab--print Печатная продукция
+                            i.fas.fa-angle-down
+                        .tabs__item.subnav-tab.subnav-tab--souvenir Сувенирная продукция
+                            i.fas.fa-angle-down
 
-                    .tabs__wrapper
-                        .tabs__content
+                    .tabs__wrapper.tabs__wrapper--mobile
+                        .tabs__content.tabs__content--print
                             // begin subnav-list 
                             ul.subnav-list
                                 li.subnav-list__item
                                     h5.subnav-list__heading Широкоформатная печать:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/plotter.svg", alt="plotter")
@@ -51,6 +58,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Флаги
                                 li.subnav-list__item
                                     h5.subnav-list__heading Наклейки и стикеры:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/sticker.svg", alt="sticker")
@@ -81,6 +89,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Светоотражающие
                                 li.subnav-list__item
                                     h5.subnav-list__heading POS-материалы:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/flag.svg", alt="flag")
@@ -109,6 +118,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Тэйбл-тенты
                                 li.subnav-list__item
                                     h5.subnav-list__heading Конверты:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/mail.svg", alt="mail")
@@ -119,6 +129,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Конверты эксклюзивные
                                 li.subnav-list__item
                                     h5.subnav-list__heading Блокноты:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/notebook.svg", alt="notebook")
@@ -133,6 +144,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Кубарики
                                 li.subnav-list__item
                                     h5.subnav-list__heading Визитки:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/credit-card.svg", alt="credit-card")
@@ -145,6 +157,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Визитки эксклюзивные
                                 li.subnav-list__item
                                     h5.subnav-list__heading Календари 2018:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/calendar.svg", alt="calendar")
@@ -163,6 +176,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Нестандартные календари
                                 li.subnav-list__item
                                     h5.subnav-list__heading Пакеты:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/bag.svg", alt="bag")
@@ -179,6 +193,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Пакет с европодвесом/еврослотом
                                 li.subnav-list__item
                                     h5.subnav-list__heading Упаковка:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/box.svg", alt="box")
@@ -197,6 +212,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Нестандартная упаковка
                                 li.subnav-list__item
                                     h5.subnav-list__heading Папки:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/folder.svg", alt="folder")
@@ -211,6 +227,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Файлы-вкладыши А4
                                 li.subnav-list__item
                                     h5.subnav-list__heading К мероприятию:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/menu.svg", alt="menu")
@@ -231,6 +248,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Элементы оформления
                                 li.subnav-list__item
                                     h5.subnav-list__heading Многополосная продукция:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/catalog.svg", alt="catalog")
@@ -253,6 +271,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Издания в твердом переплете
                                 li.subnav-list__item
                                     h5.subnav-list__heading Листовая продукция:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/flyer.svg", alt="flyer")
@@ -275,6 +294,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Приглашения
                                 li.subnav-list__item
                                     h5.subnav-list__heading Таблички:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/emblem.svg", alt="emblem")
@@ -299,6 +319,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Нестандартные таблички
                                 li.subnav-list__item
                                     h5.subnav-list__heading Наградная продукция:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/certificate.svg", alt="certificate")
@@ -316,7 +337,8 @@ nav.navigation
                                             li.subnav-list__links-item
                                                 a.subnav-list__link(href="#") Наградные таблички
                                 li.subnav-list__item
-                                    h5.subnav-list__heading Прочая продукция:
+                                    h5.subnav-list__heading Прочная продукция:
+                                    i.fas.fa-angle-down
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/price-tag.svg", alt="price-tag")
@@ -333,7 +355,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Самокопирующиеся бланки
                                             li.subnav-list__links-item
                                                 a.subnav-list__link(href="#") Ланьярды
-                        .tabs__content
+                        .tabs__content.tabs__content.tabs__content--souvenir
                             // begin subnav-list 
                             ul.subnav-list
                                 li.subnav-list__item
@@ -828,6 +850,41 @@ nav.navigation
                 a(href="#").navigation__link Штампы
             li.navigation__item
                 a(href="#").navigation__link WOW-эффекты
+            li.navigation__item.navigation__item--mobile
+                a(href="#").navigation__link О компании
+            li.navigation__item.navigation__item--mobile
+                a(href="#").navigation__link Оплата и доставка
+            li.navigation__item.navigation__item--mobile
+                a(href="#").navigation__link Корзина
+            li.navigation__item.navigation__item--mobile
+                span.navigation__link.navigation__link--mobile Контактная информация:
+                a.navigation__link.header__link.navigation__link--mobile(href="tel:+78124934953") 
+                    i.fas.fa-phone
+                    span +7 (812) 493-49-53
+                a.navigation__link.header__link.navigation__link--mobile(href="tel:+78127401397") 
+                    i.fas.fa-phone
+                    span +7 (812) 740-13-97
+                ul
+                    li
+                        a(href="#").header__link.navigation__link.navigation__link--mobile
+                            i.fab.fa-vk 
+                            span Вконтакте
+                    li
+                        a(href="#").header__link.navigation__link.navigation__link--mobile
+                            i.fab.fa-instagram 
+                            span Instagram
+                    li
+                        a(href="#").header__link.navigation__link.navigation__link--mobile
+                            i.fab.fa-facebook-f 
+                            span Facebook
+            li.navigation__item.navigation__item--mobile.navigation__link--mobile
+                a.navigation__link.header__link(href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.282487%2C59.896689&z=16&source=wizgeo&utm_source=serp&l=map&utm_medium=maps-touch-phone&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.282488%252C59.896690%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A8%25D0%25B2%25D0%25B5%25D1%2586%25D0%25BE%25D0%25B2%25D0%25B0%252C%252012%25D0%25BA2%2520" target="_blank") 
+                    i.fas.fa-map-marker-alt
+                    span Санкт-Петербург, ул. Швецова 12/2, корп. 2
+            li.navigation__item.navigation__item--mobile.navigation__link--mobile
+                a.navigation__link.header__link 
+                    i.far.fa-clock
+                    span пн-пт: 09:00 - 18:00
         
         form.navigation-search
             input(type="text" required="required" placeholder="Пример: печать визиток").navigation-search__input

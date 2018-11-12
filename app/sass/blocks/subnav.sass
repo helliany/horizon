@@ -15,14 +15,61 @@
     @media #{$_lg}
         padding: 30px 30px 60px
 
+    @media #{$_xs}
+        position: absolute
+        top: 88%
+        width: 100%
+        padding: 0 15px
+        box-shadow: none
+
+.subnav-tab
+    .fa-angle-down
+        display: none
+
+    @media #{$_xs}
+        display: flex
+        padding-top: 12px
+        padding-bottom: 9px
+        width: 100%
+        margin: 0
+        color: $main-color
+        font-size: 12px
+        font-family: $main-regular
+        border-bottom: 1px solid $light
+
+        .fa-angle-down
+            display: block
+            transform: rotate(270deg)
+            width: 6px
+            margin: 2px 0 0 auto
+
 .subnav-list__item
     margin-bottom: 30px
+
+    .fa-angle-down
+        display: none
+
+    @media #{$_xs}
+        display: flex
+        border-bottom: 1px solid $light
+        
+        .fa-angle-down
+            display: block
+            width: 6px
+            margin: 12px 0 0 auto
+            transform: rotate(270deg)
 
 .subnav-list__heading
     font-size: 16px
     font-family: $main-semibold
     margin-bottom: 13px
 
+    @media #{$_xs}
+        margin: 0
+        padding: 12px 0
+        font-size: 12px
+        font-family: $main-regular
+        
 .subnav-list__icon
     margin-right: 20px
     width: 60px
@@ -32,9 +79,15 @@
     display: flex
     align-items: flex-start
 
+    @media #{$_xs}
+        display: none
+
 .subnav-list__item
     page-break-inside: avoid
     break-inside: avoid
+
+    @media #{$_xs}
+        margin: 0
 
 .subnav-list__link
     font-size: 15px
@@ -48,5 +101,11 @@
     @media #{$_lg}
         font-size: 13px
 
+    @media #{$_sm}
+        font-size: 12px
+
 .subnav-list
     column-count: 3
+
+    @media #{$_xs}
+        column-count: 1
