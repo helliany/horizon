@@ -2,30 +2,31 @@
 nav.navigation
     .container.navigation__container
         ul.navigation__list
-            li.navigation__item
+            li.navigation__item.navigation__item--back
                 button.nav-button.nav-button--back
-                    i.fas.fa-angle-down
+                    i.fas.fa-arrow-left
                     span Назад 
-                button.navigation__link.nav-button
+            li.navigation__item
+                button.nav-button.navigation__link
                     img(src="img/header/burger.svg", alt="Burger icon").burger
                     |  Каталог
-                    i.fas.fa-angle-down
+                    i.fas.fa-angle-right
                 // begin subnav 
                 .subnav
                     // begin tabs 
                     .tabs.tabs--mobile
-                        .tabs__item.subnav-tab.subnav-tab--print Печатная продукция
-                            i.fas.fa-angle-down
-                        .tabs__item.subnav-tab.subnav-tab--souvenir Сувенирная продукция
-                            i.fas.fa-angle-down
+                        .tabs__item.subnav-tab Печатная продукция
+                            i.fas.fa-angle-right
+                        .tabs__item.subnav-tab Сувенирная продукция
+                            i.fas.fa-angle-right
 
                     .tabs__wrapper.tabs__wrapper--mobile
-                        .tabs__content.tabs__content--print
+                        .tabs__content
                             // begin subnav-list 
                             ul.subnav-list
                                 li.subnav-list__item
                                     h5.subnav-list__heading Широкоформатная печать:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/plotter.svg", alt="plotter")
@@ -58,7 +59,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Флаги
                                 li.subnav-list__item
                                     h5.subnav-list__heading Наклейки и стикеры:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/sticker.svg", alt="sticker")
@@ -89,7 +90,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Светоотражающие
                                 li.subnav-list__item
                                     h5.subnav-list__heading POS-материалы:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/flag.svg", alt="flag")
@@ -118,7 +119,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Тэйбл-тенты
                                 li.subnav-list__item
                                     h5.subnav-list__heading Конверты:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/mail.svg", alt="mail")
@@ -129,7 +130,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Конверты эксклюзивные
                                 li.subnav-list__item
                                     h5.subnav-list__heading Блокноты:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/notebook.svg", alt="notebook")
@@ -144,7 +145,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Кубарики
                                 li.subnav-list__item
                                     h5.subnav-list__heading Визитки:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/credit-card.svg", alt="credit-card")
@@ -157,7 +158,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Визитки эксклюзивные
                                 li.subnav-list__item
                                     h5.subnav-list__heading Календари 2018:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/calendar.svg", alt="calendar")
@@ -176,7 +177,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Нестандартные календари
                                 li.subnav-list__item
                                     h5.subnav-list__heading Пакеты:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/bag.svg", alt="bag")
@@ -193,7 +194,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Пакет с европодвесом/еврослотом
                                 li.subnav-list__item
                                     h5.subnav-list__heading Упаковка:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/box.svg", alt="box")
@@ -212,7 +213,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Нестандартная упаковка
                                 li.subnav-list__item
                                     h5.subnav-list__heading Папки:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/folder.svg", alt="folder")
@@ -227,7 +228,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Файлы-вкладыши А4
                                 li.subnav-list__item
                                     h5.subnav-list__heading К мероприятию:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/menu.svg", alt="menu")
@@ -248,7 +249,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Элементы оформления
                                 li.subnav-list__item
                                     h5.subnav-list__heading Многополосная продукция:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/catalog.svg", alt="catalog")
@@ -271,7 +272,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Издания в твердом переплете
                                 li.subnav-list__item
                                     h5.subnav-list__heading Листовая продукция:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/flyer.svg", alt="flyer")
@@ -294,7 +295,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Приглашения
                                 li.subnav-list__item
                                     h5.subnav-list__heading Таблички:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/emblem.svg", alt="emblem")
@@ -319,7 +320,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Нестандартные таблички
                                 li.subnav-list__item
                                     h5.subnav-list__heading Наградная продукция:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/certificate.svg", alt="certificate")
@@ -338,7 +339,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Наградные таблички
                                 li.subnav-list__item
                                     h5.subnav-list__heading Прочная продукция:
-                                    i.fas.fa-angle-down
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/price-tag.svg", alt="price-tag")
@@ -355,11 +356,12 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Самокопирующиеся бланки
                                             li.subnav-list__links-item
                                                 a.subnav-list__link(href="#") Ланьярды
-                        .tabs__content.tabs__content.tabs__content--souvenir
+                        .tabs__content
                             // begin subnav-list 
                             ul.subnav-list
                                 li.subnav-list__item
                                     h5.subnav-list__heading Сувениры к праздникам:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/confetti.svg", alt="confetti")
@@ -412,6 +414,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Подарки детям
                                 li.subnav-list__item
                                     h5.subnav-list__heading Флешки:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/flash-drive.svg", alt="flash-drive")
@@ -424,6 +427,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Пластиковые флешки
                                 li.subnav-list__item
                                     h5.subnav-list__heading Промо:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/lighter.svg", alt="lighter")
@@ -444,6 +448,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Промопродукция
                                 li.subnav-list__item
                                     h5.subnav-list__heading Одежда:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/jacket.svg", alt="jacket")
@@ -472,6 +477,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Аксессуары
                                 li.subnav-list__item
                                     h5.subnav-list__heading Дом:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/house.svg", alt="house")
@@ -498,6 +504,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Игрушки
                                 li.subnav-list__item
                                     h5.subnav-list__heading Сувениры к новому году:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/snow.svg", alt="snow")
@@ -520,6 +527,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Оригинальные календари
                                 li.subnav-list__item
                                     h5.subnav-list__heading Упаковка:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/supermarket-gift.svg", alt="supermarket-gift")
@@ -534,6 +542,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Жестяная упаковка
                                 li.subnav-list__item
                                     h5.subnav-list__heading Для офиса:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/desk.svg", alt="desk")
@@ -548,6 +557,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Панно
                                 li.subnav-list__item
                                     h5.subnav-list__heading Ручки:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/pen.svg", alt="pen")
@@ -566,6 +576,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Наборы с ручками
                                 li.subnav-list__item
                                     h5.subnav-list__heading Электрика:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/charging.svg", alt="charging")
@@ -582,6 +593,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Наушники
                                 li.subnav-list__item
                                     h5.subnav-list__heading Футболки:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/jacket.svg", alt="jacket")
@@ -602,6 +614,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Футболка T-bolka под нанесение
                                 li.subnav-list__item
                                     h5.subnav-list__heading Отдых:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/thermo.svg", alt="thermo")
@@ -632,6 +645,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Пляжный отдых
                                 li.subnav-list__item
                                     h5.subnav-list__heading Элитные подарки:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/book.svg", alt="book")
@@ -646,6 +660,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Золотые символы
                                 li.subnav-list__item
                                     h5.subnav-list__heading Подарочные наборы:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/spirits.svg", alt="spirits")
@@ -658,6 +673,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Подарочные продуктовые наборы
                                 li.subnav-list__item
                                     h5.subnav-list__heading Ежедневники и блокноты:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/notebook.svg", alt="notebook")
@@ -674,6 +690,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Упаковка для ежедневников
                                 li.subnav-list__item
                                     h5.subnav-list__heading Корпоративные:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/wallet-closed.svg", alt="wallet-closed")
@@ -692,6 +709,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Папки, портфели
                                 li.subnav-list__item
                                     h5.subnav-list__heading Часы:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/jacket.svg", alt="jacket")
@@ -708,6 +726,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Наручные часы
                                 li.subnav-list__item
                                     h5.subnav-list__heading Пледы и подушки:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/jacket.svg", alt="jacket")
@@ -720,6 +739,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Декоративные подушки
                                 li.subnav-list__item
                                     h5.subnav-list__heading Сумки:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/backpack.svg", alt="backpack")
@@ -748,6 +768,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Спортивные сумки
                                 li.subnav-list__item
                                     h5.subnav-list__heading Зонты:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/umbrella.svg", alt="umbrella")
@@ -766,6 +787,7 @@ nav.navigation
                                                 a.subnav-list__link(href="#") Женские зонты
                                 li.subnav-list__item
                                     h5.subnav-list__heading Посуда:
+                                    i.fas.fa-angle-right
                                     .subnav-list__body
                                         .subnav-list__icon
                                             img(src="img/icons/dishes.svg", alt="dishes")
@@ -786,18 +808,17 @@ nav.navigation
             li.navigation__item
                 a(href="#").navigation__link Портфолио
             li.navigation__item
-                a(href="#").navigation__link 
+                a(href="#").navigation__link.nav-button.nav-button--blue 
                     |Услуги
-                    i.fas.fa-angle-down
+                    i.fas.fa-angle-right
                 // begin dropdown 
-                .dropdown
+                .subnav.subnav--service
                     ul.dropdown__wrapper
                         li.dropdown__item
                             a(href="#").dropdown__link Цифровая оперативная печать
                         li.dropdown__item
-                            a(href="#").dropdown__link Все виды постпечатной
-                                br
-                                |  обработки тиражей:
+                            a(href="#").dropdown__link.dropdown__link--service Все виды постпечатной обработки тиражей:
+                            i.fas.fa-angle-right
                             ul.sublist
                                 li.sublist__item
                                     a.sublist__link(href="#") Ламинирование

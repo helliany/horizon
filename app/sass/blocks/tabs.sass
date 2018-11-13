@@ -8,7 +8,7 @@
         &:first-child
             margin-left: 0
 
-    @media #{$_xs}
+    @media #{$_xsm}
         &--mobile
             margin: 0
 
@@ -29,8 +29,17 @@
     &:focus
         outline: 0
 
+    @media #{$_xsm}
+        &.active
+            color: $accent
+            font-family: $main-semibold
+            text-decoration: none
+
+            svg
+                display: none
+
 .tabs__wrapper--mobile .tabs__content
-     @media #{$_xs}
+     @media #{$_xsm}
         display: none
 
         img 

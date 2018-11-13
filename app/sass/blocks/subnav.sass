@@ -4,7 +4,7 @@
     top: 100%
     left: 50%
     background-color: #ffffff
-    box-shadow: 0 0 50px rgba(#000, .3)
+    box-shadow: 0 5px 5px rgba(#000, .3)
     transform: translate(-50%)
     padding: 35px 60px 70px 35px
     display: none
@@ -15,18 +15,20 @@
     @media #{$_lg}
         padding: 30px 30px 60px
 
-    @media #{$_xs}
+    @media #{$_xsm}
         position: absolute
-        top: 88%
         width: 100%
         padding: 0 15px
         box-shadow: none
 
+    &--service
+        padding: 0
+
 .subnav-tab
-    .fa-angle-down
+    .fa-angle-right
         display: none
 
-    @media #{$_xs}
+    @media #{$_xsm}
         display: flex
         padding-top: 12px
         padding-bottom: 9px
@@ -37,38 +39,47 @@
         font-family: $main-regular
         border-bottom: 1px solid $light
 
-        .fa-angle-down
+        .fa-angle-right
             display: block
-            transform: rotate(270deg)
             width: 6px
             margin: 2px 0 0 auto
 
 .subnav-list__item
     margin-bottom: 30px
+    page-break-inside: avoid
+    break-inside: avoid
 
-    .fa-angle-down
+    .fa-angle-right
         display: none
 
-    @media #{$_xs}
+    @media #{$_xsm}
         display: flex
+        position: relative
+        margin: 0
         border-bottom: 1px solid $light
         
-        .fa-angle-down
+        .fa-angle-right
             display: block
             width: 6px
             margin: 12px 0 0 auto
-            transform: rotate(270deg)
 
 .subnav-list__heading
     font-size: 16px
     font-family: $main-semibold
     margin-bottom: 13px
 
-    @media #{$_xs}
+    @media #{$_xsm}
         margin: 0
         padding: 12px 0
         font-size: 12px
         font-family: $main-regular
+
+        &.active
+            color: $accent
+            font-family: $main-semibold
+
+            & + svg
+                display: none
         
 .subnav-list__icon
     margin-right: 20px
@@ -79,15 +90,11 @@
     display: flex
     align-items: flex-start
 
-    @media #{$_xs}
+    @media #{$_xsm}
+        position: absolute
+        top: 100%;
         display: none
-
-.subnav-list__item
-    page-break-inside: avoid
-    break-inside: avoid
-
-    @media #{$_xs}
-        margin: 0
+        width: 100%
 
 .subnav-list__link
     font-size: 15px
@@ -104,8 +111,27 @@
     @media #{$_sm}
         font-size: 12px
 
+    @media #{$_xsm}
+        justify-content: flex-start
+        padding: 8px 0
+        color: $main-color
+        font-size: 12px
+        font-family: $main-regular
+        border: none
+
+        &:hover,
+        &:focus
+            color: $accent
+            font-family: $main-semibold
+            text-decoration: none
+
 .subnav-list
     column-count: 3
 
-    @media #{$_xs}
+    @media #{$_xsm}
         column-count: 1
+
+.subnav-list__links-item
+    @media #{$_xsm}
+        display: flex
+        border-bottom: 1px solid $light

@@ -13,8 +13,39 @@
     column-count: 3
     padding: 40px 80px 70px
 
+    @media #{$_sm}
+        padding: 32px 30px 60px;
+
+    @media #{$_xsm}
+        padding: 0 15px
+        column-count: 1
+
+        .sublist
+            display: none
+
+
 .dropdown__item
     margin-bottom: 10px
+
+    svg
+        display: none
+
+    @media #{$_xsm}
+        position: relative
+        margin: 0
+        border-bottom: 1px solid $light
+
+        svg
+            position: absolute
+            top: 36%
+            left: 98%
+            display: block
+
+            path
+                fill: $gray
+
+        & > .active + svg
+            display: none
 
 .dropdown__link
     display: inline-block
@@ -23,4 +54,22 @@
     
     &:hover
         text-decoration: underline
+
+    @media #{$_xsm}
+        padding: 12px 0
+        color: $main-color
+        font-size: 12px
+        font-family: $main-regular
+        border: none
+
+        &:hover,
+        &:focus
+            color: $accent
+            font-family: $main-semibold
+            text-decoration: none
+
+        &.active
+            color: $accent
+            font-family: $main-semibold 
+
         

@@ -35,15 +35,16 @@
         .navigation__link
             border-color: $alt-accent
 
-            &--mobile
-                border-color: transparent
-
         .dropdown
             visibility: visible
             opacity: 1
 
     @media #{$_xsm}
         border-bottom: 1px solid $light
+
+        &:hover
+            .navigation__link
+                border: none
 
         &--mobile
             display: block
@@ -71,10 +72,15 @@
 
     @media #{$_xsm}
         justify-content: flex-start
-        padding-top: 12px
-        padding-bottom: 9px
+        padding: 12px 0
         color: $main-color
         font-size: 12px
+        border: none
+
+        &:hover,
+        &:focus
+            color: $accent
+            font-family: $main-semibold
 
         .svg-inline--fa
             margin-left: 0
@@ -83,8 +89,7 @@
             path
                 fill: $gray
 
-        .fa-angle-down
-            transform: rotate(270deg)
+        .fa-angle-right
             width: 6px
             margin: 0 0 0 auto
 
@@ -102,31 +107,51 @@
     &--back 
         display: none
 
-    .fa-angle-down
+    svg
         display: none
 
     &:focus
         outline: 0
+
+    &--blue 
+        font-family: $main-regular
+        background-color: #005e98
+
+        svg
+            display: block
+            margin-top: 2px
+            transform: rotate(90deg)
 
     @media #{$_xsm}
         padding: 12px 0 9px
         font-family: $main-regular
         background-color: #fff
 
-        .fa-angle-down
+        svg
             display: block
 
         img 
             display: none
 
         &--back 
-            padding: 12px 0 9px 18px
+            width: 100%
+            padding: 12px 0 9px 32px
+            color: $gray
+            text-align: left
 
-            .fa-angle-down
+            .fa-arrow-left
                 position: absolute
                 left: 5%
                 top: 15px
-                transform: rotate(90deg)
+                width: 16px
+
+        &--active
+            svg
+                display: none
+
+        &--blue 
+            svg
+                transform: rotate(0deg)
 
 .navigation-search__input
     position: absolute
@@ -155,6 +180,14 @@
     width: 14px
     margin-right: 12px
 
+.sublist
+    @media #{$_xsm}
+        border-top: 1px solid $light
+
+.sublist__item
+    @media #{$_xsm}
+        border-bottom: 1px solid $light
+
 .sublist__link
     color: $main-color
     display: inline-block
@@ -162,6 +195,16 @@
 
     &:hover
         text-decoration: underline
+
+    @media #{$_xsm}
+        padding: 8px 0
+        font-size: 12px
+
+        &:hover,
+        &:focus
+            color: $accent
+            font-family: $main-semibold
+            text-decoration: none
 
 .navigation-search__form
     height: 100%
