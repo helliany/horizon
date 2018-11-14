@@ -1,0 +1,65 @@
+.contacts
+    display: flex
+    flex-wrap: wrap
+    width: 855px
+    margin: 0 0 80px
+
+.contacts__item
+    width: 285px
+    padding: 0 0 16px
+
+    p:not(.contacts__title)
+        font-family: $main-light
+
+.contacts__title
+    font-size: 18px
+    font-family: $main-semibold
+
+.contacts__link
+    color: $main-color
+
+    &--orange
+        color: $alt-accent
+        text-decoration: underline
+
+.contacts__socials
+    display: flex
+    flex-wrap: wrap
+
+.contact__social
+    width: 20px
+    height: 20px
+    margin: -6px 10px 0 0
+
+.contacts__img
+    position: absolute
+    right: 0
+    top: 110px
+
+.contacts-man
+    display: flex
+    flex-wrap: wrap
+    margin: 0 0 14px
+
+.contacts-man__item
+    width: 190px
+    margin: 0 40px 26px 0
+
+    &:last-child
+        margin: 0 0 26px 0
+
+    span 
+        font-size: 12px
+        font-family: $main-light
+
+    .contacts-man__title
+        margin: 16px 0 0
+        font-size: 16px
+        font-family: $main-semibold
+
+    .contacts__link--orange
+        font-size: 13.5px
+
+.contacts-man__tel
+    font-size: 12px
+    font-family: $main-semibold

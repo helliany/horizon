@@ -62,14 +62,14 @@
     border-bottom: 1px solid $light
 
     @media #{$_sm}
-        border: none
-        padding: 15px
         flex-wrap: wrap
-        box-shadow: 0 0 20px 0 rgba(#000, .3)
         margin-bottom: 30px
 
     @media #{$_xsm}
         position: relative
+        padding: 15px
+        box-shadow: 0 0 20px 0 rgba(#000, .3)
+        border: none
 
 
 .basket-list__item
@@ -94,18 +94,34 @@
 
 .basket-product__text
     width: 55%
+    padding-right: 10px
+
+    @media #{$_sm}
+        width: 58%
 
     @media #{$_xsm}
         width: 100%
 
 .basket-product__img
     width: 35%
+    max-height: 100px
     display: flex
     justify-content: center
 
+    img 
+        object-fit: contain
+
+    @media #{$_sm}
+        width: 38%
+
     @media #{$_xsm}
         order: -1
+        width: 35%
+        min-height: 200px;
         margin: 0 0 10px
+
+    @media #{$_xs}
+        width: 50%
 
 .basket-product__number
     margin-bottom: 10px
@@ -281,7 +297,7 @@
 
     @media #{$_xsm}
         position: absolute
-        top: 28%
+        top: 40%
         right: 6%
 
 .basket-clear__top
@@ -331,6 +347,12 @@
             top: 80px
             width: 100%
             font-size: 16px
+
+.basket-total__item-wrapper
+    width: 75%
+
+    @media #{$_sm}
+        width: 100%
 
 .basket-checkout
     width: calc(33.3333% - 10px)

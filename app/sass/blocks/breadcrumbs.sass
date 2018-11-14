@@ -10,7 +10,7 @@
     display: flex
     flex-wrap: wrap
 
-    @media #{$_sm}
+    @media #{$_xsm}
         display: none
 
 .breadrcrumbs__list--hidden
@@ -25,7 +25,7 @@
             .svg-inline--fa
                 margin-left: 5px
 
-    @media #{$sm}
+    @media #{$xsm}
         display: none
     
 .breadcrumbs__item
@@ -47,6 +47,12 @@
         color: $gray
         font-size: 12px
         font-family: $main-regular
+
+    &--card a
+        font-size: 14px
+
+        @media #{$_md}
+            font-size: 12px
 
     a
         &:hover

@@ -1,0 +1,150 @@
+doctype html
+html(lang='ru')
+
+  title Горизонт
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main.page
+
+        .container
+        
+            // begin breadcrumbs 
+            .breadcrumbs
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a(href="index.html") Главная
+                    li.breadcrumbs__item
+                        span Контакты
+                ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                    li.breadcrumbs__item
+                        a(href="index.html") 
+                            i.fas.fa-angle-left
+                            |  Назад
+            // end breadcrumbs 
+
+            // begin page-section 
+            section.page-section.page-section--template
+                header.heading.page-section__header
+                    h1.page-title Наши контакты
+                .page-section__wrapper
+                    h2 Связь с нами
+                    .contacts
+                        .contacts__item
+                            p.contacts__title Адрес:
+                            p СПб, ул. Швецова 12, корп. 2
+                        .contacts__item
+                            p.contacts__title Общая почта:
+                            a.contacts__link.contacts__link--orange(href="mailto:zakaz@gorizont-spb.ru") zakaz@gorizont-spb.ru
+                        .contacts__item
+                            p.contacts__title Телефоны:
+                            p
+                                a.contacts__link(href="tel:+78124934953") +7 (812) 493-49-53,
+                            p
+                                a.contacts__link(href="tel:+78127401397") +7 (812) 740-13-97
+                        .contacts__item
+                            p.contacts__title Режим работы:
+                            p пн-пт: 09:00 - 18:00
+                        .contacts__item
+                            p.contacts__title Соцсети:
+                            ul.contacts__socials
+                                li.contact__social
+                                    a(href="#")
+                                        img(src="img/contacts/instagram-logo.png", alt="Instagram")
+                                li.contact__social
+                                    a(href="#")
+                                        img(src="img/contacts/vk2.png", alt="Vkontakte")
+                                li.contact__social
+                                    a(href="#")
+                                        img(src="img/contacts/facebook-logo.png", alt="Facebook")
+                        .contacts__img
+                            img(src="img/contacts/call.png", alt="Call")
+
+                    h3 Напишите нашим менеджерам:
+                    // begin contacts-managers
+                    .contacts-man
+                        .contacts-man__item
+                            img(src="img/contacts/photo/Юлия Кулакова.jpg", alt="Юлия Кулакова")
+                            p.contacts-man__title Юлия Кулакова
+                            span руководитель отдела продаж
+                            p.contacts-man__tel Добавочный номер 707
+                            p
+                                a.contacts__link.contacts__link--orange(href="mailto:manager@gorizont-spb.ru") manager@gorizont-spb.ru
+                        .contacts-man__item
+                            img(src="img/contacts/photo/Яна Беляева.jpg", alt="Яна Беляева")
+                            p.contacts-man__title Яна Беляева
+                            span менеджер
+                            p.contacts-man__tel Добавочный номер 703
+                            p
+                                a.contacts__link.contacts__link--orange(href="mailto:admin@gorizont-spb.ru") admin@gorizont-spb.ru
+                        .contacts-man__item
+                            img(src="img/contacts/photo/Елизавета Веретнова.jpg", alt="Елизавета Веретнова")
+                            p.contacts-man__title Елизавета Веретнова
+                            span менеджер
+                            p.contacts-man__tel Добавочный номер 705
+                            p
+                                a.contacts__link.contacts__link--orange(href="mailto:manager2@gorizont-spb.ru") manager2@gorizont-spb.ru
+                        .contacts-man__item
+                            img(src="img/contacts/photo/Ксения Енькова.jpg", alt="Ксения Енькова")
+                            p.contacts-man__title Ксения Енькова
+                            span менеджер
+                            p.contacts-man__tel Добавочный номер 704
+                            p
+                                a.contacts__link.contacts__link--orange(href="mailto:office@gorizont-spb.ru") office@gorizont-spb.ru
+                        .contacts-man__item
+                            img(src="img/contacts/photo/Елена Капаруллина.jpg", alt="Елена Капарулина")
+                            p.contacts-man__title Елена Капарулина
+                            span менеджер
+                            p.contacts-man__tel Добавочный номер 706
+                            p
+                                a.contacts__link.contacts__link--orange(href="mailto:doc@gorizont-spb.ru") doc@gorizont-spb.ru
+                    // end contacts-managers
+                     
+                    h3 Или свяжитесь с нашим директором:
+                    .contacts-director
+                        a.contacts-btn.button.button--blue(href="#") Написать директору
+
+                    .contacts-adress
+                        div
+                            span Адрес офиса:
+                            a(href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.282487%2C59.896689&z=16&source=wizgeo&utm_source=serp&l=map&utm_medium=maps-touch-phone&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.282488%252C59.896690%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A8%25D0%25B2%25D0%25B5%25D1%2586%25D0%25BE%25D0%25B2%25D0%25B0%252C%252012%25D0%25BA2%2520" target="_blank") СПБ, ул. Швецова 12, корп. 2
+                            a.contacts__link.contacts__link--orange Скачать схему проезда
+                        div
+                            p Забрать посылку можно в нашем офисе.
+                            p При выборе доставки курьером стоимость по городу будет фиксированная.
+
+                    .contacts-map
+                        //- script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adab4c7011315d438993c9aad4b9f939804679be899376b96700a566580c187af&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false")
+
+      // end page
+
+    // end wrapper
+
+    // begin form
+    section.form.form--director
+        h2 Напишите нашему директору
+        .form__text Получите ответы на все ваши вопросы
+        form(method="post")
+            input(type="text" required="required" placeholder="Ваше имя" name="name").form__input
+            input(type="email" required="required" placeholder="Ваша почта" name="mail").form__input
+            textarea(required="required" placeholder="Текст" name="text-dir").form__input.form__input--dir-text
+            button(type="submit").form__btn.button.button--blue Отправить
+        .form__offer Нажимая кнопку вы даете согласие на обработку своих персональных данных
+        button(type="button").form__btn-close   
+    // end form
+
+    .overlay
+
+    include ../modules/footer
+    include ../modules/form
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

@@ -18,10 +18,9 @@
     form
         margin: 50px 0 8px
 
-    &--testimonial
-        @media #{$_xsm}
-            width: 320px
-            padding: 26px 14px
+    @media #{$_xsm}
+        width: 320px
+        padding: 26px 14px
 
 .form__text 
     font-size: 16px  
@@ -59,13 +58,17 @@
         padding: 2px 2px 2px 20px
         font-family: $main-light
 
-    &--testi-text 
+    &--testi-text,
+    &--dir-text 
         width: 350px
         min-height: 120px
 
-    &--testi
+    &--testi,
+    &--dir-text
         @media #{$_xsm}
             width: 100%
+
+
 
 .form__label
     display: block

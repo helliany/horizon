@@ -8,9 +8,15 @@
     width: 100%
     margin-top: 35px
 
+    @media #{$_sm}
+        margin-top: 25px
+
 .subpage-list
     margin-top: 15px
     column-gap: 50px
+
+    @media #{$_sm}
+        column-gap: 30px
 
 .page-list__item,
 .subpage-list__item
@@ -22,8 +28,17 @@
     font-weight: 600
     font-family: $main-semibold
 
+    @media #{$_sm}
+        font-size: 16px
+
+        &:nth-child(2n) .subpage-list
+            width: 264px
+
 .subpage-list__item
     font-size: 16px
+
+    @media #{$_sm}
+        font-size: 14px
 
 .numbered-list
     margin-top: 15px
@@ -35,6 +50,11 @@
     font-family: $main-regular
     padding-left: 15px
 
+    @media #{$_sm}
+        padding-left: 10px
+
     a
-        
         font-size: 14px
+
+        @media #{$_sm}
+            font-size: 12px
