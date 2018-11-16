@@ -4,11 +4,17 @@
     background-color: $gainsboro
 
     @media #{$_sm}
+        padding-bottom: 56px
+
+    @media #{$_xsm}
         background-color: #ffffff
 
 .testimonials__container
     position: relative
     padding: 0
+
+    @media #{$_xsm}
+        padding: 0 15px
 
 .testimonials__background
     position: absolute
@@ -77,7 +83,7 @@
             margin-bottom: 20px
 
     @media #{$_lg}
-        margin-right: 10px
+        margin-right: 15px
 
     @media #{$_xsm}
         width: 100%
@@ -104,7 +110,7 @@
         max-width: 130px
 
         @media #{$_sm}
-            max-width: 160px
+            max-width: 130px
 
         @media #{$_xs}
             max-width: 140px
@@ -122,6 +128,9 @@
 
         span
             font-size: 12px
+
+    @media #{$_xsm}
+        margin-left: auto
 
     @media #{$_xs}
         h5
@@ -152,6 +161,9 @@
     @media #{$_xsm}
         margin-right: 30px
 
+    @media #{$_xs}
+        margin-right: 15px
+
 .testi__text
     margin-right: 20px
     p
@@ -164,7 +176,7 @@
         p
             font-size: 12px
 
-    @media #{$_sm}
+    @media #{$_xsm}
         margin-right: 0
 
 .testi__image
@@ -180,7 +192,7 @@
         width: 240px
         flex-basis: 240px
 
-    @media #{$_sm}
+    @media #{$_xsm}
         display: none
 
 .testi__quotes

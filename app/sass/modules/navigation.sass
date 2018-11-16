@@ -34,9 +34,10 @@
     &--back 
         display: none
 
-    &:hover
-        .navigation__link
+    .navigation__link:not(.nav-button--orange)
+        &:hover, &:focus
             border-color: $alt-accent
+            outline: none
 
         .dropdown
             visibility: visible
@@ -51,6 +52,10 @@
 
         &--mobile
             display: block
+
+.sfHover 
+    .subnav
+        display: block 
 
 .navigation__link
     text-align: center
@@ -101,7 +106,7 @@
                 transform: rotate(90deg)
 
 .nav-button
-    background-color: $alt-accent
+    background-color: $accent
     font-family: $main-bold
     border: 0
     border-bottom: 3px solid transparent
@@ -113,9 +118,14 @@
     &:focus
         outline: 0
 
+    &--orange
+        background-color: $alt-accent
+        &:hover, &:focus
+            background-color: darken($alt-accent, 5%)
+
     &--blue 
         font-family: $main-regular
-        background-color: #005e98
+        background-color: $accent
 
         svg
             display: block
@@ -126,6 +136,11 @@
         padding: 12px 0 9px
         font-family: $main-regular
         background-color: #fff
+
+        &--orange
+        background-color: #fff
+        &:hover, &:focus
+            background-color: #fff
 
         svg
             display: block

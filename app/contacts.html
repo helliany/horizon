@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="https://unpkg.com/metismenu/dist/metisMenu.min.css">
   <!-- Chrome, Firefox OS and Opera-->
   <meta name="theme-color" content="#000">
   <!-- Windows Phone-->
@@ -31,7 +32,7 @@
                         <li class="menu__item"><a class="menu__link" href="template.html">О компании</a></li>
                         <li class="menu__item"><a class="menu__link" href="testimonials.html">Отзывы</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Статьи</a></li>
                 </ul>
               </div>
@@ -95,9 +96,9 @@
                 <button class="nav-button nav-button--back"><i class="fas fa-arrow-left"></i><span>Назад </span></button>
               </li>
               <li class="navigation__item">
-                <button class="nav-button navigation__link"><img class="burger" src="img/header/burger.svg" alt="Burger icon"> Каталог<i class="fas fa-angle-right"></i></button>
+                <button class="nav-button nav-button--orange navigation__link"><img class="burger" src="img/header/burger.svg" alt="Burger icon"> Каталог<i class="fas fa-angle-right"></i></button>
                 <!-- begin subnav -->
-                <div class="subnav">
+                <div class="subnav subnav--catalog">
                   <!-- begin tabs -->
                   <div class="tabs tabs--mobile">
                     <div class="tabs__item subnav-tab">Печатная продукция<i class="fas fa-angle-right"></i></div>
@@ -783,48 +784,62 @@
                 </div>
                 <div class="contacts__img"><img src="img/contacts/call.png" alt="Call"></div>
               </div>
-              <h3>Напишите нашим менеджерам:</h3>
-              <!-- begin contacts-managers-->
-              <div class="contacts-man">
-                <div class="contacts-man__item"><img src="img/contacts/photo/Юлия Кулакова.jpg" alt="Юлия Кулакова">
-                  <p class="contacts-man__title">Юлия Кулакова</p><span>руководитель отдела продаж</span>
-                  <p class="contacts-man__tel">Добавочный номер 707</p>
-                  <p><a class="contacts__link contacts__link--orange" href="mailto:manager@gorizont-spb.ru">manager@gorizont-spb.ru</a></p>
-                </div>
-                <div class="contacts-man__item"><img src="img/contacts/photo/Яна Беляева.jpg" alt="Яна Беляева">
-                  <p class="contacts-man__title">Яна Беляева</p><span>менеджер</span>
-                  <p class="contacts-man__tel">Добавочный номер 703</p>
-                  <p><a class="contacts__link contacts__link--orange" href="mailto:admin@gorizont-spb.ru">admin@gorizont-spb.ru</a></p>
-                </div>
-                <div class="contacts-man__item"><img src="img/contacts/photo/Елизавета Веретнова.jpg" alt="Елизавета Веретнова">
-                  <p class="contacts-man__title">Елизавета Веретнова</p><span>менеджер</span>
-                  <p class="contacts-man__tel">Добавочный номер 705</p>
-                  <p><a class="contacts__link contacts__link--orange" href="mailto:manager2@gorizont-spb.ru">manager2@gorizont-spb.ru</a></p>
-                </div>
-                <div class="contacts-man__item"><img src="img/contacts/photo/Ксения Енькова.jpg" alt="Ксения Енькова">
-                  <p class="contacts-man__title">Ксения Енькова</p><span>менеджер</span>
-                  <p class="contacts-man__tel">Добавочный номер 704</p>
-                  <p><a class="contacts__link contacts__link--orange" href="mailto:office@gorizont-spb.ru">office@gorizont-spb.ru</a></p>
-                </div>
-                <div class="contacts-man__item"><img src="img/contacts/photo/Елена Капаруллина.jpg" alt="Елена Капарулина">
-                  <p class="contacts-man__title">Елена Капарулина</p><span>менеджер</span>
-                  <p class="contacts-man__tel">Добавочный номер 706</p>
-                  <p><a class="contacts__link contacts__link--orange" href="mailto:doc@gorizont-spb.ru">doc@gorizont-spb.ru</a></p>
+              <div class="contacts-wrapper">
+                <h3>Напишите нашим менеджерам:</h3>
+                <!-- begin contacts-managers-->
+                <div class="contacts-man">
+                  <div class="contacts-man__item"><img src="img/contacts/photo/Юлия Кулакова.jpg" alt="Юлия Кулакова">
+                    <p class="contacts-man__title">Юлия Кулакова</p><span>руководитель отдела продаж</span>
+                    <p class="contacts-man__tel">Добавочный номер 707</p>
+                    <p><a class="contacts__link contacts__link--orange" href="mailto:manager@gorizont-spb.ru">manager@gorizont-spb.ru</a></p>
+                  </div>
+                  <div class="contacts-man__item"><img src="img/contacts/photo/Яна Беляева.jpg" alt="Яна Беляева">
+                    <p class="contacts-man__title">Яна Беляева</p><span>менеджер</span>
+                    <p class="contacts-man__tel">Добавочный номер 703</p>
+                    <p><a class="contacts__link contacts__link--orange" href="mailto:admin@gorizont-spb.ru">admin@gorizont-spb.ru</a></p>
+                  </div>
+                  <div class="contacts-man__item"><img src="img/contacts/photo/Елизавета Веретнова.jpg" alt="Елизавета Веретнова">
+                    <p class="contacts-man__title">Елизавета Веретнова</p><span>менеджер</span>
+                    <p class="contacts-man__tel">Добавочный номер 705</p>
+                    <p><a class="contacts__link contacts__link--orange" href="mailto:manager2@gorizont-spb.ru">manager2@gorizont-spb.ru</a></p>
+                  </div>
+                  <div class="contacts-man__item"><img src="img/contacts/photo/Ксения Енькова.jpg" alt="Ксения Енькова">
+                    <p class="contacts-man__title">Ксения Енькова</p><span>менеджер</span>
+                    <p class="contacts-man__tel">Добавочный номер 704</p>
+                    <p><a class="contacts__link contacts__link--orange" href="mailto:office@gorizont-spb.ru">office@gorizont-spb.ru</a></p>
+                  </div>
+                  <div class="contacts-man__item"><img src="img/contacts/photo/Елена Капаруллина.jpg" alt="Елена Капарулина">
+                    <p class="contacts-man__title">Елена Капарулина</p><span>менеджер</span>
+                    <p class="contacts-man__tel">Добавочный номер 706</p>
+                    <p><a class="contacts__link contacts__link--orange" href="mailto:doc@gorizont-spb.ru">doc@gorizont-spb.ru</a></p>
+                  </div>
+                  <div class="contacts-man__director">
+                    <h3>Или свяжитесь с нашим директором:</h3>
+                    <div class="contacts-director__btn"><a class="contacts-btn button button--blue" href="#">Написать директору</a></div>
+                  </div>
                 </div>
               </div>
               <!-- end contacts-managers-->
-              <h3>Или свяжитесь с нашим директором:</h3>
-              <div class="contacts-director"><a class="contacts-btn button button--blue" href="#">Написать директору</a></div>
-              <div class="contacts-adress">
-                <div><span>Адрес офиса:</span><a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.282487%2C59.896689&amp;z=16&amp;source=wizgeo&amp;utm_source=serp&amp;l=map&amp;utm_medium=maps-touch-phone&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.282488%252C59.896690%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A8%25D0%25B2%25D0%25B5%25D1%2586%25D0%25BE%25D0%25B2%25D0%25B0%252C%252012%25D0%25BA2%2520" target="_blank">СПБ, ул. Швецова 12, корп. 2</a><a class="contacts__link contacts__link--orange">Скачать схему проезда</a></div>
-                <div>
-                  <p>Забрать посылку можно в нашем офисе.</p>
-                  <p>При выборе доставки курьером стоимость по городу будет фиксированная.</p>
-                </div>
-              </div>
-              <div class="contacts-map"></div>
             </div>
           </section>
+        </div>
+        <!-- end container-->
+        <div class="contacts-adress">
+          <div class="contacts-adress__wrapper container">
+            <div>
+              <p>Адрес офиса:</p>
+              <p><a class="contacts__link contacts__link--white" href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.282487%2C59.896689&amp;z=16&amp;source=wizgeo&amp;utm_source=serp&amp;l=map&amp;utm_medium=maps-touch-phone&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.282488%252C59.896690%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A8%25D0%25B2%25D0%25B5%25D1%2586%25D0%25BE%25D0%25B2%25D0%25B0%252C%252012%25D0%25BA2%2520" target="_blank">СПБ, ул. Швецова 12, корп. 2</a></p>
+              <p><a class="contacts__link contacts__link--orange">Скачать схему проезда</a></p>
+              <div class="contacts-adress__img"><img src="img/contacts/maps-and-location.png" alt="Location"></div>
+            </div>
+            <div>
+              <p>Забрать посылку можно в нашем офисе.</p>
+              <p>При выборе доставки курьером стоимость по городу будет фиксированная.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="contacts-adress__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2464522793e93ac8bd97bfd6f1e2aa448a3d06d63c37083360d46224acd45604&amp;width=100%&amp;height=385&amp;lang=ru_RU&amp;scroll=false"></script></div>
         </div>
       </main>
       <!-- end page-->
@@ -856,7 +871,7 @@
                 <ul class="footer-submenu">
                   <li class="footer-submenu__item"><a href="template.html">О компании</a></li>
                   <li class="footer-submenu__item"><a href="testimonials.html">Отзывы</a></li>
-                  <li class="footer-submenu__item"><a href="#">Контакты</a></li>
+                  <li class="footer-submenu__item"><a href="contacts.html">Контакты</a></li>
                   <li class="footer-submenu__item"><a href="#">Статьи</a></li>
                   <li class="footer-submenu__item"><a href="#">Политика<br> конфиденциальности</a></li>
                 </ul>

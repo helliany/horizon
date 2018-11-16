@@ -41,7 +41,7 @@
     flex-grow: 1
     a
         line-height: 1.5
-        &:hover
+        &:hover, &:focus
             color: $alt-accent
             text-decoration: underline
 
@@ -94,7 +94,8 @@
 .footer-info__link
     display: block
     color: #ffffff
-    &:hover
+    &:hover, &:focus
+        color: $alt-accent
         text-decoration: underline
 
 .footer-info__item
@@ -131,8 +132,7 @@
         font-size: 12px
         color: $main-color
 
-        &:hover,
-        &:focus
+        &:hover, &:focus
             text-decoration: underline
 
     @media #{$_xsm}

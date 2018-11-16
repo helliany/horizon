@@ -12,7 +12,10 @@
 
     .testi__wrapper
         max-width: 100%
-        padding: 15px 15px 15px 0
+        padding: 15px 0
+
+        @media #{$xsm}
+            padding: 15px 15px 15px 0
 
     .testi__customer
         order: 0
@@ -41,7 +44,7 @@
 
         @media #{$_xsm}
             position: absolute
-            top: 68px
+            top: 82px
             left: 55%
             width: 130px
             height: 60px

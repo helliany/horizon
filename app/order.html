@@ -737,206 +737,142 @@
       </header>
       <!-- end header -->
       <!-- begin page-->
-      <main class="page"> 
-        <!-- begin page-section -->
-        <section class="page-section basket-section">
-          <div class="container">
-            <!-- begin breadcrumbs -->
-            <div class="breadcrumbs">
-              <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-                <li class="breadcrumbs__item"><span>Корзина</span></li>
-              </ul>
-              <ul class="breadcrumbs__list breadrcrumbs__list--hidden">
-                <li class="breadcrumbs__item"><a href="#"> <i class="fas fa-angle-left"></i> Назад</a></li>
-              </ul>
-            </div>
-            <!-- end breadcrumbs -->
+      <main class="page">
+        <div class="container">
+          <!-- begin breadcrumbs -->
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="basket.html">Корзина</a></li>
+              <li class="breadcrumbs__item"><span>Оформление заказа</span></li>
+            </ul>
+            <ul class="breadcrumbs__list breadrcrumbs__list--hidden">
+              <li class="breadcrumbs__item"><a href="index.html"> <i class="fas fa-angle-left"></i> Назад</a></li>
+            </ul>
+          </div>
+          <!-- end breadcrumbs -->
+          <!-- begin page-section -->
+          <section class="page-section page-section--template">
             <header class="heading page-section__header">
-              <h1 class="page-title">Корзина</h1>
-              <div class="basket-info">
-                <div class="basket-info__text">В корзине: <b>8 товара на сумму 15200 ₽</b></div>
-                <div class="basket-info__button">
-                  <button class="button">Очистить корзину</button>
-                </div>
-              </div>
+              <h1 class="page-title">Оформление заказа</h1>
             </header>
-          </div>
-          <div class="basket-wrapper">
-            <header class="basket-wrapper__header">
-              <div class="container basket-wrapper__header-container">
-                <div class="basket-wrapper__header-item">Товар</div>
-                <div class="basket-wrapper__header-item">Артикул</div>
-                <div class="basket-wrapper__header-item">Цена</div>
-                <div class="basket-wrapper__header-item">Количество</div>
-                <div class="basket-wrapper__header-item">Сумма</div>
-              </div>
-            </header>
-            <div class="container">
-              <ul class="basket-list">
-                <li class="basket-list__row">
-                  <div class="basket-list__item basket-product">
-                    <div class="basket-product__text">
-                      <div class="basket-product__number">№00000000</div><a class="basket-product__title" href="#">Ежедневник BRAND, недатированный, синий</a>
+            <div class="page-section__wrapper">
+              <form class="order__form" method="post">
+                <div class="order__form-wrapper">
+                  <fieldset class="order__form-fieldset order__form-fieldset--pay">
+                    <legend class="order__form-title">Выберите способ оплаты:*</legend>
+                    <ul class="order__list">
+                      <li class="order__item">
+                        <input class="order__input-radio" type="radio" name="pay" value="pay-cash" id="pay-cash" required="required" hidden checked>
+                        <label class="order__label" for="pay-cash"><img class="order__img" src="img/order/notes1.png" alt="Cash"><img class="order__img-active" src="img/order/notes.png" alt="Cash"><span>Наличными</span></label>
+                      </li>
+                      <li class="order__item">
+                        <input class="order__input-radio" type="radio" name="pay" value="pay-online" id="pay-online" hidden>
+                        <label class="order__label" for="pay-online"><img class="order__img" src="img/order/bank-card1.png" alt="Online"><img class="order__img-active" src="img/order/bank-card.png" alt="Online"><span>Онлайн</span></label>
+                      </li>
+                      <li class="order__item">
+                        <input class="order__input-radio" type="radio" name="pay" value="pay-transfer" id="pay-transfer" hidden>
+                        <label class="order__label" for="pay-transfer"><img class="order__img" src="img/order/bill1.png" alt="Transfer"><img class="order__img-active" src="img/order/bill.png" alt="Transfer"><span>Переводом</span></label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="order__form-fieldset order__form-fieldset--delivery">
+                    <legend class="order__form-title">Выберите способ получения:*</legend>
+                    <ul class="order__list">
+                      <li class="order__item">
+                        <input class="order__input-radio" type="radio" name="delivery" value="delivery-courier" id="delivery-courier" required="required" checked hidden>
+                        <label class="order__label" for="delivery-courier"> <img class="order__img" src="img/order/delivery-truck1.png" alt="Courier"><img class="order__img-active" src="img/order/delivery-truck.png" alt="Courier"><span>Курьером</span></label>
+                      </li>
+                      <li class="order__item">
+                        <input class="order__input-radio" type="radio" name="delivery" value="delivery-pickup" id="delivery-pickup" hidden>
+                        <label class="order__label" for="delivery-pickup"> <img class="order__img" src="img/order/trolley1.png" alt="Pickup"><img class="order__img-active" src="img/order/trolley.png" alt="Pickup"><span>Самовывоз</span></label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="order__form-fieldset order__form-fieldset--extra">
+                    <legend class="order__form-title">Дополнительная услуга:*</legend>
+                    <ul class="order__list order__list--extra">
+                      <li class="order__item order__item--extra">
+                        <input class="order__input-radio" type="radio" name="extra" value="extra-spb" id="extra-spb" required="required" checked hidden>
+                        <label class="order__label" for="extra-spb"> <img class="order__img" src="img/order/delivery-truck1.png" alt="Delivery SPb"><img class="order__img-active" src="img/order/delivery-truck.png" alt="Delivery SPb"><span>Оформить доставку по СПб</span></label>
+                      </li>
+                      <li class="order__item order__item--extra">
+                        <input class="order__input-radio" type="radio" name="extra" value="extra-russia" id="extra-russia" hidden>
+                        <label class="order__label" for="extra-russia"> <img class="order__img" src="img/order/location1.png" alt="Delivery Russia"><img class="order__img-active" src="img/order/location.png" alt="Delivery Russia"><span>Доставка по России</span></label>
+                      </li>
+                    </ul>
+                    <div class="order__text order__text--extra">
+                      <p>Доставка оплачивается отдельно. Наш менеджер уточнит адрес доставки при подтверждении заказа и рассчитает ее стоимость.</p>
+                      <p>Стоимость доставки по городу фиксированная.</p>
                     </div>
-                    <div class="basket-product__img"><img src="img/basket/image.jpg" alt="Basket image"></div>
-                  </div>
-                  <div class="basket-list__item basket-vendor-code">
-                    <div class="basket-vendor-code__text">Артикул: 0000000<br>Размер: 15х21 см<br>Вес: 550 г</div><a class="basket-vendor-code__link" href="#">Добавить нанесение</a>
-                  </div>
-                  <div class="basket-list__item basket-price"><span>Цена за шт:</span><span>380 ₽</span></div>
-                  <div class="basket-list__item basket-quantity"><span class="basket-quantity__text">Количество</span>
-                    <button class="basket-quantity__btn">-</button>
-                    <input class="basket-quantity__number" type="text" value="5">
-                    <button class="basket-quantity__btn">+</button>
-                  </div>
-                  <div class="basket-list__item basket-sum">
-                    <div class="basket-sum__amount"> <span>Сумма:</span><span>1900 ₽</span></div>
-                    <button class="basket-clear"><span class="basket-clear__top"></span><span class="basket-clear__bottom"></span></button>
-                  </div>
-                </li>
-                <li class="basket-list__row">
-                  <div class="basket-list__item basket-product">
-                    <div class="basket-product__text">
-                      <div class="basket-product__number">№00000000</div><a class="basket-product__title" href="#">Ежедневник BRAND, недатированный, синий</a>
+                  </fieldset>
+                  <fieldset class="order__form-fieldset order__form-fieldset--data order__form-fieldset--spb active">
+                    <legend class="order__form-title">Введите свои данные:*</legend>
+                    <div>
+                      <div class="order__form-wrapper--spb-left">
+                        <input class="order__input-data" type="text" required="required" placeholder="Ваше имя" name="order-name">
+                        <input class="order__input-data" type="email" required="required" placeholder="Ваша почта" name="order-mail">
+                        <input class="order__input-data" type="tel" required="required" placeholder="Ваш телефон" name="order-tel">
+                      </div>
+                      <div class="order__form-wrapper--spb-right"> 
+                        <input class="order__input-data" type="tel" required="required" placeholder="Адрес доставки" name="order-address">
+                        <textarea class="order__input-data order__input-data--comment" placeholder="Комментарий" name="order-comment"></textarea>
+                      </div>
                     </div>
-                    <div class="basket-product__img"><img src="img/basket/image.jpg" alt="Basket image"></div>
-                  </div>
-                  <div class="basket-list__item basket-vendor-code">
-                    <div class="basket-vendor-code__text">Артикул: 0000000<br>Размер: 15х21 см<br>Вес: 550 г</div><a class="basket-vendor-code__link" href="#">Добавить нанесение</a>
-                  </div>
-                  <div class="basket-list__item basket-price"><span>Цена за шт:</span><span>380 ₽</span></div>
-                  <div class="basket-list__item basket-quantity"><span class="basket-quantity__text">Количество</span>
-                    <button class="basket-quantity__btn">-</button>
-                    <input class="basket-quantity__number" type="text" value="5">
-                    <button class="basket-quantity__btn">+</button>
-                  </div>
-                  <div class="basket-list__item basket-sum">
-                    <div class="basket-sum__amount"> <span>Сумма:</span><span>1900 ₽</span></div>
-                    <button class="basket-clear"><span class="basket-clear__top"></span><span class="basket-clear__bottom"></span></button>
-                  </div>
-                </li>
-                <li class="basket-list__row">
-                  <div class="basket-list__item basket-product">
-                    <div class="basket-product__text">
-                      <div class="basket-product__number">№00000000</div><a class="basket-product__title" href="#">Ежедневник BRAND, недатированный, синий</a>
+                  </fieldset>
+                  <fieldset class="order__form-fieldset order__form-fieldset--data order__form-fieldset--russia">
+                    <legend class="order__form-title">Введите свои данные:*</legend>
+                    <div>
+                      <div class="order__form-wrapper--rus-left">
+                        <input class="order__input-data" type="text" required="required" placeholder="Ваше имя" name="order-name">
+                        <input class="order__input-data" type="email" required="required" placeholder="Ваша почта" name="order-mail">
+                        <input class="order__input-data" type="tel" required="required" placeholder="Ваш телефон" name="order-tel">
+                        <input class="order__input-data" type="text" required="required" placeholder="Индекс" name="order-index">
+                        <input class="order__input-data" type="text" required="required" placeholder="Ваш город" name="order-town">
+                        <input class="order__input-data" type="text" required="required" placeholder="Улица" name="order-street">
+                      </div>
+                      <div class="order__form-wrapper--rus-right">
+                        <input class="order__input-data" type="text" required="required" placeholder="Дом" name="order-house">
+                        <input class="order__input-data" type="text" required="required" placeholder="Корпус" name="order-building">
+                        <input class="order__input-data" type="text" required="required" placeholder="Подъезд" name="order-door">
+                        <input class="order__input-data" type="text" required="required" placeholder="Этаж" name="order-floor">
+                      </div>
+                      <textarea class="order__input-data order__input-data--comment" placeholder="Комментарий" name="order-comment"></textarea>
                     </div>
-                    <div class="basket-product__img"><img src="img/basket/image.jpg" alt="Basket image"></div>
-                  </div>
-                  <div class="basket-list__item basket-vendor-code">
-                    <div class="basket-vendor-code__text">Артикул: 0000000<br>Размер: 15х21 см<br>Вес: 550 г</div><a class="basket-vendor-code__link" href="#">Добавить нанесение</a>
-                  </div>
-                  <div class="basket-list__item basket-price"><span>Цена за шт:</span><span>380 ₽</span></div>
-                  <div class="basket-list__item basket-quantity"><span class="basket-quantity__text">Количество</span>
-                    <button class="basket-quantity__btn">-</button>
-                    <input class="basket-quantity__number" type="text" value="5">
-                    <button class="basket-quantity__btn">+</button>
-                  </div>
-                  <div class="basket-list__item basket-sum">
-                    <div class="basket-sum__amount"> <span>Сумма:</span><span>1900 ₽</span></div>
-                    <button class="basket-clear"><span class="basket-clear__top"></span><span class="basket-clear__bottom"></span></button>
-                  </div>
-                </li>
-                <li class="basket-list__row">
-                  <div class="basket-list__item basket-product">
-                    <div class="basket-product__text">
-                      <div class="basket-product__number">№00000000</div><a class="basket-product__title" href="#">Ежедневник BRAND, недатированный, синий</a>
-                    </div>
-                    <div class="basket-product__img"><img src="img/basket/image.jpg" alt="Basket image"></div>
-                  </div>
-                  <div class="basket-list__item basket-vendor-code">
-                    <div class="basket-vendor-code__text">Артикул: 0000000<br>Размер: 15х21 см<br>Вес: 550 г</div><a class="basket-vendor-code__link" href="#">Добавить нанесение</a>
-                  </div>
-                  <div class="basket-list__item basket-price"><span>Цена за шт:</span><span>380 ₽</span></div>
-                  <div class="basket-list__item basket-quantity"><span class="basket-quantity__text">Количество</span>
-                    <button class="basket-quantity__btn">-</button>
-                    <input class="basket-quantity__number" type="text" value="5">
-                    <button class="basket-quantity__btn">+</button>
-                  </div>
-                  <div class="basket-list__item basket-sum">
-                    <div class="basket-sum__amount"> <span>Сумма:</span><span>1900 ₽</span></div>
-                    <button class="basket-clear"><span class="basket-clear__top"></span><span class="basket-clear__bottom"></span></button>
-                  </div>
-                </li>
-                <li class="basket-list__row">
-                  <div class="basket-list__item basket-product">
-                    <div class="basket-product__text">
-                      <div class="basket-product__number">№00000000</div><a class="basket-product__title" href="#">Ежедневник BRAND, недатированный, синий</a>
-                    </div>
-                    <div class="basket-product__img"><img src="img/basket/image.jpg" alt="Basket image"></div>
-                  </div>
-                  <div class="basket-list__item basket-vendor-code">
-                    <div class="basket-vendor-code__text">Артикул: 0000000<br>Размер: 15х21 см<br>Вес: 550 г</div><a class="basket-vendor-code__link" href="#">Добавить нанесение</a>
-                  </div>
-                  <div class="basket-list__item basket-price"><span>Цена за шт:</span><span>380 ₽</span></div>
-                  <div class="basket-list__item basket-quantity"><span class="basket-quantity__text">Количество</span>
-                    <button class="basket-quantity__btn">-</button>
-                    <input class="basket-quantity__number" type="text" value="5">
-                    <button class="basket-quantity__btn">+</button>
-                  </div>
-                  <div class="basket-list__item basket-sum">
-                    <div class="basket-sum__amount"> <span>Сумма:</span><span>1900 ₽</span></div>
-                    <button class="basket-clear"><span class="basket-clear__top"></span><span class="basket-clear__bottom"></span></button>
-                  </div>
-                </li>
-                <li class="basket-list__row">
-                  <div class="basket-list__item basket-product">
-                    <div class="basket-product__text">
-                      <div class="basket-product__number">№00000000</div><a class="basket-product__title" href="#">Ежедневник BRAND, недатированный, синий</a>
-                    </div>
-                    <div class="basket-product__img"><img src="img/basket/image.jpg" alt="Basket image"></div>
-                  </div>
-                  <div class="basket-list__item basket-vendor-code">
-                    <div class="basket-vendor-code__text">Артикул: 0000000<br>Размер: 15х21 см<br>Вес: 550 г</div><a class="basket-vendor-code__link" href="#">Добавить нанесение</a>
-                  </div>
-                  <div class="basket-list__item basket-price"><span>Цена за шт:</span><span>380 ₽</span></div>
-                  <div class="basket-list__item basket-quantity"><span class="basket-quantity__text">Количество</span>
-                    <button class="basket-quantity__btn">-</button>
-                    <input class="basket-quantity__number" type="text" value="5">
-                    <button class="basket-quantity__btn">+</button>
-                  </div>
-                  <div class="basket-list__item basket-sum">
-                    <div class="basket-sum__amount"> <span>Сумма:</span><span>1900 ₽</span></div>
-                    <button class="basket-clear"><span class="basket-clear__top"></span><span class="basket-clear__bottom"></span></button>
-                  </div>
-                </li>
-                <li class="basket-list__row">
-                  <div class="basket-list__item basket-product">
-                    <div class="basket-product__text">
-                      <div class="basket-product__number">№00000000</div><a class="basket-product__title" href="#">Ежедневник BRAND, недатированный, синий</a>
-                    </div>
-                    <div class="basket-product__img"><img src="img/basket/image.jpg" alt="Basket image"></div>
-                  </div>
-                  <div class="basket-list__item basket-vendor-code">
-                    <div class="basket-vendor-code__text">Артикул: 0000000<br>Размер: 15х21 см<br>Вес: 550 г</div><a class="basket-vendor-code__link" href="#">Добавить нанесение</a>
-                  </div>
-                  <div class="basket-list__item basket-price"><span>Цена за шт:</span><span>380 ₽</span></div>
-                  <div class="basket-list__item basket-quantity"><span class="basket-quantity__text">Количество</span>
-                    <button class="basket-quantity__btn">-</button>
-                    <input class="basket-quantity__number" type="text" value="5">
-                    <button class="basket-quantity__btn">+</button>
-                  </div>
-                  <div class="basket-list__item basket-sum">
-                    <div class="basket-sum__amount"> <span>Сумма:</span><span>1900 ₽</span></div>
-                    <button class="basket-clear"><span class="basket-clear__top"></span><span class="basket-clear__bottom"></span></button>
-                  </div>
-                </li>
-              </ul>
-              <div class="basket-total">
-                <div class="basket-total__info">
-                  <div class="basket-total__item">Вес заказа:<br><b>3,24 кг</b></div>
-                  <div class="basket-total__item">Объем м<sup>2</sup>:<br><b>0,01</b></div>
-                  <div class="basket-total__item">Общий тираж:<br><b>40 шт</b></div>
-                  <div class="basket-total__item">
-                    <div class="basket-total__item-wrapper"><b>Сумма заказа: </b><b>15200 ₽</b></div>
+                  </fieldset>
+                  <div class="order__text">
+                    <p>Если Вы указали почтовый адрес, то после оформления заказа Вам придет письмо с номером Вашего заказа. Далее с Вами свяжется наш оператор для подтверждения и уточнения деталей заказа.</p>
+                    <p>* — поля, отмеченные звёздочкой, обязательны для заполнения</p>
                   </div>
                 </div>
-                <div class="basket-checkout"><a class="button button--blue" href="#">Оформить заказ</a></div>
-              </div>
+                <div class="order__order-wrapper">
+                  <h2 class="order__title">Ваш заказ</h2><a href="#">Изменить</a>
+                  <table class="order__table">
+                    <tr>
+                      <td>Товаров:</td>
+                      <td>4</td>
+                    </tr>
+                    <tr> 
+                      <td>Общий вес:</td>
+                      <td>1 кг</td>
+                    </tr>
+                    <tr>
+                      <td>Стоимость доставки:</td>
+                      <td>100 ₽</td>
+                    </tr>
+                    <tr>
+                      <td class="order__table-sum">Итого:</td>
+                      <td class="order__table-sum">400 ₽    </td>
+                    </tr>
+                  </table>
+                  <button class="button button--orange" type="submit">Оформить заказ</button>
+                  <div class="form__offer">Нажимая кнопку вы даете согласие на обработку своих персональных данных</div>
+                </div>
+              </form>
             </div>
-          </div>
-        </section>
-        <!-- end page-section -->
+          </section>
+        </div>
+        <!-- end container-->
       </main>
       <!-- end page-->
     </div>

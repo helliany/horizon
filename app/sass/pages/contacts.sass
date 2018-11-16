@@ -4,12 +4,25 @@
     width: 855px
     margin: 0 0 80px
 
+    @media #{$_md}
+       width: 720px 
+
+    @media #{$_xsm}
+       width: 100% 
+       margin: 0 0 16px
+
 .contacts__item
     width: 285px
     padding: 0 0 16px
 
     p:not(.contacts__title)
         font-family: $main-light
+
+    @media #{$_md}
+       width: 240px 
+
+    @media #{$_xsm}
+       padding: 0 0 40px
 
 .contacts__title
     font-size: 18px
@@ -18,9 +31,23 @@
 .contacts__link
     color: $main-color
 
+    &:hover, &:focus
+            text-decoration: underline
+            outline: none
+
     &--orange
         color: $alt-accent
         text-decoration: underline
+
+        &:hover, &:focus
+            text-decoration: none
+
+    &--white
+        color: #ffffff
+        text-decoration: underline
+
+        &:hover, &:focus
+            text-decoration: none
 
 .contacts__socials
     display: flex
@@ -36,17 +63,38 @@
     right: 0
     top: 110px
 
+    @media #{$_md}
+       width: 490px 
+
+    @media #{$_sm}
+       display: none
+
+.contacts-wrapper
+    @media #{$_md}
+       position: relative
+
+    @media #{$_xsm}
+        margin: 0 0 60px
+
 .contacts-man
     display: flex
     flex-wrap: wrap
+    justify-content: space-between
     margin: 0 0 14px
+
+    @media #{$_sm}
+        justify-content: flex-start
 
 .contacts-man__item
     width: 190px
-    margin: 0 40px 26px 0
+    flex-shrink: 0
+    margin: 0 0 26px 0
 
-    &:last-child
-        margin: 0 0 26px 0
+    @media #{$_sm}
+        margin: 0 50px 26px 0
+
+    @media #{$_xsm}
+       width: 100% 
 
     span 
         font-size: 12px
@@ -63,3 +111,74 @@
 .contacts-man__tel
     font-size: 12px
     font-family: $main-semibold
+
+.contacts-man__director
+    @media #{$_md}
+        width: 430px
+        margin: 50px 0 0
+
+    @media #{$_sm}
+        width: 240px
+
+        h3
+            font-size: 11.5px
+
+    @media #{$_xsm}
+        h3 
+           font-size: 20px
+
+.contacts-adress
+    position: relative
+    background-color: $accent
+
+    @media #{$_xsm}
+        margin: 0 0 30px
+
+.contacts-adress__wrapper
+    position: absolute
+    top: -30px
+    left: 50%
+    display: flex
+    flex-wrap: wrap
+    width: 730px
+    padding: 20px 38px
+    color: #ffffff
+    background-color: $accent
+    font-family: $main-light
+    transform: translateX(-50%)
+
+    div
+        width: 50%
+
+        &:first-child
+            position: relative
+            padding-left: 56px
+
+            p:not(:last-child) 
+                margin-bottom: 10px
+
+            p:first-child
+                font-family: $main-semibold
+                text-decoration: underline
+
+    @media #{$_xsm}
+        position: static
+        width: 100%
+        padding: 20px 15px
+        transform: none
+
+        div
+            width: 100%
+            font-size: 12px
+
+            &:first-child
+                display: none
+
+.contacts-adress__img
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.contacts-adress__map
+    margin-bottom: 100px

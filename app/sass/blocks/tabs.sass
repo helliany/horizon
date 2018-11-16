@@ -19,15 +19,13 @@
     transition: color .15s ease
     font-family: $main-bold
 
-    &:hover
+    &:hover, &:focus
         color: $alt-accent
+        outline: none
 
     &.active
         color: $alt-accent
         text-decoration: underline
-
-    &:focus
-        outline: 0
 
     @media #{$_xsm}
         &.active

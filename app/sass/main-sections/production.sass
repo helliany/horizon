@@ -17,20 +17,63 @@
             justify-content: center
 
 .production-slider
+    background-color: $accent
+
+    .slick-active
+        color: #ffffff
+        background-color: $alt-accent
+
+    .production-tab
+        &:hover, &:focus
+            background-color: darken($alt-accent, 5%)
+            outline: none
+
     @media #{$xsm}
         display: flex
         width: 100%
         justify-content: center
 
+    @media #{$_xsm}
+        background-color: $alt-accent
+
         > *
             &:not(:first-child)
                 margin-left: 60px
-    
+
+.production-tab
+    min-width: 300px
+    padding: 14px
+    color: #ffffff
+    text-align: center
+
+    @media #{$_lg}
+        font-size: 16px
+
+    @media #{$_sm}
+        min-width: 260px
+
+    &:hover, &:focus
+        color: #ffffff
+        darken($alt-accent, 5%)
+
+    &.active
+        color: #ffffff
+        background-color: $alt-accent
+        text-decoration: none
+
+    @media #{$_xsm}
+        &.active
+            font-family: $main-semibold
+
+            svg
+                display: none
+
 .production__prev,
 .production__next
     position: absolute
     display: none
-    top: 0
+    top: 50%
+    transform: translateY(-50%)
     z-index: 1
 
     @media #{$_xsm}
@@ -189,6 +232,3 @@ img.hidden-img
 .production__button
     text-align: center
 
-.production-slider .slick-active
-    color: $alt-accent
-    text-decoration: underline

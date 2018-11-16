@@ -1,0 +1,177 @@
+.order__form
+    display: flex
+    flex-wrap: wrap
+    
+.order__form-wrapper
+    display: flex
+    flex-wrap: wrap
+    width: 760px
+    padding: 0 30px 0 0
+
+    &--spb-left 
+        width: 190px
+
+    &--spb-right 
+        width: 316px
+        margin: 0 0 0 30px
+
+    &--rus-left 
+        width: 440px
+
+        .order__input-data
+            width: 190px
+            margin: 0 30px 20px 0
+
+    &--rus-right
+        width: 200px
+        max-height: 97px;
+
+        .order__input-data
+            width: 90px
+            margin: 0 10px 20px 0
+            padding: 5px 15px
+
+.order__order-wrapper
+    position: relative
+    width: 350px  
+    height: 360px
+    padding: 26px 
+    background-color: $light-accent
+    color: #ffffff
+
+    .order__title
+        display: inline-block
+        width: 222px
+
+    a 
+        color: #ffffff
+        text-decoration: underline
+
+        &:hover, &:focus
+            text-decoration: none
+
+    .button 
+        margin: 20px 65px 8px
+
+    .form__offer
+        padding: 0
+        text-align: center
+
+    &::after
+        position: absolute
+        bottom: -4px
+        left: 0
+        content: ""
+        width: 350px
+        height: 5px
+        background-image: url(../img/order/polygon.png)
+
+.order__table
+    width: 100%   
+    font-size: 16px
+    font-family: $main-semibold
+
+    td 
+        padding: 0 0 14px
+
+    tr 
+        td:last-child
+            text-align: right
+
+    .order__table-sum
+        padding: 14px 0
+        border-top: 1px dashed #ffffff
+        border-bottom: 1px dashed #ffffff
+
+.order__form-title
+    margin: 0 0 30px
+    font-size: 18px
+    font-family: $main-semibold
+
+.order__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    &--extra 
+        justify-content: flex-start
+
+        .order__item 
+            width: 266px
+
+.order__img
+    display: inline-block
+    margin: 0 10px 0 0
+
+    &-active
+        display: none
+        margin: 0 10px 0 0
+
+.order__form-fieldset 
+    margin: 0 0 40px
+    padding: 0
+    border: none
+
+    &--pay 
+        width: 51%
+
+    &--delivery 
+        width: 49%
+        padding: 0 0 0 46px
+
+    &--data 
+        display: none
+
+        &.active 
+            display: block
+
+        div
+            display: flex
+            flex-wrap: wrap
+
+    &--russia 
+        .order__input-data--comment 
+                width: 410px
+
+.order__input-radio
+    & + label
+        display: flex
+        color: $gray
+
+    &:hover + label,
+    &:focus + label,
+    &:active + label, 
+    &:checked + label    
+        color: $alt-accent
+        text-decoration: underline
+
+    &:hover + label .order__img-active,
+    &:focus + label .order__img-active,
+    &:active + label .order__img-active, 
+    &:checked + label .order__img-active    
+        display: inline-block
+
+    &:hover + label .order__img,
+    &:focus + label .order__img,
+    &:active + label .order__img, 
+    &:checked + label .order__img    
+        display: none
+
+.order__text
+    font-family: $main-light
+    color: $gray  
+
+    &--extra 
+        padding: 36px 0 20px
+        border-bottom: 1px solid $light
+
+.order__input-data
+    width: 100%
+    padding: 5px 20px
+    margin: 0 0 20px
+    border: 1px solid $main-color 
+    border-radius: 12px
+    font-size: 12px
+
+    &--comment
+        height: 80px
