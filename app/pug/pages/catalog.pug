@@ -1,0 +1,58 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main.page 
+
+                // begin page-section 
+                section.page-section.catalog
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    span Каталог
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="index.html") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title Каталог
+
+                    include ../modules/main/production
+
+                    .container
+                        .catalog__text
+                            p Компания Горизонт работает на рынке с 2008 года. Типография по своей сути это отдельная компания, предприятие, производящее печатную продукцию различных форм и видов. Печать абсолютно на любой вкус. Процессы и технологии печати подразумевают несколько этапов по производству. Сначала подготовка до печати, затем сама печать и обработка после печати.
+                            p Типография, на сегодняшний день, важная составляющая рекламного бизнеса. К сожалению многие типографии предлагают только лишь печать продукции. Мы предоставляем заказчику полный комплекс услуг: от разработки визитки до корпоративного стиля, от широкоформатной печати до офсетной. Полный цикл печатных услуг, оснащенность современным оборудованием, новейшие технологии, современный уровень всех полиграфических процессов — все это позволяет выполнять практически любые заказы в самые короткие сроки. Мы не только круто печатаем, но и занимаемся комплексным решением Ваших творческих и бизнес задач.
+                            p Впервые обратились в типографию? Давно в деле? Вам будет одинаково просто и комфортно работать с нами. Парк новейшего оборудования, команда профессионалов и придирчивый отбор поставщиков сырья - всё это позволяет нам обещать наилучший результат работы в сжатые сроки.
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

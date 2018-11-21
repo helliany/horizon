@@ -1,0 +1,206 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main.page 
+
+                // begin page-section 
+                section.page-section
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    a(href="catalog.html") Каталог
+                                li.breadcrumbs__item
+                                    span Печатная продукция
+                                li.breadcrumbs__item
+                                    a(href="catalog-print.html") Блокноты
+                                li.breadcrumbs__item
+                                    span Ежедневник BRAND, недатированный, синий
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="index.html") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title Блокноты
+
+                        .catalog-print.services-card
+                            ul.catalog-print__menu.services-card__menu 
+                                li.services-card__item
+                                    a.services-card__link.active Блокноты
+                                li.services-card__item
+                                    a.services-card__link(href="#") На пружине
+                                li.services-card__item
+                                    a.services-card__link(href="#") На склейке
+                                li.services-card__item
+                                    a.services-card__link(href="#") На скрепке
+                                li.services-card__item
+                                    a.services-card__link(href="#") Кубарики
+
+                            .catalog-print__card.services-card__card 
+                                .catalog-print-card__wrapper
+                                    .catalog-print-card__img
+                                        img(src="img/basket/image.jpg", alt="Catalog image") 
+                                    .catalog-print-card__slider-wrapper
+                                        .catalog-print-card__arr.catalog-print-card__arr--prev.slick-nav-prev
+                                            img(src="img/icons/left-arrow.svg", alt="Arrow icon")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image.jpg", alt="Catalog slider image") 
+                                        .catalog-print-card__arr.catalog-print-card__arr--next.slick-nav-next
+                                            img(src="img/icons/left-arrow.svg", alt="Arrow icon")
+                                    .catalog-print-card__desc
+                                        h2 Ежедневник BRAND, недатированный, синий
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                        button.button.button--blue.catalog-print-add(type="button") В корзину
+                                        button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                            i.fas.fa-check
+                                        .catalog-print-card__comment
+                                            i.fas.fa-caret-up
+                                            h2 Добавьте комментарий к заказу
+                                            textarea(placeholder="Комментарий" name="catalog-print-comment")
+
+                                .catalog-print-card__text
+                                    p По желанию на товар производится нанесение логотипа, надписи или полноцветного изображения в короткие сроки, наши опытные дизайнеры выполнят макет бесплатно (кроме дизайна календарей и полиграфических макетов с нуля).
+                                    p Наши курьеры бесплатно привезут образцы товара для ознакомления. Готовый заказ доставляется бесплатно* по Москве и Санкт-Петербургу до двери заказчика на нашем фирменном транспорте.
+                                    p.catalog-print-card__text-extra *при заказе от 10 000 руб
+
+                                table.catalog-print-card__table
+                                    caption Тираж и стоимость нанесения УФ-печатью без учета ежедневников #[br](в руб. за одно место нанесения)
+                                    tr 
+                                        th Размер нанесения#[br]/тираж изделий
+                                        th 10-49
+                                        th 50-99
+                                        th 100-299
+                                        th 300-499
+                                        th 500-1000
+                                        th 1001-1500
+                                        th 1501-2000
+                                    tr 
+                                        td До 10 см
+                                            sup 2
+                                        td 108 ₽
+                                        td 81 ₽
+                                        td 54 ₽
+                                        td 36 ₽
+                                        td 27 ₽
+                                        td 23 ₽
+                                        td 19 ₽
+                                    tr 
+                                        td До 20 см
+                                            sup 2
+                                        td 144 ₽
+                                        td 108 ₽
+                                        td 72 ₽
+                                        td 48 ₽
+                                        td 36 ₽
+                                        td 31 ₽
+                                        td 26 ₽
+                                    tr 
+                                        td Более 20 см
+                                            sup 2
+                                        td 171 ₽
+                                        td 128 ₽
+                                        td 85 ₽
+                                        td 57 ₽
+                                        td 42 ₽
+                                        td 37 ₽
+                                        td 31 ₽
+                                    tr 
+                                        td Более 40 см
+                                            sup 2
+                                        td 180 ₽
+                                        td 135 ₽
+                                        td 90 ₽
+                                        td 60 ₽
+                                        td 45 ₽
+                                        td 39 ₽
+                                        td 33 ₽
+                                    tr 
+                                        td Более 60 см
+                                            sup 2
+                                        td 189 ₽
+                                        td 141 ₽
+                                        td 94 ₽
+                                        td 63 ₽
+                                        td 47 ₽
+                                        td 40 ₽
+                                        td 34 ₽
+                                    tr 
+                                        td Более 80 см
+                                            sup 2
+                                        td 198 ₽
+                                        td 148 ₽
+                                        td 99 ₽
+                                        td 66 ₽
+                                        td 49 ₽
+                                        td 42 ₽
+                                        td 36 ₽
+                                    tr 
+                                        td Более 100 см
+                                            sup 2
+                                        td 207 ₽
+                                        td 155 ₽
+                                        td 103 ₽
+                                        td 69 ₽
+                                        td 51 ₽
+                                        td 44 ₽
+                                        td 37 ₽
+                                    tr 
+                                        td Более 200 см
+                                            sup 2
+                                        td 252 ₽
+                                        td 189 ₽
+                                        td 126 ₽
+                                        td 84 ₽
+                                        td 63 ₽
+                                        td 54 ₽
+                                        td 46 ₽
+
+                                button.catalog-print-card__order.button.button--blue(type="button") Заявка на рассчет
+
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

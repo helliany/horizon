@@ -15,53 +15,35 @@
         .tabs__item
             display: flex
             justify-content: center
+            color: $alt-accent
+            text-decoration: underline
 
 .production-slider
-    background-color: $accent
-
-    .slick-active
-        color: #ffffff
-        background-color: $alt-accent
-
-    .production-tab
-        &:hover, &:focus
-            background-color: darken($alt-accent, 5%)
-            outline: none
-
     @media #{$xsm}
         display: flex
         width: 100%
         justify-content: center
 
     @media #{$_xsm}
-        background-color: $alt-accent
+        .tabs__item.active
+            color: $alt-accent
+            text-decoration: underline
 
-        > *
-            &:not(:first-child)
-                margin-left: 60px
+    > *
+        &:not(:first-child)
+            margin-left: 60px
 
 .production-tab
-    min-width: 300px
-    padding: 14px
-    color: #ffffff
     text-align: center
-
-    @media #{$_lg}
-        font-size: 16px
+    font-size: 22px
+    color: $main-color
 
     @media #{$_sm}
-        min-width: 260px
-
-    &:hover, &:focus
-        color: #ffffff
-        darken($alt-accent, 5%)
-
-    &.active
-        color: #ffffff
-        background-color: $alt-accent
-        text-decoration: none
+        font-size: 20px
 
     @media #{$_xsm}
+        font-size: 18px
+
         &.active
             font-family: $main-semibold
 
@@ -113,6 +95,13 @@
     margin-bottom: 30px
     position: relative
 
+    &:nth-child(n + 13)
+        display: none
+
+    &.active
+        &:nth-child(n + 13)
+            display: block
+
     &::before
         content: ''
         position: absolute
@@ -128,10 +117,10 @@
     &:nth-child(2n)
         .product__body
             &:hover
-                background-color: $accent
+                background-color: $light-accent
 
         .product__image::before
-            background-color: $accent
+            background-color: $light-accent
 
     @media #{$_sm}
         width: calc(33.3333% - 30px)
@@ -202,7 +191,6 @@
     width: 115px
     display: flex
     justify-content: center
-    position: relative
 
     img
         position: relative
@@ -232,3 +220,6 @@ img.hidden-img
 .production__button
     text-align: center
 
+.production-slider .slick-active
+    color: $alt-accent
+    text-decoration: underline

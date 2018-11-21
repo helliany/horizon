@@ -7,7 +7,7 @@ nav.navigation
                     i.fas.fa-arrow-left
                     span Назад 
             li.navigation__item
-                button.nav-button.nav-button--orange.navigation__link
+                a.nav-button.nav-button--orange.navigation__link(href="catalog.html")
                     img(src="img/header/burger.svg", alt="Burger icon").burger
                     |  Каталог
                     i.fas.fa-angle-right
@@ -808,14 +808,14 @@ nav.navigation
             li.navigation__item
                 a(href="#").navigation__link Портфолио
             li.navigation__item
-                a(href="#").navigation__link.nav-button.nav-button--blue 
+                a(href="services.html").navigation__link.nav-button.nav-button--blue 
                     |Услуги
                     i.fas.fa-angle-right
                 // begin dropdown 
                 .subnav.subnav--service
                     ul.dropdown__wrapper
                         li.dropdown__item
-                            a(href="#").dropdown__link Цифровая оперативная печать
+                            a(href="services-card.html").dropdown__link Цифровая оперативная печать
                         li.dropdown__item
                             a(href="#").dropdown__link.dropdown__link--service Все виды постпечатной обработки тиражей:
                             i.fas.fa-angle-right

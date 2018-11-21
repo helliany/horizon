@@ -1,0 +1,48 @@
+.catalog-print__menu
+    @media #{$_xsm}
+        display: block
+        width: 100%
+    
+.catalog-print__list
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 60px
+
+    @media #{$_xs}
+        margin-bottom: 30px
+
+.catalog-print__item
+    width: 33.3%
+    height: 480px
+    padding: 16px
+    margin-bottom: 30px
+    overflow: hidden
+
+    @media #{$_sm}
+        width: 50%
+
+    @media #{$_xs}
+        width: 100%
+
+    p 
+       margin: 16px 0 
+       font-size: 12px
+       font-family: $main-light
+       color: $gray
+
+    &:hover, &:focus
+       background-color: #ffffff
+       outline: 1px solid $light
+       box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3)
+
+.catalog-print__img
+    height: 200px
+    margin-bottom: 20px
+
+.catalog-print__link 
+    color: $main-color
+    font-family: $main-semibold
+    text-decoration: underline
+
+    &:hover, &:focus
+        text-decoration: none

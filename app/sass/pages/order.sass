@@ -11,25 +11,69 @@
     &--spb-left 
         width: 190px
 
+        @media #{$_sm}
+            width: 100%
+
     &--spb-right 
         width: 316px
         margin: 0 0 0 30px
 
+        @media #{$_sm}
+            width: 100%
+            margin: 0
+
+            .order__input-data--comment 
+                margin-bottom: 0
+
     &--rus-left 
         width: 440px
+
+        @media #{$_lg}
+            width: 420px
+
+        @media #{$_xs}
+            width: 100%
 
         .order__input-data
             width: 190px
             margin: 0 30px 20px 0
 
+            @media #{$_lg}
+                margin: 0 20px 20px 0
+
+            @media #{$_sm}
+                width: 100%
+                margin: 0 0 20px 0
+
     &--rus-right
         width: 200px
-        max-height: 97px;
+        max-height: 97px
+
+        @media #{$_sm}
+            width: 100%
 
         .order__input-data
             width: 90px
             margin: 0 10px 20px 0
             padding: 5px 15px
+
+            @media #{$_sm}
+                width: 46.4%
+                margin: 0 7% 20px 0
+
+                &:nth-child(even)
+                    margin: 0 0 20px 0
+
+    @media #{$_lg}
+        width: 650px
+
+    @media #{$_sm}
+        width: 430px
+        padding: 0 20px 0 0
+
+    @media #{$_xs}
+        width: 100%
+        padding: 0
 
 .order__order-wrapper
     position: relative
@@ -39,19 +83,31 @@
     background-color: $light-accent
     color: #ffffff
 
-    .order__title
-        display: inline-block
-        width: 222px
+    &--title 
+        display: flex
+        flex-wrap: wrap
+        align-items: baseline
 
-    a 
-        color: #ffffff
-        text-decoration: underline
+        .order__title
+            display: inline-block
 
-        &:hover, &:focus
-            text-decoration: none
+            @media #{$_lg}
+                margin-bottom: 26px
+                font-size: 18px
+
+        a
+            margin-left: auto 
+            color: #ffffff
+            text-decoration: underline
+
+            &:hover, &:focus
+                text-decoration: none
 
     .button 
-        margin: 20px 65px 8px
+        position: relative
+        margin: 20px 0 8px
+        left: 50%;
+        transform: translateX(-50%)
 
     .form__offer
         padding: 0
@@ -62,9 +118,17 @@
         bottom: -4px
         left: 0
         content: ""
-        width: 350px
+        width: 100%
         height: 5px
         background-image: url(../img/order/polygon.png)
+
+    @media #{$_lg}
+        width: 290px
+        padding: 16px 
+
+    @media #{$_xsm}
+        width: 100%
+        margin: 60px 0 100px
 
 .order__table
     width: 100%   
@@ -115,9 +179,38 @@
     &--pay 
         width: 51%
 
+        @media #{$_lg}
+            width: 44%
+
+        @media #{$_sm}
+            width: 100%
+
     &--delivery 
+        position: relative
         width: 49%
         padding: 0 0 0 46px
+
+        &::before
+            position: absolute
+            left: 20px
+            top: 10px
+            content: ""
+            width: 1px
+            height: 64px
+            background-color: $light
+
+            @media #{$_lg}
+                height: 160px
+
+        @media #{$_lg}
+            width: 56%
+
+        @media #{$_sm}
+            width: 100%
+            padding: 0
+
+            &::before
+                display: none
 
     &--data 
         display: none
@@ -131,7 +224,19 @@
 
     &--russia 
         .order__input-data--comment 
-                width: 410px
+            width: 410px
+
+            @media #{$_lg}
+                width: 400px
+                margin-bottom: 0
+
+            @media #{$_sm}
+                width: 100%
+
+.order__item
+    @media #{$_lg}
+        width: 100%
+        margin-bottom: 26px
 
 .order__input-radio
     & + label
@@ -164,6 +269,9 @@
     &--extra 
         padding: 36px 0 20px
         border-bottom: 1px solid $light
+
+        @media #{$_lg}
+            padding: 10px 0 20px
 
 .order__input-data
     width: 100%

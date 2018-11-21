@@ -1,0 +1,142 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main.page 
+
+                // begin page-section 
+                section.page-section.catalog
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    span Портфолио
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="index.html") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title Портфолио
+
+                        .portfolio.services-card
+                            ul.services-card__menu.portfolio__menu
+                                li.services-card__item
+                                    a.services-card__link.active Все
+                                li.services-card__item
+                                    a.services-card__link(href="#") Широкоформатная печать
+                                li.services-card__item
+                                    a.services-card__link(href="#") Визитки
+                                li.services-card__item
+                                    a.services-card__link(href="#") POS-материалы
+                                li.services-card__item
+                                    a.services-card__link(href="#") Календари
+                                li.services-card__item
+                                    a.services-card__link(href="#") Многополосная продукция
+                                li.services-card__item
+                                    a.services-card__link(href="#") Таблички
+                                li.services-card__item
+                                    a.services-card__link(href="#") Сувениры к праздникам
+                                li.services-card__item
+                                    a.services-card__link(href="#") Подарочные наборы
+                                li.services-card__item
+                                    a.services-card__link(href="#") Футболки
+                                li.services-card__item
+                                    a.services-card__link(href="#") Посуда
+                                li.services-card__item
+                                    a.services-card__link(href="#") Для офиса
+                                li.services-card__item
+                                    a.services-card__link(href="#") Промо
+
+                            ul.services-card__card.portfolio__card
+                                li.portfolio__item
+                                    ul.portfolio__img
+                                        li
+                                            img(src="img/portfolio/print-1.jpg", alt="Print image")
+                                        li
+                                            img(src="img/portfolio/print-2.jpg", alt="Print image")
+                                    div
+                                        h2.portfolio__title Широкоформатная печать
+                                        button.button Подробнее
+                                li.portfolio__item
+                                    ul.portfolio__img
+                                        li
+                                            img(src="img/portfolio/table-1.jpg", alt="Table image")
+                                        li
+                                            img(src="img/portfolio/table-2.jpg", alt="Table image")
+                                    div
+                                        h2.portfolio__title Таблички
+                                        button.button Подробнее
+                                li.portfolio__item
+                                    ul.portfolio__img
+                                        li
+                                            img(src="img/portfolio/gift-1.jpg", alt="Gift image")
+                                        li
+                                            img(src="img/portfolio/gift-2.jpg", alt="Gift image")
+                                    div
+                                        h2.portfolio__title Подарочные наборы
+                                        button.button Подробнее
+                                li.portfolio__item
+                                    ul.portfolio__img
+                                        li
+                                            img(src="img/portfolio/office-1.jpg", alt="Office image")
+                                        li
+                                            img(src="img/portfolio/office-2.jpg", alt="Office image")
+                                    div
+                                        h2.portfolio__title Для офиса
+                                        button.button Подробнее
+                        // begin pagination 
+                        .pagination.portfolio-pagination
+                            ul.pagination__list
+                                li.pagination__item
+                                    a.pagination__link(href="#")
+                                        i.fas.fa-angle-left
+                                li.pagination__item
+                                    a(href="#").active 01
+                                li.pagination__item
+                                    a(href="#") 02
+                                li.pagination__item
+                                    a(href="#") 03
+                                li.pagination__item
+                                    a(href="#") 04
+                                li.pagination__item
+                                    a(href="#") 05
+                                li.pagination__item
+                                    span ...
+                                li.pagination__item
+                                    a(href="#") 10
+                                li.pagination__item
+                                    a.pagination__link(href="#")
+                                        i.fas.fa-angle-right
+                        // end pagination
+
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

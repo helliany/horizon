@@ -1,0 +1,108 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main.page 
+
+                // begin page-section 
+                section.page-section
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    a(href="services.html") Услуги
+                                li.breadcrumbs__item
+                                    span Цифровая оперативная печать
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="index.html") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title Цифровая оперативная печать
+
+                        .services-card
+                            ul.services-card__menu 
+                                li.services-card__item
+                                    a.services-card__link.active Цифровая оперативная печать
+                                li.services-card__item
+                                    a.services-card__link(href="#") Широкоформатная печать
+                                li.services-card__item
+                                    a.services-card__link(href="#") Офсетная печать
+                                li.services-card__item
+                                    a.services-card__link(href="#") Шелкотрафаретная печать
+                                li.services-card__item
+                                    a.services-card__link(href="#") Тампопечать
+                                li.services-card__item
+                                    a.services-card__link(href="#") Термоперенос на одежду и ткань
+                                li.services-card__item
+                                    a.services-card__link(href="#") Плоттерная резка
+                                li.services-card__item
+                                    a.services-card__link(href="#") Обрамление в профиль
+                                li.services-card__item
+                                    a.services-card__link(href="#") Круговая печать на сувенирах
+                                li.services-card__item
+                                    a.services-card__link(href="#") Тиснение
+                                li.services-card__item
+                                    a.services-card__link(href="#") Конгрев
+                                li.services-card__item
+                                    a.services-card__link(href="#") Вырубка
+                                li.services-card__item
+                                    a.services-card__link(href="#") УФ-лакировка
+                                li.services-card__item
+                                    a.services-card__link(href="#") Накат на основу, пвх-пластик и пенокартон
+                                li.services-card__item
+                                    a.services-card__link(href="#") УФ-печать
+                                li.services-card__item
+                                    a.services-card__link(href="#") Закатные значки
+                                li.services-card__item
+                                    a.services-card__link(href="#") Лазерная гравировка
+                                li.services-card__item
+                                    a.services-card__link(href="#") Все виды постпечатной обработки тиражей
+
+                            .services-card__card 
+                                .services-card__text
+                                    p Теперь эксклюзивно для наших новых и постоянных клиентов - еще больше возможностей для реализаций самых смелых и креативных идей с помощью УФ-печати!
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                    p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                .services-card__imgs
+                                    .services-card__img
+                                        img(src="img/main-sections/last-news/1.jpg", alt="Services")
+                                    .services-card__img
+                                        img(src="img/main-sections/last-news/2.jpg", alt="Services")
+                                    .services-card__img
+                                        img(src="img/main-sections/last-news/3.jpg", alt="Services")
+                                .services-card__price
+                                    h2 Прайс-лист
+                                    a.button(href="#") Скачать прайс-лист
+                                    img(src="img/services/price.png", alt="Price")
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')
