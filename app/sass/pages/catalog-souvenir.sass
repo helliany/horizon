@@ -1,0 +1,285 @@
+.catalog-souvenir__menu
+    margin: 0 1% 0 0
+
+    .services-card__item
+        position: relative
+        
+        svg
+            position: absolute
+            right: 14px
+            height: 12px
+            width: 8.5px
+            display: none
+
+        .fa-angle-down
+            bottom: 8px
+
+        .fa-angle-up
+            top: 8px
+
+        a.active
+            svg
+                display: block
+
+            &::after
+                position: absolute
+                right: 11px
+                top: 49%
+                content: ""
+                width: 14px
+                height: 1px
+                background-color: #ffffff
+
+    @media #{$_xsm}
+        position: absolute
+        display: block
+        z-index: 1
+        width: 92.5%
+        margin-bottom: 40px
+        background-color: #fff
+        
+        .services-card__item
+            display: none
+
+            &.active
+                display: block
+
+        a.active
+            svg.fa-angle-up
+                display: none
+
+            svg.fa-angle-down
+                bottom: 18px
+
+            &::after
+                display: none
+
+    @media #{$_xxs}
+        width: 290px
+
+.catalog-souvenir__card
+    width: 75%
+
+    @media #{$_lg}
+        width: 73%
+
+    @media #{$_sm}
+        width: 70%
+
+    @media #{$_xsm}
+        width: 100%
+
+        .portfolio-card__menu
+            display: block
+
+.catalog-souvenir__filter-title
+    position: absolute
+    display: none
+    width: 92.5%
+    margin-top: 60px
+    padding: 14px 16px
+    font-family: $main-semibold
+    font-size: 14px
+    border-radius: 0
+    border: none
+
+    @media #{$_xsm}
+        display: block
+    
+    @media #{$_xxs}
+        width: 290px
+
+.catalog-souvenir__filter-menu
+    li 
+        position: relative
+        width: 160px
+
+        svg 
+            position: absolute
+            right: 16px
+            top: 50%
+            transform: translateY(-50%)
+
+        a
+            .fa-times
+                display: none
+                color: #ffffff
+
+        a.active 
+            .fa-times
+                display: block
+
+            .fa-angle-down
+                display: none
+
+        @media #{$_lg}
+            width: 148px
+
+    @media #{$_xsm}
+        li 
+            width: 210px
+
+.catalog-souvenir__filter-wrapper
+    @media #{$_xsm}
+        position: absolute
+        z-index: 1
+        width: 100%
+        display: none
+        flex-direction: column
+        align-items: center
+        margin-top: 120px
+        background-color: #fff
+
+        &.active 
+            display: flex
+
+.catalog-souvenir__filter
+    display: flex
+    margin: 24px 0 44px
+    font-size: 12px
+
+    a.active
+        .fa-angle-down
+            display: block
+
+    @media #{$_xs}
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+
+    span
+        padding: 0 20px 0 0
+        color: $main-color
+
+        @media #{$_sm}
+            padding: 0 14px 0 0
+
+        @media #{$_xs}
+            padding: 0 14px 10px 0
+
+    a 
+        padding: 0 20px 0 0
+        color: $main-color
+        position: relative
+
+        .fa-angle-down
+            position: absolute
+            right: 10px
+            top: 50%
+            transform: translateY(-50%)
+            display: none
+
+        &:active, &:focus, &.active
+            color: $alt-accent
+            text-decoration: underline
+
+        @media #{$_xs}
+            display: inline-block
+            width: 100%
+
+            &.active 
+                color: $main-color
+                text-decoration: none
+
+    @media #{$_xsm}    
+        margin-top: 140px
+
+.catalog-souvenir__filter-list
+    display: flex
+    flex-wrap: wrap
+
+    @media #{$_xs}
+        position: absolute
+        left: 44%
+        width: 60%
+        padding: 0 4%
+        margin-left: auto
+        background-color: #ffffff
+
+        &.active 
+            top: -5px
+
+        li 
+            display: none
+            width: 100%
+            margin-bottom: 10px
+            padding: 4px 14px
+            border: 1px solid $gray
+            border-radius: 16px
+
+            &.active
+                display: block
+
+.catalog-souvenir__filter-btn
+    display: none
+    width: 210px
+    margin: 20px 15px 20px 0
+    background-color: $light-accent
+    color: #ffffff
+    font-family: $main-semibold
+
+    @media #{$_xsm} 
+        display: block
+    
+.catalog-souvenir__item
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    min-height: 500px
+
+    @media #{$_xsm}
+        border: 1px solid $gainsboro
+
+.catalog-souvenir__imgs
+    display: flex
+    flex-wrap: wrap
+    height: 200px
+    margin-bottom: 16px
+
+.catalog-souvenir__img
+    width: 70%
+
+    @media #{$_xs}
+        width: 75%
+
+    @media #{$_xxs}
+        width: 70%
+
+.catalog-souvenir__list
+    display: flex
+    flex-wrap: wrap
+    align-content: flex-start
+    width: 30%
+    overflow: hidden
+
+    @media #{$_xs}
+        width: 25%
+
+    @media #{$_xxs}
+        width: 30%
+
+    li
+        width: 30px
+        margin-bottom: 15%
+
+        @media #{$_lg}
+            width: 25px
+
+        @media #{$_xsm}
+            width: 30px
+        
+        &:nth-child(odd)
+            margin-right: 10%
+
+.catalog-souvenir__price
+    padding: 14px 0 16px
+    font-size: 20px
+    font-family: $main-semibold
+
+.catalog-souvenir__btn
+    width: 100%
+    margin-top: auto
+
+    .button
+        margin-top: 0

@@ -12,7 +12,7 @@ html(lang='ru')
             include ../modules/header
 
             // begin page
-            main.page 
+            main
 
                 // begin page-section 
                 section.page-section
@@ -39,20 +39,30 @@ html(lang='ru')
                         // end breadcrumbs 
 
                         header.heading.page-section__header
-                            h1.page-title Блокноты
+                            h1.page-title Ежедневник BRAND, недатированный, синий
 
                         .catalog-print.services-card
                             ul.catalog-print__menu.services-card__menu 
                                 li.services-card__item
                                     a.services-card__link.active Блокноты
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") На пружине
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") На склейке
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") На скрепке
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Кубарики
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
 
                             .catalog-print__card.services-card__card 
                                 .catalog-print-card__wrapper
@@ -88,8 +98,9 @@ html(lang='ru')
                                             i.fas.fa-check
                                         .catalog-print-card__comment
                                             i.fas.fa-caret-up
-                                            h2 Добавьте комментарий к заказу
-                                            textarea(placeholder="Комментарий" name="catalog-print-comment")
+                                            form(method="post")
+                                                h2 Добавьте комментарий к заказу
+                                                textarea(placeholder="Комментарий" name="catalog-print-comment")
 
                                 .catalog-print-card__text
                                     p По желанию на товар производится нанесение логотипа, надписи или полноцветного изображения в короткие сроки, наши опытные дизайнеры выполнят макет бесплатно (кроме дизайна календарей и полиграфических макетов с нуля).
@@ -188,7 +199,7 @@ html(lang='ru')
                                         td 54 ₽
                                         td 46 ₽
 
-                                button.catalog-print-card__order.button.button--blue(type="button") Заявка на рассчет
+                                button.catalog-print-card__order.button.button--blue.btn-back-call(type="button") Заявка на рассчет
 
                 // end page-section 
 

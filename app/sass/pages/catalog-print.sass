@@ -1,8 +1,69 @@
-.catalog-print__menu
-    @media #{$_xsm}
-        display: block
-        width: 100%
+.catalog-print
+    .catalog-print__list
+        @media #{$_xsm}    
+            margin-top: 90px
+
+    .search-print__list,
+    .search-souvenir__list
+        @media #{$_xsm}    
+            margin-top: 0
     
+.catalog-print__menu
+    .services-card__item
+        position: relative
+        
+        svg
+            position: absolute
+            right: 14px
+            height: 12px
+            width: 8.5px
+            display: none
+
+        .fa-angle-down
+            bottom: 8px
+
+        .fa-angle-up
+            top: 8px
+
+        a.active
+            svg
+                display: block
+
+            &::after
+                position: absolute
+                right: 11px
+                top: 49%
+                content: ""
+                width: 14px
+                height: 1px
+                background-color: #ffffff
+
+    @media #{$_xsm}
+        position: absolute
+        display: block
+        width: 92.5%
+        margin-bottom: 40px
+        background-color: #fff
+        
+        .services-card__item
+            display: none
+
+            &.active
+                display: block
+
+        a.active
+            svg.fa-angle-up
+                display: none
+
+            svg.fa-angle-down
+                bottom: 18px
+
+            &::after
+                display: none
+
+    @media #{$_xxs}
+        width: 290px
+
 .catalog-print__list
     display: flex
     flex-wrap: wrap
@@ -13,7 +74,6 @@
 
 .catalog-print__item
     width: 33.3%
-    height: 480px
     padding: 16px
     margin-bottom: 30px
     overflow: hidden
@@ -21,6 +81,9 @@
     @media #{$_sm}
         width: 50%
 
+    @media #{$_xsm}
+        border: 1px solid $gainsboro
+        
     @media #{$_xs}
         width: 100%
 

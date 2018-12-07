@@ -1,0 +1,163 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main 
+
+                // begin page-section 
+                section.page-section.catalog
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    a(href="portfolio.html") Портфолио
+                                li.breadcrumbs__item
+                                    span Широкоформатная печать
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="index.html") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title Широкоформатная печать
+
+                            // begin breadcrumbs 
+                            .breadcrumbs
+                                ul.breadcrumbs__list
+                                    li.breadcrumbs__item.breadcrumbs__item--card
+                                        a(href="portfolio.html") 
+                                            i.fas.fa-angle-left
+                                            |  Возврат к списку
+                            // end breadcrumbs 
+
+                        .portfolio-card
+                            ul.portfolio-card__menu
+                                li
+                                    a.portfolio-card__link(href="portfolio.html") Все
+                                li
+                                    a.portfolio-card__link.active Широкоформатная печать
+                                li
+                                    a.portfolio-card__link(href="#") Визитки
+                                li
+                                    a.portfolio-card__link(href="#") POS-материалы
+                                li
+                                    a.portfolio-card__link(href="#") Календари
+                                li
+                                    a.portfolio-card__link(href="#") Многополосная продукция
+                                li
+                                    a.portfolio-card__link(href="#") Таблички
+                                li
+                                    a.portfolio-card__link(href="#") Сувениры к праздникам
+                                li
+                                    a.portfolio-card__link(href="#") Подарочные наборы
+                                li
+                                    a.portfolio-card__link(href="#") Футболки
+                                li
+                                    a.portfolio-card__link(href="#") Посуда
+                                li
+                                    a.portfolio-card__link(href="#") Для офиса
+                                li
+                                    a.portfolio-card__link(href="#") Промо
+
+                            ul.portfolio-card__card
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                                li(tabindex="0").portfolio-card__item
+                                    img(src="img/portfolio/card.jpg", alt="Print-card image")
+                                    div
+                                        h2.portfolio-card__title Печать афиш на обычной мелованной бумаге
+                                        a(href="#").button.button--orange Хочу такую же!
+                         
+                        // begin pagination 
+                        .pagination
+                            ul.pagination__list
+                                li.pagination__item
+                                    a.pagination__link(href="#")
+                                        i.fas.fa-angle-left
+                                li.pagination__item
+                                    a(href="#").active 01
+                                li.pagination__item
+                                    a(href="#") 02
+                                li.pagination__item
+                                    a(href="#") 03
+                                li.pagination__item
+                                    a(href="#") 04
+                                li.pagination__item
+                                    a(href="#") 05
+                                li.pagination__item
+                                    span ...
+                                li.pagination__item
+                                    a(href="#") 10
+                                li.pagination__item
+                                    a.pagination__link(href="#")
+                                        i.fas.fa-angle-right
+                        // end pagination
+
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

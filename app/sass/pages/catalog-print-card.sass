@@ -6,9 +6,20 @@
 
     @media #{$_xsm}
         margin-bottom: 60px
-    
+        margin-top: 90px
+
 .catalog-print-card__img 
     width: 43%
+    max-height: 484px
+
+    @media #{$_md}
+        max-height: 400px
+
+    @media #{$_sm}
+        max-height: 294px
+
+    @media #{$_xsm}
+        max-height: 230px
 
 .catalog-print-card__slider-wrapper
     position: relative
@@ -86,9 +97,14 @@
     position: absolute
     bottom: 10%
     display: none
+    width: 350px
     padding: 14px
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3)
     background-color: #ffffff
+
+    @media #{$_lg}
+        width: 280px
+        bottom: -23%
 
     .fa-caret-up
         position: absolute
@@ -99,13 +115,21 @@
     &.active 
         display: block
 
-    @media #{$_lg}
-        bottom: -24%
-
     @media #{$_sm}
-        bottom: -50%
+        bottom: -49%
+        width: 220px
 
     @media #{$_xsm}
+        bottom: -91%
+        width: 290px
+
+    @media #{$_large-phone}
+        bottom: -84%
+
+    @media #{$_xs}
+        bottom: -68%
+
+    @media #{$_xxs}
         bottom: -56%
 
     h2 

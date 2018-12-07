@@ -28,6 +28,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "gulp-wait": "0.0.2",
+    "jquery-slinky": "^4.1.0",
     "metismenu": "^3.0.3"
   },
   "dependencies": {

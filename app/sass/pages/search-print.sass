@@ -1,0 +1,34 @@
+.search-print__page-title
+    margin-bottom: 0
+
+.search-print__text 
+    @media #{$_xs}
+        display: none
+
+.search-print__filter
+    width: 100%
+    margin-top: 0
+
+    a.search-print__link 
+        .fa-angle-down
+            display: none
+
+    @media #{$_xs}
+        a.search-print__link.active
+            .fa-angle-down
+                display: block
+    
+.search-print__card
+    width: 100%
+
+    .catalog-print__item
+        width: 25%
+
+        @media #{$_sm}
+            width: 33.3%
+
+        @media #{$_xsm}
+            width: 50%
+
+        @media #{$_xs}
+            width: 100%

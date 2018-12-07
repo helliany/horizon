@@ -71,7 +71,6 @@
         box-shadow: 0 0 20px 0 rgba(#000, .3)
         border: none
 
-
 .basket-list__item
     width: 16.666666%
 
@@ -110,6 +109,7 @@
 
     img 
         object-fit: contain
+        max-height: 100px
 
     @media #{$_sm}
         width: 38%
@@ -117,8 +117,11 @@
     @media #{$_xsm}
         order: -1
         width: 35%
-        min-height: 200px;
+        min-height: 200px
         margin: 0 0 10px
+
+        img 
+            min-height: 200px
 
     @media #{$_xs}
         width: 50%
@@ -161,6 +164,7 @@
     @media #{$_xsm}
         margin-bottom: 35px
         display: block
+        font-size: 14px
 
 .basket-price
     display: flex
@@ -201,6 +205,13 @@
         order: -1
         width: 100%
         margin: 0 0 20px 
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button 
+        -webkit-appearance: none
+    
+    input[type='number']
+        -moz-appearance: textfield
 
 .basket-quantity__text
     display: none

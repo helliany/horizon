@@ -1,0 +1,125 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main
+
+                // begin page-section 
+                section.page-section
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    span Поиск
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="index.html") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title.search-print__page-title Результаты поиска
+                                span.search-print__text  по запросу
+                                span : блокноты Адьютант
+
+                        .catalog-print.services-card
+                            .catalog-souvenir__filter.search-print__filter
+                                span Сортировать по:
+                                a.search-print__link.active Популярности
+                                    i.fas.fa-angle-down
+                                a.search-print__link(href="#") Названию
+                                    i.fas.fa-angle-down
+                                a.search-print__link(href="#") Новинкам
+                                    i.fas.fa-angle-down
+
+                            .search-print__card.services-card__card 
+                                ul.catalog-print__list.search-print__list
+                                    li.catalog-print__item(tabindex="0")
+                                        a.catalog-print__link(href="#")
+                                            .catalog-print__img
+                                                img(src="img/basket/image.jpg", alt="Catalog image") 
+                                            span Ежедневник BRAND, недатированный, синий
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    li.catalog-print__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-print__img
+                                                img(src="img/basket/image2.jpg", alt="Catalog image")
+                                            span Ежедневник Lyric classic, недатированный, синий
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    li.catalog-print__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-print__img
+                                                img(src="img/basket/image3.jpg", alt="Catalog image")
+                                            span Ежедневник Tone, недатированный, черный с фиолетовым
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    li.catalog-print__item(tabindex="0")
+                                        a.catalog-print__link(href="#")
+                                            .catalog-print__img
+                                                img(src="img/basket/image.jpg", alt="Catalog image") 
+                                            span Ежедневник BRAND, недатированный, синий
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    li.catalog-print__item(tabindex="0")
+                                        a.catalog-print__link(href="#")
+                                            .catalog-print__img
+                                                img(src="img/basket/image.jpg", alt="Catalog image") 
+                                            span Ежедневник BRAND, недатированный, синий
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    li.catalog-print__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-print__img
+                                                img(src="img/basket/image2.jpg", alt="Catalog image")
+                                            span Ежедневник Lyric classic, недатированный, синий
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                // begin pagination 
+                                .pagination
+                                    ul.pagination__list
+                                        li.pagination__item
+                                            a.pagination__link(href="#")
+                                                i.fas.fa-angle-left
+                                        li.pagination__item
+                                            a(href="#").active 01
+                                        li.pagination__item
+                                            a(href="#") 02
+                                        li.pagination__item
+                                            a(href="#") 03
+                                        li.pagination__item
+                                            a(href="#") 04
+                                        li.pagination__item
+                                            a(href="#") 05
+                                        li.pagination__item
+                                            span ...
+                                        li.pagination__item
+                                            a(href="#") 10
+                                        li.pagination__item
+                                            a.pagination__link(href="#")
+                                                i.fas.fa-angle-right
+                                // end pagination        
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

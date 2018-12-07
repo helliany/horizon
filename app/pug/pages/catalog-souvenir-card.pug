@@ -1,0 +1,188 @@
+doctype html
+html(lang='ru')
+
+    title Горизонт
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main
+
+                // begin page-section 
+                section.page-section
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a(href="index.html") Главная
+                                li.breadcrumbs__item
+                                    a(href="catalog.html") Каталог
+                                li.breadcrumbs__item
+                                    span Сувенирная продукция
+                                li.breadcrumbs__item
+                                    a(href="catalog-print.html") Ежедневники и блокноты
+                                li.breadcrumbs__item
+                                    span Ежедневник BRAND, недатированный, синий
+                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                                li.breadcrumbs__item
+                                    a(href="index.html") 
+                                        i.fas.fa-angle-left
+                                        |  Назад
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1.page-title Ежедневник BRAND
+
+                        .catalog-souvenir.services-card
+                            ul.catalog-souvenir__menu.services-card__menu 
+                                li.services-card__item
+                                    a.services-card__link.active Ежедневники и блокноты
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Калькулятор ежедневника
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Ежедневник "Адъютант"
+                                        sup 58 
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Оригинальные ежедневники
+                                        sup 40 
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Блокноты
+                                        sup 254
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Наборы с ежедневниками
+                                        sup 30
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Упаковка для ежедневников
+                                        sup 18
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Ежедневники на заказ
+                                        i.fas.fa-angle-up
+                                        i.fas.fa-angle-down
+
+                            .catalog-print__card.services-card__card.catalog-souvenir__card 
+                                .catalog-print-card__wrapper
+                                    .catalog-print-card__img.catalog-souvenir-card__img
+                                        div
+                                            img(src="img/basket/image.jpg", alt="Catalog image") 
+                                        ul.catalog-souvenir__list.catalog-souvenir-card__list
+                                            li
+                                                img(src="img/basket/image.jpg", alt="Catalog souvenir image")
+                                            li
+                                                img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
+                                            li
+                                                img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
+                                            li
+                                                img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
+                                            li
+                                                img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
+                                            li
+                                                img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
+                                            li
+                                                img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
+                                            li
+                                                img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
+                                    .catalog-print-card__slider-wrapper
+                                        .catalog-print-card__arr.catalog-print-card__arr--prev.slick-nav-prev
+                                            img(src="img/icons/left-arrow.svg", alt="Arrow icon")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image.jpg", alt="Catalog slider image") 
+                                        .catalog-print-card__arr.catalog-print-card__arr--next.slick-nav-next
+                                            img(src="img/icons/left-arrow.svg", alt="Arrow icon")
+                                    .catalog-print-card__desc
+                                        h2 Ежедневник BRAND, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 380 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br 
+                                            | Импортёр: Проект111
+                                            br 
+                                            | Бренд: Адъютант
+                                            br 
+                                            | Материал: искусственная кожа
+                                            br 
+                                            | Материал обложки — Brand, синий НН
+                                            br 
+                                            | Блок 920: недатированный
+                                            br 
+                                            | Кол-во страниц — 336
+                                            br 
+                                            | Бумага — белая, плотность 70 г/м²
+                                            br 
+                                            | Форзац и нахзац — карты России и Европы
+                                            br 
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                            br
+                                            | На складе: 51 шт
+                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                        .basket-list__item.basket-quantity.catalog-souvenir-card__quantity
+                                            span Тираж:
+                                            button.basket-quantity__btn.basket-quantity__btn-min -
+                                            input(type="number" value="5" name="basket-quantity").basket-quantity__number
+                                            button.basket-quantity__btn.basket-quantity__btn-plus +
+                                        button.button.button--blue.catalog-print-add(type="button") В корзину
+                                        button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                            i.fas.fa-check
+                                        .catalog-print-card__comment.catalog-souvenir-card__comment
+                                            i.fas.fa-caret-up
+                                            form(method="post")
+                                                h2 Добавьте комментарий к заказу
+                                                textarea(placeholder="Комментарий" name="catalog-print-comment")
+
+                                .catalog-print-card__text.catalog-souvenir-card__text
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

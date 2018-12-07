@@ -10,7 +10,6 @@
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-  <link rel="stylesheet" href="https://unpkg.com/metismenu/dist/metisMenu.min.css">
   <!-- Chrome, Firefox OS and Opera-->
   <meta name="theme-color" content="#000">
   <!-- Windows Phone-->
@@ -674,7 +673,7 @@
               </li>
               <li class="navigation__item"><a class="navigation__link" href="news.html">Новости и акции</a></li>
               <li class="navigation__item"><a class="navigation__link" href="#">Требования к макетам</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Портфолио</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="portfolio.html">Портфолио</a></li>
               <li class="navigation__item"><a class="navigation__link nav-button nav-button--blue" href="services.html">
                    Услуги<i class="fas fa-angle-right"></i></a>
                 <!-- begin dropdown -->
@@ -716,6 +715,8 @@
               <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">О компании</a></li>
               <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">Оплата и доставка</a></li>
               <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">Корзина</a></li>
+            </ul>
+            <ul>
               <li class="navigation__item navigation__item--mobile"><span class="navigation__link navigation__link--mobile">Контактная информация:</span><a class="navigation__link header__link navigation__link--mobile" href="tel:+78124934953"> <i class="fas fa-phone"></i><span>+7 (812) 493-49-53</span></a><a class="navigation__link header__link navigation__link--mobile" href="tel:+78127401397"> <i class="fas fa-phone"></i><span>+7 (812) 740-13-97</span></a>
                 <ul>
                   <li><a class="header__link navigation__link navigation__link--mobile" href="#"><i class="fab fa-vk"> </i><span>Вконтакте</span></a></li>
@@ -736,7 +737,7 @@
       </header>
       <!-- end header -->
       <!-- begin page-->
-      <main class="page">
+      <main>
         <div class="container">
           <!-- begin breadcrumbs -->
           <div class="breadcrumbs">
@@ -897,7 +898,7 @@
                   <li class="footer-submenu__item"><a href="catalog.html">Каталог</a></li>
                   <li class="footer-submenu__item"><a href="news.html">Новости и акции</a></li>
                   <li class="footer-submenu__item"><a href="#">Требования к макетам</a></li>
-                  <li class="footer-submenu__item"><a href="#">Портфолио</a></li>
+                  <li class="footer-submenu__item"><a href="portfolio.html">Портфолио</a></li>
                   <li class="footer-submenu__item"><a href="services.html">Услуги</a></li>
                   <li class="footer-submenu__item"><a href="#">Штампы</a></li>
                   <li class="footer-submenu__item"><a href="#">WOW-эффекты</a></li>
@@ -914,7 +915,7 @@
                 <p>пн-пт: 09:00 - 18:00<br>сб-вс: 10:00 - 16:00</p>
               </li>
               <li class="footer-info__item">
-                <h4 class="footer__title"><i class="fas fa-phone"></i> Наши телефоны:</h4><a class="footer-info__link" href="tel:+78124934953">+7 (812) 493-49-53</a><a class="footer-info__link" href="tel:+78127401397">+7 (812) 740-13-97</a><a class="button button--white btn-call" href="#">Обратный звонок</a>
+                <h4 class="footer__title"><i class="fas fa-phone"></i> Наши телефоны:</h4><a class="footer-info__link" href="tel:+78124934953">+7 (812) 493-49-53</a><a class="footer-info__link" href="tel:+78127401397">+7 (812) 740-13-97</a><a class="button button--white btn-back-call" href="#">Обратный звонок</a>
               </li>
               <li class="footer-info__item">
                 <h4 class="footer__title"><i class="fas fa-envelope"></i> Наши соцсети:</h4>
@@ -966,6 +967,19 @@
       </form>
       <div class="form__offer">Нажимая кнопку вы даете согласие на обработку своих персональных данных</div>
       <button class="form__btn-close" type="button">   </button>
+    </section>
+    <section class="form form--back-call">
+      <h2>Заявка</h2>
+      <div class="form__text">Заполните форму и наши специалисты свяжутся с Вами в ближайшее время</div>
+      <form method="post">
+        <input class="form__input" type="text" required="required" placeholder="Ваше имя" name="name">
+        <input class="form__input" type="tel" required="required" placeholder="Ваш телефон" name="tel">
+        <input class="form__input" type="email" required="required" placeholder="Ваша почта" name="mail">
+        <textarea class="form__input form__input--testi form__input--testi-text" placeholder="Комментарий" name="back-comment"></textarea>
+        <button class="form__btn button button--blue" type="submit">Позвоните мне</button>
+      </form>
+      <div class="form__offer">Нажимая кнопку вы даете согласие на обработку своих персональных данных</div>
+      <button class="form__btn-close" type="button"> </button>
     </section>
     <!-- end form    -->
     <!-- scripts -->

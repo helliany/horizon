@@ -2,15 +2,18 @@
     width: 100%
     margin-bottom: 55px
     border-spacing: 0
+    border-collapse: collapse
 
     tr
         display: flex
         width: 100%
         border-bottom: 1px solid $light
 
+        &:first-child
+            background-color: $accent
+
     th, td
         font-weight: 300
-        font-weight: $main-light
 
         &:not(:last-child)
             width: 180px
@@ -28,7 +31,6 @@
                 flex-basis: 118px
 
     th
-        background-color: $accent
         color: #ffffff
         padding: 5px 0
         text-align: left

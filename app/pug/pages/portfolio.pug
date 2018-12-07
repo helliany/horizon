@@ -12,7 +12,7 @@ html(lang='ru')
             include ../modules/header
 
             // begin page
-            main.page 
+            main
 
                 // begin page-section 
                 section.page-section.catalog
@@ -40,7 +40,7 @@ html(lang='ru')
                                 li.services-card__item
                                     a.services-card__link.active Все
                                 li.services-card__item
-                                    a.services-card__link(href="#") Широкоформатная печать
+                                    a.services-card__link(href="portfolio-card.html") Широкоформатная печать
                                 li.services-card__item
                                     a.services-card__link(href="#") Визитки
                                 li.services-card__item
@@ -73,7 +73,7 @@ html(lang='ru')
                                             img(src="img/portfolio/print-2.jpg", alt="Print image")
                                     div
                                         h2.portfolio__title Широкоформатная печать
-                                        button.button Подробнее
+                                        a(href="portfolio-card.html").button Подробнее
                                 li.portfolio__item
                                     ul.portfolio__img
                                         li
@@ -82,7 +82,7 @@ html(lang='ru')
                                             img(src="img/portfolio/table-2.jpg", alt="Table image")
                                     div
                                         h2.portfolio__title Таблички
-                                        button.button Подробнее
+                                        a(href="#").button Подробнее
                                 li.portfolio__item
                                     ul.portfolio__img
                                         li
@@ -91,7 +91,7 @@ html(lang='ru')
                                             img(src="img/portfolio/gift-2.jpg", alt="Gift image")
                                     div
                                         h2.portfolio__title Подарочные наборы
-                                        button.button Подробнее
+                                        a(href="#").button Подробнее
                                 li.portfolio__item
                                     ul.portfolio__img
                                         li
@@ -100,7 +100,7 @@ html(lang='ru')
                                             img(src="img/portfolio/office-2.jpg", alt="Office image")
                                     div
                                         h2.portfolio__title Для офиса
-                                        button.button Подробнее
+                                        a(href="#").button Подробнее
                         // begin pagination 
                         .pagination.portfolio-pagination
                             ul.pagination__list

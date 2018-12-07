@@ -18,4 +18,16 @@ section.form.form--call
         button(type="submit").form__btn.button.button--blue Позвоните мне
     .form__offer Нажимая кнопку вы даете согласие на обработку своих персональных данных
     button(type="button").form__btn-close    
+
+section.form.form--back-call
+    h2 Заявка
+    .form__text Заполните форму и наши специалисты свяжутся с Вами в ближайшее время
+    form(method="post")
+        input(type="text" required="required" placeholder="Ваше имя" name="name").form__input
+        input(type="tel" required="required" placeholder="Ваш телефон" name="tel").form__input
+        input(type="email" required="required" placeholder="Ваша почта" name="mail").form__input
+        textarea(placeholder="Комментарий" name="back-comment").form__input.form__input--testi.form__input--testi-text
+        button(type="submit").form__btn.button.button--blue Позвоните мне
+    .form__offer Нажимая кнопку вы даете согласие на обработку своих персональных данных
+    button(type="button").form__btn-close  
 // end form    
