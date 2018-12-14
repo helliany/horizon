@@ -199,6 +199,7 @@
 
         &.active 
             top: -5px
+            border-radius: 12px
 
         li 
             display: none
@@ -210,6 +211,25 @@
 
             &.active
                 display: block
+
+.catalog-souvenir__filter-menu-item
+    @media #{$_xsm}
+        &.active
+            display: none
+
+.catalog-souvenir__filter-sublist
+    position: absolute
+    z-index: 1
+    display: none
+    border-radius: 16px
+    padding-top: 10px
+    background-color: #ffffff
+
+    &.active 
+        display: block
+
+        li 
+            margin: 0 0 10px
 
 .catalog-souvenir__filter-btn
     display: none
@@ -234,7 +254,6 @@
 .catalog-souvenir__imgs
     display: flex
     flex-wrap: wrap
-    height: 200px
     margin-bottom: 16px
 
 .catalog-souvenir__img
@@ -251,7 +270,10 @@
     flex-wrap: wrap
     align-content: flex-start
     width: 30%
-    overflow: hidden
+    
+    li 
+        img 
+            cursor: pointer
 
     @media #{$_xs}
         width: 25%

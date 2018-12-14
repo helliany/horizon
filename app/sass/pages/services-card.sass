@@ -56,11 +56,15 @@
 .services-card__imgs
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    // justify-content: space-between
 
 .services-card__img
     width: 31.5%
     height: 200px
+    margin: 0 2.6% 20px 0
+
+    &:nth-child(3n)
+        margin: 0 0 30px
 
     @media #{$_sm}
         height: 168px

@@ -2,35 +2,10 @@ $(document).ready(function() {
 
     $('.navigation__list').superfish({
 		speed: 200,
-		delay: 200
+		delay: 600
     });
     
 // forms
-    $('.btn-write').click(function (){
-        $('.form--write').fadeIn();
-        $('.overlay').fadeIn();
-    });
-
-    $('.btn-call').click(function (){
-        $('.form--call').fadeIn();
-        $('.overlay').fadeIn();
-    });
-
-    $('.btn-back-call').click(function (){
-        $('.form--back-call').fadeIn();
-        $('.overlay').fadeIn();
-    });
-
-    $('.leave-feedback__btn').click(function (){
-        $('.form--testimonial').fadeIn();
-        $('.overlay').fadeIn();
-    });
-
-    $('.contacts-btn').click(function (){
-        $('.form--director').fadeIn();
-        $('.overlay').fadeIn();
-    });
-
     $('.form__btn-close').click(function (){
         modalClose();
     });
@@ -44,6 +19,19 @@ $(document).ready(function() {
             modalClose();
         }
     });
+
+    modalOpen($('.btn-write'), $('.form--write'));
+    modalOpen($('.btn-call'), $('.form--call'));
+    modalOpen($('.btn-back-call'), $('.form--back-call'));
+    modalOpen($('.leave-feedback__btn'), $('.form--testimonial'));
+    modalOpen($('.contacts-btn'), $('.form--director'));
+
+    function modalOpen(btn, form) {
+        btn.click(function (){
+            form.fadeIn().css({'top': $(window).scrollTop() + ($(window).height() / 2)});
+            $('.overlay').fadeIn();
+        });
+    };
 
     function modalClose() {
         $('.form').hide();
@@ -124,6 +112,12 @@ $(document).ready(function() {
         $(".catalog-souvenir__filter-wrapper").toggleClass("active");
     });
 
+    $(".catalog-souvenir__filter-menu-link").click(function(e) {
+        e.preventDefault();
+        $(".catalog-souvenir__filter-sublist").not($($(this).siblings(".catalog-souvenir__filter-sublist"))).removeClass("active");
+        $(this).siblings(".catalog-souvenir__filter-sublist").toggleClass("active");
+    });
+
     $('.navigation-search__button').click(function() {
         $('.navigation-search__input').css({
             'opacity': '1',
@@ -140,6 +134,12 @@ $(document).ready(function() {
         setTimeout(function(){
             $('.mobile-search__button').prop('type', 'submit');
         }, 300);
+    });
+
+    $(function() {
+        $('.catalog-souvenir__list li img').click(function(){
+            $(this).parent('li').parent('.catalog-souvenir__list').siblings('div').children('img').attr('src', $(this).attr('src')); 
+        })
     });
 
     $(document).mouseup(function(e) {
@@ -220,19 +220,26 @@ $(document).ready(function() {
     });
 
     $(function() {
-        if ( $(window).width() <= 767 ) {
+        if ( $(window).width() <= 991 ) {
             $('.nav-button').click(function(e) {
-                e.preventDefault();
+                if (!$(this).hasClass('clicked')) {
+                    e.preventDefault();
+                    $(this).addClass("clicked");
+                } else {
+                    $(this).removeClass('clicked');
+                }
             });
+        } else {
+            $('.nav-button').removeClass('clicked');
+        }
+
+        if ( $(window).width() <= 767 ) {
             $('.nav-button').not($('.nav-button--back')).click(function (){
-                $(".subnav-tab").removeClass("active");
+                $(".subnav-tab").removeClass("active").fadeIn();
                 $('.subnav').not($(this).siblings('.subnav')).removeClass('active');
-                $(this).siblings('.subnav').toggleClass('active');
+                $(this).addClass("active").siblings('.subnav').toggleClass('active');
                 $('.navigation__item').not($(this).parent()).not($('.navigation__item--back')).hide();
-                $(this).addClass("active");
                 $('.navigation__item--back').fadeIn();
-                $('.subnav-tab').removeClass('active');
-                $('.subnav-tab').fadeIn();
             });
 
             $('.subnav-list__heading').click(function (){
@@ -262,17 +269,14 @@ $(document).ready(function() {
             $('.services-card__link').parent().eq(0).addClass('active');
             $('.services-card__link').click(function (){
                 $('.services-card__link').removeClass('active');
-                $(this).addClass('active');
-                $(this).parent().addClass('active');
+                $(this).addClass('active').parent().addClass('active');;
                 $('.services-card__item').not($(this).parent()).toggleClass('active');
                 $(".catalog-souvenir__filter-wrapper").removeClass("active");
             });
-            $('.catalog-souvenir__filter-link').parent().eq(0).addClass('active');
-            $('.catalog-souvenir__filter-link').eq(0).addClass('active');
+            $('.catalog-souvenir__filter-link').eq(0).addClass('active').parent().eq(0).addClass('active');
             $('.catalog-souvenir__filter-link').click(function (){
                 $('.catalog-souvenir__filter-link').removeClass('active');
-                $(this).addClass('active');
-                $(this).parent().addClass('active');
+                $(this).addClass('active').parent().addClass('active');
                 $('.catalog-souvenir__filter-item').not($(this).parent()).toggleClass('active');
                 $('.catalog-souvenir__filter-list').toggleClass('active');
             });
@@ -287,7 +291,8 @@ $(document).ready(function() {
     });
 
     $(function() {
-        $('.catalog-souvenir__filter-link').click(function (){
+        $('.catalog-souvenir__filter-link').click(function (e){
+            e.preventDefault();
             $('.catalog-souvenir__filter-link').removeClass('active');
             $(this).addClass('active');
         })
@@ -406,13 +411,10 @@ $(document).ready(function() {
             $('.navigation__item').fadeIn();
             $('.nav-button').fadeIn().removeClass("active");
         }
-        if ( $('.nav-button.active')) {
-            $('.subnav').removeClass('active');
-        }
+        $('.nav-button').removeClass('clicked');
         $('.subnav').removeClass('active');
-        $(".subnav-list__heading").removeClass("active");
+        $(".subnav-list__heading").removeClass("active").parent().fadeIn();
         $(".subnav-list__links").hide();
-        $('.subnav-list__heading').parent().fadeIn();
         $(".subnav-list__body").hide();
         $('.dropdown__item').fadeIn();
         $(".sublist").hide();

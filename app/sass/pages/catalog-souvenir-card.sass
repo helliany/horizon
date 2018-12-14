@@ -3,10 +3,10 @@
     margin-top: 30px
 
     li 
-        margin: 0 10px 0 0
+        margin: 0 10px 10px 0
 
         &:nth-child(odd)
-            margin: 0 10px 0 0
+            margin: 0 10px 10px 0
 
     @media #{$_xsm}
         width: 28%
@@ -16,6 +16,17 @@
             margin: 0 10px 14px 0
 
 .catalog-souvenir-card__img
+    div 
+        height: 490px
+
+    @media #{$_lg}
+        div 
+            height: 400px
+
+    @media #{$_sm}
+        div 
+            height: 294px
+
     @media #{$_xsm}
         display: flex
         flex-wrap: wrap
@@ -25,12 +36,14 @@
 
         div 
             width: 43%
+            height: 230px
 
     @media #{$_xxs}
         margin-bottom: 6px
 
         div 
             width: 50%
+            height: 220px
 
 .catalog-souvenir-card__quantity
     width: 100%

@@ -31,7 +31,7 @@ html(lang='ru')
                                     span Ежедневники и блокноты
                             ul.breadcrumbs__list.breadrcrumbs__list--hidden
                                 li.breadcrumbs__item
-                                    a(href="index.html") 
+                                    a(href="#") 
                                         i.fas.fa-angle-left
                                         |  Назад
                         // end breadcrumbs 
@@ -84,37 +84,74 @@ html(lang='ru')
                                 .catalog-souvenir__filter-wrapper
                                     ul.portfolio-card__menu.catalog-souvenir__filter-menu
                                         li
-                                            a.portfolio-card__link(href="#") Бренд
+                                            a.portfolio-card__link.catalog-souvenir__filter-menu-link(href="#") Бренд
+                                                i.fas.fa-times
+                                                i.fas.fa-angle-down
+                                            ul.catalog-souvenir__filter-sublist
+                                                li 
+                                                    a.portfolio-card__link(href="#") Бренд 1
+                                                li 
+                                                    a.portfolio-card__link(href="#") Бренд 2
+                                                li 
+                                                    a.portfolio-card__link(href="#") Бренд 3
+                                        li
+                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Цвет
+                                                i.fas.fa-times
+                                                i.fas.fa-angle-down
+                                            ul.catalog-souvenir__filter-sublist
+                                                li 
+                                                    a.portfolio-card__link(href="#") Цвет 1
+                                                li 
+                                                    a.portfolio-card__link(href="#") Цвет 2
+                                        li
+                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Материал
+                                                i.fas.fa-times
+                                                i.fas.fa-angle-down
+                                            ul.catalog-souvenir__filter-sublist
+                                                li 
+                                                    a.portfolio-card__link(href="#") Материал 1
+                                                li 
+                                                    a.portfolio-card__link(href="#") Материал 2
+                                                li 
+                                                    a.portfolio-card__link(href="#") Материал 3
+                                                li 
+                                                    a.portfolio-card__link(href="#") Материал 4
+                                        li
+                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Вид нанесения
                                                 i.fas.fa-times
                                                 i.fas.fa-angle-down
                                         li
-                                            a.portfolio-card__link(href="#") Цвет
+                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Датировка
                                                 i.fas.fa-times
                                                 i.fas.fa-angle-down
                                         li
-                                            a.portfolio-card__link(href="#") Материал
+                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Тип обложки
                                                 i.fas.fa-times
                                                 i.fas.fa-angle-down
                                         li
-                                            a.portfolio-card__link(href="#") Вид нанесения
+                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Цвет блока
                                                 i.fas.fa-times
                                                 i.fas.fa-angle-down
+                                            ul.catalog-souvenir__filter-sublist
+                                                li 
+                                                    a.portfolio-card__link(href="#") Цвет 1
+                                                li 
+                                                    a.portfolio-card__link(href="#") Цвет 2
+                                                li 
+                                                    a.portfolio-card__link(href="#") Цвет 3
+                                                li 
+                                                    a.portfolio-card__link(href="#") Цвет 4
                                         li
-                                            a.portfolio-card__link(href="#") Датировка
+                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Размер блока
                                                 i.fas.fa-times
                                                 i.fas.fa-angle-down
-                                        li
-                                            a.portfolio-card__link(href="#") Тип обложки
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                        li
-                                            a.portfolio-card__link(href="#") Цвет блока
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                        li
-                                            a.portfolio-card__link(href="#") Размер блока
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
+                                            ul.catalog-souvenir__filter-sublist
+                                                li 
+                                                    a.portfolio-card__link(href="#") Размер 1
+                                                li 
+                                                    a.portfolio-card__link(href="#") Размер 2
+                                                li 
+                                                    a.portfolio-card__link(href="#") Размер 3
                                     button.button.catalog-souvenir__filter-btn Применить
                                 .catalog-souvenir__filter
                                     span Сортировать по:
@@ -133,25 +170,27 @@ html(lang='ru')
                                                 i.fas.fa-angle-down
                                 ul.catalog-print__list
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#")
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                             span Ежедневник BRAND, недатированный, синий
                                         .catalog-souvenir__price
                                             span 380 ₽
@@ -168,19 +207,21 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image2.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Lyric classic, недатированный, синий
                                         .catalog-souvenir__price
                                             span 499 ₽
@@ -197,27 +238,29 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image3.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Tone, недатированный, черный с фиолетовым
                                         .catalog-souvenir__price
                                             span 598 ₽
@@ -234,25 +277,27 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#")
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                             span Ежедневник BRAND, недатированный, синий
                                         .catalog-souvenir__price
                                             span 380 ₽
@@ -269,19 +314,21 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image2.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Lyric classic, недатированный, синий
                                         .catalog-souvenir__price
                                             span 499 ₽
@@ -298,27 +345,29 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image3.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Tone, недатированный, черный с фиолетовым
                                         .catalog-souvenir__price
                                             span 598 ₽
@@ -335,25 +384,27 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#")
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                             span Ежедневник BRAND, недатированный, синий
                                         .catalog-souvenir__price
                                             span 380 ₽
@@ -370,19 +421,21 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image2.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Lyric classic, недатированный, синий
                                         .catalog-souvenir__price
                                             span 499 ₽
@@ -399,27 +452,29 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image3.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Tone, недатированный, черный с фиолетовым
                                         .catalog-souvenir__price
                                             span 598 ₽
@@ -436,25 +491,27 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#")
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img1_7.jpg", alt="Catalog souvenir image")
                                             span Ежедневник BRAND, недатированный, синий
                                         .catalog-souvenir__price
                                             span 380 ₽
@@ -471,19 +528,21 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image2.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img2_4.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Lyric classic, недатированный, синий
                                         .catalog-souvenir__price
                                             span 499 ₽
@@ -500,27 +559,29 @@ html(lang='ru')
                                             button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                                 i.fas.fa-check
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        .catalog-souvenir__imgs
+                                            .catalog-print__img.catalog-souvenir__img
+                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            ul.catalog-souvenir__list
+                                                li
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
+                                                li
+                                                    img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                         a.catalog-print__link(href="#") 
-                                            .catalog-souvenir__imgs
-                                                .catalog-print__img.catalog-souvenir__img
-                                                    img(src="img/basket/image3.jpg", alt="Catalog image")
-                                                ul.catalog-souvenir__list
-                                                    li
-                                                        img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_2.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_3.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_4.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_5.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_6.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_7.jpg", alt="Catalog souvenir image")
-                                                    li
-                                                        img(src="img/catalog/img3_8.jpg", alt="Catalog souvenir image")
                                             span Ежедневник Tone, недатированный, черный с фиолетовым
                                         .catalog-souvenir__price
                                             span 598 ₽

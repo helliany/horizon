@@ -25,7 +25,7 @@ html(lang='ru')
                         span Контакты
                 ul.breadcrumbs__list.breadrcrumbs__list--hidden
                     li.breadcrumbs__item
-                        a(href="index.html") 
+                        a(href="#") 
                             i.fas.fa-angle-left
                             |  Назад
             // end breadcrumbs 
@@ -110,7 +110,7 @@ html(lang='ru')
                             .contacts-man__director
                                 h3 Или свяжитесь с нашим директором:
                                 .contacts-director__btn
-                                    a.contacts-btn.button.button--blue(href="#") Написать директору
+                                    button(type="button").contacts-btn.button.button--blue Написать директору
                     // end contacts-managers
         // end container
 
@@ -119,9 +119,9 @@ html(lang='ru')
                 div
                     p Адрес офиса:
                     p
-                        a.contacts__link.contacts__link--white(href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.282487%2C59.896689&z=16&source=wizgeo&utm_source=serp&l=map&utm_medium=maps-touch-phone&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.282488%252C59.896690%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A8%25D0%25B2%25D0%25B5%25D1%2586%25D0%25BE%25D0%25B2%25D0%25B0%252C%252012%25D0%25BA2%2520" target="_blank") СПБ, ул. Швецова 12, корп. 2
+                        span СПБ, ул. Швецова 12, корп. 2
                     p
-                        a.contacts__link.contacts__link--orange Скачать схему проезда
+                        a.contacts__link.contacts__link--orange(href="#") Скачать схему проезда
                     .contacts-adress__img
                         img(src="img/contacts/maps-and-location.png", alt="Location")
 
