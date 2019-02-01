@@ -373,6 +373,18 @@ $(document).ready(function() {
                 }            
             ]
         });
+
+        $('.magnific-gallery').magnificPopup({
+            type:'image',
+            delegate: 'li img',
+            removalDelay: 300,
+            mainClass: 'mfp-fade',
+            gallery: {
+                enabled: true
+            },
+            fixedContentPos: false,
+            fixedBgPos: false,
+        });
     });
 
     // function resizeMenu() {
