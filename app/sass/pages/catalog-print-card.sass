@@ -11,17 +11,34 @@
 .catalog-print-card__img 
     width: 43%
 
-    div
-        max-height: 484px
+    div 
+        height: 490px
 
-        @media #{$_md}
-            max-height: 400px
+    @media #{$_lg}
+        div 
+            height: 400px
 
-        @media #{$_sm}
-            max-height: 294px
+    @media #{$_sm}
+        div 
+            height: 294px
 
-        @media #{$_xsm}
-            max-height: 230px
+    @media #{$_xsm}
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 100%
+        margin-bottom: 16px
+
+        div 
+            width: 43%
+            height: 230px
+
+    @media #{$_xxs}
+        margin-bottom: 6px
+
+        div 
+            width: 50%
+            height: 220px
 
 .catalog-print-card__slider-wrapper
     position: relative
@@ -31,6 +48,7 @@
         display: none
 
 .catalog-print-card__slider
+    display: none
     height: 404px
     margin: 16px 0
     overflow: hidden
@@ -40,6 +58,9 @@
 
     @media #{$_sm}
         height: 226px
+
+.catalog-print-card__slider:first-of-type
+    display: block
 
 .catalog-print-card__slide
     margin-bottom: 20px
@@ -52,7 +73,11 @@
 
         @media #{$_sm}
             height: 40px
-    
+
+.catalog-print-card__slide img
+    padding: 0
+    cursor: pointer
+
 .catalog-print-card__arr
     width: 10px
     margin: 0 auto

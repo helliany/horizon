@@ -70,7 +70,8 @@
         width: 100%
 
         .portfolio-card__menu
-            display: block
+            display: flex
+            flex-direction: column
 
 .catalog-souvenir__filter-title
     position: absolute
@@ -90,15 +91,17 @@
         width: 290px
 
 .catalog-souvenir__filter-menu
-    li 
+    select 
         position: relative
         width: 160px
+        margin-right: 20px
+        margin-bottom: 10px
+        padding: 3px 10px
+        border-radius: 16px
+        background-color: #ffffff
 
-        svg 
-            position: absolute
-            right: 16px
-            top: 50%
-            transform: translateY(-50%)
+    option 
+        padding: 10px
 
         a
             .fa-times
@@ -116,7 +119,7 @@
             width: 148px
 
     @media #{$_xsm}
-        li 
+        select
             width: 210px
 
 .catalog-souvenir__filter-wrapper
@@ -217,20 +220,6 @@
         &.active
             display: none
 
-.catalog-souvenir__filter-sublist
-    position: absolute
-    z-index: 1
-    display: none
-    border-radius: 16px
-    padding-top: 10px
-    background-color: #ffffff
-
-    &.active 
-        display: block
-
-        li 
-            margin: 0 0 10px
-
 .catalog-souvenir__filter-btn
     display: none
     width: 210px
@@ -274,6 +263,7 @@
     li 
         img 
             cursor: pointer
+            padding: 0
 
     @media #{$_xs}
         width: 25%

@@ -22,22 +22,22 @@ html(lang='ru')
                         .breadcrumbs
                             ul.breadcrumbs__list
                                 li.breadcrumbs__item
-                                    a(href="#") Главная
+                                    a.breadcrumbs__link(href="#") Главная
                                 li.breadcrumbs__item
-                                    a(href="#") Каталог
+                                    a.breadcrumbs__link(href="#") Каталог
                                 li.breadcrumbs__item
                                     span Сувенирная продукция
                                 li.breadcrumbs__item
                                     span Ежедневники и блокноты
                             ul.breadcrumbs__list.breadrcrumbs__list--hidden
                                 li.breadcrumbs__item
-                                    a(href="#") 
+                                    a.breadcrumbs__link(href="#") 
                                         i.fas.fa-angle-left
                                         |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
-                            h1.page-title Ежедневники и блокноты
+                            h1 Ежедневники и блокноты
 
                         .catalog-souvenir.services-card
                             ul.catalog-souvenir__menu.services-card__menu 
@@ -82,76 +82,38 @@ html(lang='ru')
                             .catalog-souvenir__card.services-card__card 
                                 button.button.button--orange.catalog-souvenir__filter-title Фильтр
                                 .catalog-souvenir__filter-wrapper
-                                    ul.portfolio-card__menu.catalog-souvenir__filter-menu
-                                        li
-                                            a.portfolio-card__link.catalog-souvenir__filter-menu-link(href="#") Бренд
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                            ul.catalog-souvenir__filter-sublist
-                                                li 
-                                                    a.portfolio-card__link(href="#") Бренд 1
-                                                li 
-                                                    a.portfolio-card__link(href="#") Бренд 2
-                                                li 
-                                                    a.portfolio-card__link(href="#") Бренд 3
-                                        li
-                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Цвет
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                            ul.catalog-souvenir__filter-sublist
-                                                li 
-                                                    a.portfolio-card__link(href="#") Цвет 1
-                                                li 
-                                                    a.portfolio-card__link(href="#") Цвет 2
-                                        li
-                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Материал
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                            ul.catalog-souvenir__filter-sublist
-                                                li 
-                                                    a.portfolio-card__link(href="#") Материал 1
-                                                li 
-                                                    a.portfolio-card__link(href="#") Материал 2
-                                                li 
-                                                    a.portfolio-card__link(href="#") Материал 3
-                                                li 
-                                                    a.portfolio-card__link(href="#") Материал 4
-                                        li
-                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Вид нанесения
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                        li
-                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Датировка
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                        li
-                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Тип обложки
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                        li
-                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Цвет блока
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                            ul.catalog-souvenir__filter-sublist
-                                                li 
-                                                    a.portfolio-card__link(href="#") Цвет 1
-                                                li 
-                                                    a.portfolio-card__link(href="#") Цвет 2
-                                                li 
-                                                    a.portfolio-card__link(href="#") Цвет 3
-                                                li 
-                                                    a.portfolio-card__link(href="#") Цвет 4
-                                        li
-                                            a.portfolio-card__link(href="#").catalog-souvenir__filter-menu-link Размер блока
-                                                i.fas.fa-times
-                                                i.fas.fa-angle-down
-                                            ul.catalog-souvenir__filter-sublist
-                                                li 
-                                                    a.portfolio-card__link(href="#") Размер 1
-                                                li 
-                                                    a.portfolio-card__link(href="#") Размер 2
-                                                li 
-                                                    a.portfolio-card__link(href="#") Размер 3
+                                    .portfolio-card__menu.catalog-souvenir__filter-menu
+                                        select
+                                            option.portfolio-card__link(value="") Бренд
+                                            option.portfolio-card__link(value="") Бренд 1
+                                            option.portfolio-card__link(value="") Бренд 2
+                                            option.portfolio-card__link(value="") Бренд 3
+                                        select
+                                            option.portfolio-card__link(value="") Цвет
+                                            option.portfolio-card__link(value="") Цвет 1
+                                            option.portfolio-card__link(value="") Цвет 2
+                                        select
+                                            option.portfolio-card__link(value="") Материал
+                                            option.portfolio-card__link(value="") Материал 1
+                                            option.portfolio-card__link(value="") Материал 2
+                                            option.portfolio-card__link(value="") Материал 3
+                                            option.portfolio-card__link(value="") Материал 4
+                                        select
+                                            option.portfolio-card__link(value="") Вид нанесения
+                                            option.portfolio-card__link(value="") Вид нанесения 1
+                                            option.portfolio-card__link(value="") Вид нанесения 2
+                                        select
+                                            option.portfolio-card__link(value="") Датировка
+                                            option.portfolio-card__link(value="") Датировка 1
+                                        select
+                                            option.portfolio-card__link(value="") Тип обложки
+                                            option.portfolio-card__link(value="") Тип обложки 1
+                                        select
+                                            option.portfolio-card__link(value="") Цвет блока
+                                            option.portfolio-card__link(value="") Цвет блока 1
+                                        select
+                                            option.portfolio-card__link(value="") Размер блока
+                                            option.portfolio-card__link(value="") Размер блока 1
                                     button.button.catalog-souvenir__filter-btn Применить
                                 .catalog-souvenir__filter
                                     span Сортировать по:
@@ -172,7 +134,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image1.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
@@ -209,7 +171,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image2.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
@@ -240,7 +202,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image3.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
@@ -279,7 +241,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image1.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
@@ -316,7 +278,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image2.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
@@ -347,7 +309,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image3.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
@@ -386,7 +348,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image1.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
@@ -423,7 +385,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image2.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
@@ -454,7 +416,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image3.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
@@ -493,7 +455,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image1.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
@@ -530,7 +492,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image2.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image2.jpg", alt="Catalog souvenir image")
@@ -561,7 +523,7 @@ html(lang='ru')
                                     li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                         .catalog-souvenir__imgs
                                             .catalog-print__img.catalog-souvenir__img
-                                                img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                                img.catalog-souvenir-card__img-main(src="img/catalog/image3.jpg", alt="Catalog image")
                                             ul.catalog-souvenir__list
                                                 li
                                                     img(src="img/catalog/image3.jpg", alt="Catalog souvenir image")
@@ -605,19 +567,19 @@ html(lang='ru')
                                             a.pagination__link(href="#")
                                                 i.fas.fa-angle-left
                                         li.pagination__item
-                                            a(href="#").active 01
+                                            a.pagination__link(href="#").active 01
                                         li.pagination__item
-                                            a(href="#") 02
+                                            a.pagination__link(href="#") 02
                                         li.pagination__item
-                                            a(href="#") 03
+                                            a.pagination__link(href="#") 03
                                         li.pagination__item
-                                            a(href="#") 04
+                                            a.pagination__link(href="#") 04
                                         li.pagination__item
-                                            a(href="#") 05
+                                            a.pagination__link(href="#") 05
                                         li.pagination__item
                                             span ...
                                         li.pagination__item
-                                            a(href="#") 10
+                                            a.pagination__link(href="#") 10
                                         li.pagination__item
                                             a.pagination__link(href="#")
                                                 i.fas.fa-angle-right

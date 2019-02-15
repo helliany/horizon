@@ -27,7 +27,6 @@
     a
         color: #ffffff
 
-
     @media #{$_lg}
         margin-right: 10px
         a
@@ -35,18 +34,19 @@
 
     @media #{$_sm}
         display: none
-        
 
 .footer-submenu
     flex-grow: 1
-    a
-        line-height: 1.5
-        &:hover, &:focus
-            color: $alt-accent
-            text-decoration: underline
 
     &.footer-submenu--two-col
         column-count: 2
+
+.footer-submenu__link
+    line-height: 1.5
+    
+    &:hover, &:focus
+        color: $alt-accent
+        text-decoration: underline
 
 .footer-submenu__item
     margin-right: 25px
@@ -127,13 +127,13 @@
 .copyright__last-text
     margin: 6px
     text-align: right
+
+    @media #{$_xsm}
+        text-align: center
     
-    a 
+.copyright__link 
         font-size: 12px
         color: $main-color
 
         &:hover, &:focus
             text-decoration: underline
-
-    @media #{$_xsm}
-        text-align: center

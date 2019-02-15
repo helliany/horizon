@@ -19,14 +19,14 @@ html(lang='ru')
             .breadcrumbs
                 ul.breadcrumbs__list
                     li.breadcrumbs__item
-                        a(href="#") Главная
+                        a.breadcrumbs__link(href="#") Главная
                     li.breadcrumbs__item
-                        a(href="#") Корзина
+                        a.breadcrumbs__link(href="#") Корзина
                     li.breadcrumbs__item
                         span Оформление заказа
                 ul.breadcrumbs__list.breadrcrumbs__list--hidden
                     li.breadcrumbs__item
-                        a(href="#") 
+                        a.breadcrumbs__link(href="#") 
                             i.fas.fa-angle-left
                             |  Назад
             // end breadcrumbs 
@@ -34,7 +34,7 @@ html(lang='ru')
             // begin page-section 
             section.page-section.page-section--template
                 header.heading.page-section__header
-                    h1.page-title Оформление заказа
+                    h1 Оформление заказа
                 .page-section__wrapper
                     form(method="post").order__form
                         .order__form-wrapper
@@ -126,7 +126,7 @@ html(lang='ru')
                         .order__order-wrapper
                             .order__order-wrapper--title
                                 h2.order__title Ваш заказ
-                                a(href="#") Изменить
+                                a.order__link(href="#") Изменить
                             table.order__table
                                 tr
                                     td Товаров:

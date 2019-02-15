@@ -22,24 +22,24 @@ html(lang='ru')
                         .breadcrumbs
                             ul.breadcrumbs__list
                                 li.breadcrumbs__item
-                                    a(href="#") Главная
+                                    a.breadcrumbs__link(href="#") Главная
                                 li.breadcrumbs__item
-                                    a(href="#") Каталог
+                                    a.breadcrumbs__link(href="#") Каталог
                                 li.breadcrumbs__item
                                     span Сувенирная продукция
                                 li.breadcrumbs__item
-                                    a(href="#") Ежедневники и блокноты
+                                    a.breadcrumbs__link(href="#") Ежедневники и блокноты
                                 li.breadcrumbs__item
                                     span Ежедневник BRAND, недатированный, синий
                             ul.breadcrumbs__list.breadrcrumbs__list--hidden
                                 li.breadcrumbs__item
-                                    a(href="#") 
+                                    a.breadcrumbs__link(href="#") 
                                         i.fas.fa-angle-left
                                         |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
-                            h1.page-title Ежедневник BRAND
+                            h1 Ежедневник BRAND
 
                         .catalog-souvenir.services-card
                             ul.catalog-souvenir__menu.services-card__menu 
@@ -85,7 +85,7 @@ html(lang='ru')
                                 .catalog-print-card__wrapper
                                     .catalog-print-card__img.catalog-souvenir-card__img
                                         div
-                                            img(src="img/catalog/image1.jpg", alt="Catalog image") 
+                                            img.catalog-souvenir-card__img-main(src="img/catalog/image1.jpg", alt="Catalog image") 
                                         ul.catalog-souvenir__list.catalog-souvenir-card__list
                                             li
                                                 img(src="img/catalog/image1.jpg", alt="Catalog souvenir image")
@@ -106,7 +106,7 @@ html(lang='ru')
                                     .catalog-print-card__slider-wrapper
                                         .catalog-print-card__arr.catalog-print-card__arr--prev.slick-nav-prev
                                             img(src="img/icons/left-arrow.svg", alt="Arrow icon")
-                                        ul.catalog-print-card__slider.magnific-gallery
+                                        ul.catalog-print-card__slider
                                             li.catalog-print-card__slide
                                                 img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
                                             li.catalog-print-card__slide
@@ -123,6 +123,125 @@ html(lang='ru')
                                                 img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
                                             li.catalog-print-card__slide
                                                 img(src="img/basket/image.jpg", alt="Catalog slider image") 
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_1.jpg", alt="Catalog slider image")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_2.jpg", alt="Catalog slider image")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_3.jpg", alt="Catalog slider image")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_4.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_4.jpg", alt="Catalog slider image")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_5.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_5.jpg", alt="Catalog slider image")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_6.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_6.jpg", alt="Catalog slider image")
+                                        ul.catalog-print-card__slider
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_7.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
+                                            li.catalog-print-card__slide
+                                                img(src="img/catalog/img1_7.jpg", alt="Catalog slider image")
                                         .catalog-print-card__arr.catalog-print-card__arr--next.slick-nav-next
                                             img(src="img/icons/left-arrow.svg", alt="Arrow icon")
                                     .catalog-print-card__desc

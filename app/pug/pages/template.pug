@@ -20,12 +20,12 @@ html(lang='ru')
             .breadcrumbs
                 ul.breadcrumbs__list
                     li.breadcrumbs__item
-                        a(href="#") Главная
+                        a.breadcrumbs__link(href="#") Главная
                     li.breadcrumbs__item
                         span О компании
                 ul.breadcrumbs__list.breadrcrumbs__list--hidden
                     li.breadcrumbs__item
-                        a(href="#") 
+                        a.breadcrumbs__link(href="#") 
                             i.fas.fa-angle-left
                             |  Назад
             // end breadcrumbs 
@@ -33,7 +33,7 @@ html(lang='ru')
             // begin page-section 
             section.page-section.page-section--template
                 header.heading.page-section__header
-                    h1.page-title О компании
+                    h1 О компании
                 .page-section__wrapper
                     h2.hidden-xsm Компания "Горизонт"
                     .text
@@ -161,7 +161,7 @@ html(lang='ru')
                         .cards
                             header.cards__header
                                 h3 Примеры работ
-                                a(href="portfolio.html")
+                                a.cards__header-link(href="portfolio.html")
                                     | В портфолио
                                     i.fas.fa-angle-right
                             ul.cards__list

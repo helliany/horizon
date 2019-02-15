@@ -33,6 +33,9 @@
 .logo
     display: block
 
+    img 
+        padding: 0
+
 .menu
     +col(9)
 
@@ -82,7 +85,7 @@
     justify-content: space-around
 
     a.header__link
-        &:hover
+        &:hover, &:focus
             text-decoration: underline
 
     @media #{$_md}
@@ -113,6 +116,7 @@
 
     img
         width: 34px
+        padding: 0
 
     @media #{$_md}
         display: none
@@ -157,7 +161,7 @@
     margin-left: auto
     margin-right: auto
 
-    &:hover
+    &:hover, &:focus
         .header__basket-goods
             text-decoration: none
 

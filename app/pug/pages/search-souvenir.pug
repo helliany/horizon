@@ -22,18 +22,18 @@ html(lang='ru')
                         .breadcrumbs
                             ul.breadcrumbs__list
                                 li.breadcrumbs__item
-                                    a(href="#") Главная
+                                    a.breadcrumbs__link(href="#") Главная
                                 li.breadcrumbs__item
                                     span Поиск
                             ul.breadcrumbs__list.breadrcrumbs__list--hidden
                                 li.breadcrumbs__item
-                                    a(href="#") 
+                                    a.breadcrumbs__link(href="#") 
                                         i.fas.fa-angle-left
                                         |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
-                            h1.page-title.search-print__page-title Результаты поиска
+                            h1.search-print__page-title Результаты поиска
                                 span.search-print__text  по запросу
                                 span : блокноты Адьютант
 
@@ -58,7 +58,7 @@ html(lang='ru')
                                 li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                     .catalog-souvenir__imgs
                                         .catalog-print__img.catalog-souvenir__img
-                                            img(src="img/basket/image.jpg", alt="Catalog image")
+                                            img.catalog-souvenir-card__img-main(src="img/basket/image.jpg", alt="Catalog image")
                                         ul.catalog-souvenir__list
                                             li
                                                 img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
@@ -93,7 +93,7 @@ html(lang='ru')
                                 li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                     .catalog-souvenir__imgs
                                         .catalog-print__img.catalog-souvenir__img
-                                            img(src="img/basket/image2.jpg", alt="Catalog image")
+                                            img.catalog-souvenir-card__img-main(src="img/basket/image2.jpg", alt="Catalog image")
                                         ul.catalog-souvenir__list
                                             li
                                                 img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
@@ -122,7 +122,7 @@ html(lang='ru')
                                 li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                     .catalog-souvenir__imgs
                                         .catalog-print__img.catalog-souvenir__img
-                                            img(src="img/basket/image3.jpg", alt="Catalog image")
+                                            img.catalog-souvenir-card__img-main(src="img/basket/image3.jpg", alt="Catalog image")
                                         ul.catalog-souvenir__list
                                             li
                                                 img(src="img/catalog/img3_1.jpg", alt="Catalog souvenir image")
@@ -159,7 +159,7 @@ html(lang='ru')
                                 li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                     .catalog-souvenir__imgs
                                         .catalog-print__img.catalog-souvenir__img
-                                            img(src="img/basket/image.jpg", alt="Catalog image")
+                                            img.catalog-souvenir-card__img-main(src="img/basket/image.jpg", alt="Catalog image")
                                         ul.catalog-souvenir__list
                                             li
                                                 img(src="img/catalog/img1_1.jpg", alt="Catalog souvenir image")
@@ -194,7 +194,7 @@ html(lang='ru')
                                 li.catalog-print__item.catalog-souvenir__item(tabindex="0")
                                     .catalog-souvenir__imgs
                                         .catalog-print__img.catalog-souvenir__img
-                                            img(src="img/basket/image2.jpg", alt="Catalog image")
+                                            img.catalog-souvenir-card__img-main(src="img/basket/image2.jpg", alt="Catalog image")
                                         ul.catalog-souvenir__list
                                             li
                                                 img(src="img/catalog/img2_1.jpg", alt="Catalog souvenir image")
@@ -228,19 +228,19 @@ html(lang='ru')
                                         a.pagination__link(href="#")
                                             i.fas.fa-angle-left
                                     li.pagination__item
-                                        a(href="#").active 01
+                                        a(href="#").pagination__link.active 01
                                     li.pagination__item
-                                        a(href="#") 02
+                                        a.pagination__link(href="#") 02
                                     li.pagination__item
-                                        a(href="#") 03
+                                        a.pagination__link(href="#") 03
                                     li.pagination__item
-                                        a(href="#") 04
+                                        a.pagination__link(href="#") 04
                                     li.pagination__item
-                                        a(href="#") 05
+                                        a.pagination__link(href="#") 05
                                     li.pagination__item
                                         span ...
                                     li.pagination__item
-                                        a(href="#") 10
+                                        a.pagination__link(href="#") 10
                                     li.pagination__item
                                         a.pagination__link(href="#")
                                             i.fas.fa-angle-right

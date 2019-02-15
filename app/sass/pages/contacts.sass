@@ -32,8 +32,8 @@
     color: $main-color
 
     &:hover, &:focus
-            text-decoration: underline
-            outline: none
+        text-decoration: underline
+        outline: none
 
     &--orange
         color: $alt-accent
@@ -58,10 +58,17 @@
     height: 20px
     margin: -6px 10px 0 0
 
+    img 
+        padding: 0
+
 .contacts__img
     position: absolute
+    z-index: -1
     right: 0
     top: 110px
+
+    img 
+        padding: 0
 
     @media #{$_md}
        width: 490px 
@@ -89,6 +96,9 @@
     width: 190px
     flex-shrink: 0
     margin: 0 0 26px 0
+
+    img 
+        padding: 0
 
     @media #{$_sm}
         margin: 0 50px 26px 0
@@ -182,6 +192,9 @@
     left: 0
     top: 50%
     transform: translateY(-50%)
+
+    img 
+        padding: 0
 
 .contacts-adress__map
     width: 100%

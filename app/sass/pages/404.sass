@@ -33,6 +33,10 @@
     font-family: $alt-bold
     font-weight: 700
     line-height: 1
+    padding-bottom: 0
+
+    &::before 
+        display: none
 
     @media #{$_xsm}
         font-size: 130px
@@ -48,16 +52,16 @@
         font-size: 18px
         margin-bottom: 0
 
-    a
-        color: $alt-accent
-        text-decoration: underline
-
-        &:hover
-            text-decoration: none
-
     @media #{$_xsm}
         p
             font-size: 16px
+
+.error-page__link
+    color: $alt-accent
+    text-decoration: underline
+
+    &:hover, &:focus
+        text-decoration: none
 
 .flipped-text
     transform-origin: 69% 15%

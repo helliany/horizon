@@ -22,24 +22,24 @@ html(lang='ru')
                         .breadcrumbs
                             ul.breadcrumbs__list
                                 li.breadcrumbs__item
-                                    a(href="#") Главная
+                                    a.breadcrumbs__link(href="#") Главная
                                 li.breadcrumbs__item
-                                    a(href="#") Каталог
+                                    a.breadcrumbs__link(href="#") Каталог
                                 li.breadcrumbs__item
                                     span Печатная продукция
                                 li.breadcrumbs__item
-                                    a(href="#") Блокноты
+                                    a.breadcrumbs__link(href="#") Блокноты
                                 li.breadcrumbs__item
                                     span Ежедневник BRAND, недатированный, синий
                             ul.breadcrumbs__list.breadrcrumbs__list--hidden
                                 li.breadcrumbs__item
-                                    a(href="#") 
+                                    a.breadcrumbs__link(href="#") 
                                         i.fas.fa-angle-left
                                         |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
-                            h1.page-title Ежедневник BRAND, недатированный, синий
+                            h1 Ежедневник BRAND, недатированный, синий
 
                         .catalog-print.services-card
                             ul.catalog-print__menu.services-card__menu 
@@ -67,7 +67,8 @@ html(lang='ru')
                             .catalog-print__card.services-card__card 
                                 .catalog-print-card__wrapper
                                     .catalog-print-card__img
-                                        img(src="img/catalog/image1.jpg", alt="Catalog image") 
+                                        div
+                                            img.catalog-souvenir-card__img-main(src="img/catalog/image1.jpg", alt="Catalog image") 
                                     .catalog-print-card__slider-wrapper
                                         .catalog-print-card__arr.catalog-print-card__arr--prev.slick-nav-prev
                                             img(src="img/icons/left-arrow.svg", alt="Arrow icon")

@@ -110,6 +110,7 @@
     img 
         object-fit: contain
         max-height: 100px
+        padding: 0
 
     @media #{$_sm}
         width: 38%
@@ -134,7 +135,7 @@
     font-weight: 600
     color: $main-color
 
-    &:hover
+    &:hover, &:focus
         text-decoration: underline
 
 .basket-vendor-code
@@ -154,7 +155,7 @@
     font-weight: 500
     font-family: $main-medium
 
-    &:hover
+    &:hover, &:focus
         text-decoration: underline
         color: $alt-accent
 
@@ -233,7 +234,7 @@
     cursor: pointer
     transition: background-color .15s ease
 
-    &:hover
+    &:hover, &:focus
         background-color: lighten($accent, 5%)
 
     @media #{$_xsm}
