@@ -26,7 +26,7 @@
     font-size: 16px  
 
 .form__input 
-    width: 190px
+    width: 100%
     margin: 0 0 20px
     padding: 5px 20px
     border: 1px solid $main-color 
@@ -45,28 +45,38 @@
         clip: rect(0 0 0 0)
         overflow: hidden
 
-        &:hover + .form__label, &:focus + .form__label
-            border: 1px solid $alt-accent
-            background-color: $alt-accent
-            color: #ffffff
+    &--file-catalog
+        position: absolute
+        width: 1px
+        height: 1px
+        margin: -1px
+        border: 0
+        padding: 0
+        white-space: nowrap
+        clip-path: inset(100%)
+        clip: rect(0 0 0 0)
+        overflow: hidden
         
     &--file-wrapper
         display: flex
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between
+        align-items: center
         margin: 0 auto 20px
         padding: 2px 2px 2px 20px
         font-family: $main-light
 
+        span 
+            text-align: left
+
+        .form__input--file-name
+            display: block
+            max-width: 34%
+            overflow: hidden  
+            text-align: center
+
     &--testi-text,
     &--dir-text 
-        width: 350px
         min-height: 120px
-
-    &--testi,
-    &--dir-text
-        @media #{$_xsm}
-            width: 100%
 
 .form__label
     display: block
@@ -76,6 +86,11 @@
     border: 1px solid $accent
     overflow: hidden
     cursor: pointer
+
+    &:hover, &:focus
+        border: 1px solid $alt-accent
+        background-color: $alt-accent
+        color: #ffffff
 
 .form__btn
     width: 190px
@@ -100,3 +115,13 @@
     background-color: #fff
     background-image: url("../img/icons/cancel.svg")
     cursor: pointer
+
+.form__captcha
+    border: 1px solid #000
+    border-radius: 12px
+    margin-bottom: 20px
+
+    img 
+        padding: 1px 0 0
+        width: 180px
+        height: 40px

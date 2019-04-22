@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -25,20 +24,17 @@ html(lang='ru')
                                     a.breadcrumbs__link(href="#") Главная
                                 li.breadcrumbs__item
                                     span Портфолио
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
                             h1 Портфолио
 
                         .portfolio.services-card
-                            ul.services-card__menu.portfolio__menu
+                            ul.services-card__menu.catalog-print__menu
                                 li.services-card__item
-                                    a.services-card__link.active Все
+                                    span.services-card__link.active Все
+                                    button.services-card__btn
+                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Широкоформатная печать
                                 li.services-card__item
@@ -108,7 +104,7 @@ html(lang='ru')
                                     a.pagination__link(href="#")
                                         i.fas.fa-angle-left
                                 li.pagination__item
-                                    a(href="#").pagination__link.active 01
+                                    span.active 01
                                 li.pagination__item
                                     a.pagination__link(href="#") 02
                                 li.pagination__item

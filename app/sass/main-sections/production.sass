@@ -16,9 +16,15 @@
             display: flex
             justify-content: center
             color: $alt-accent
+
+        .tabs__item.index
             text-decoration: underline
 
 .production-slider
+    > *
+        &:not(:first-child)
+            margin-left: 60px
+
     @media #{$xsm}
         display: flex
         width: 100%
@@ -29,9 +35,9 @@
             color: $alt-accent
             text-decoration: underline
 
-    > *
-        &:not(:first-child)
-            margin-left: 60px
+        > *
+            &:not(:first-child)
+                margin-left: 0
 
 .production-tab
     text-align: center
@@ -50,6 +56,10 @@
             svg
                 display: none
 
+.production-tab a
+    color: $main-color
+    text-decoration: none
+
 .production__prev,
 .production__next
     position: absolute
@@ -67,7 +77,7 @@
 .production__next
     right: 0
 
-.production-content
+.production-content.index
     display: none
 
     &.active

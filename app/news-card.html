@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <title>Горизонт</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <!-- Chrome, Firefox OS and Opera-->
-  <meta name="theme-color" content="#000">
-  <!-- Windows Phone-->
-  <meta name="msapplication-navbutton-color" content="#000">
-  <!-- iOS Safari-->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <link rel="stylesheet" href="css/main.min.css">
+  <head>
+    <title>Горизонт</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
   <body>
     <!-- begin wrapper-->
     <div class="wrapper">
@@ -56,6 +58,10 @@
                 <button class="mobile-search__btn"><i class="fas fa-search"></i></button>
                 <form class="mobile-search__form">
                   <input type="text" required="required" placeholder="Поиск...">
+                  <select name="search">
+                    <option class="navigation-search__link" value="print">Печатная продукция</option>
+                    <option class="navigation-search__link" value="souvenir">Сувенирная продукция</option>
+                  </select>
                   <button class="mobile-search__form-btn" type="submit"><i class="fas fa-search"></i></button>
                 </form>
               </div>
@@ -66,7 +72,7 @@
               <div class="header__contacts">
                 <div class="header__location">
                   <div class="header__contacts-icon"><img src="img/header/placeholder.svg" alt="Geo marker"></div>
-                  <div class="header__links"><a class="header__link" href="#">СПБ, ул. Швецова 12/2, корп. 2</a><span class="header__link">пн-пт: 09:00 - 18:00</span></div>
+                  <div class="header__links"><a class="header__link" href="#">Санкт-Петербург, ул. Швецова 12/2</a><span class="header__link">пн-пт: 09:00 - 18:00<br>сб-вс: 10:00 - 16:00</span></div>
                 </div>
                 <div class="header__phones">
                   <div class="header__contacts-icon"><img src="img/header/phone.png" alt="Phone"></div>
@@ -91,23 +97,20 @@
         <nav class="navigation">
           <div class="container navigation__container">
             <ul class="navigation__list">
-              <li class="navigation__item navigation__item--back">
-                <button class="nav-button nav-button--back"><i class="fas fa-arrow-left"></i><span>Назад </span></button>
-              </li>
-              <li class="navigation__item"><a class="nav-button nav-button--orange navigation__link" href="#"><img class="burger" src="img/header/burger.svg" alt="Burger icon"> Каталог<i class="fas fa-angle-right"></i></a>
+              <li class="navigation__item"><a class="nav-button nav-button--orange navigation__link" href="#"><img class="burger" src="img/header/burger.svg" alt="Burger icon"> Каталог</a>
                 <!-- begin subnav -->
                 <div class="subnav subnav--catalog">
                   <!-- begin tabs -->
-                  <div class="tabs tabs--mobile">
-                    <div class="tabs__item subnav-tab">Печатная продукция<i class="fas fa-angle-right"></i></div>
-                    <div class="tabs__item subnav-tab">Сувенирная продукция<i class="fas fa-angle-right"></i></div>
+                  <div class="tabs">
+                    <div class="tabs__item index subnav-tab">Печатная продукция</div>
+                    <div class="tabs__item index subnav-tab">Сувенирная продукция</div>
                   </div>
-                  <div class="tabs__wrapper tabs__wrapper--mobile">
+                  <div class="tabs__wrapper">
                     <div class="tabs__content">
                       <!-- begin subnav-list -->
                       <ul class="subnav-list">
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Широкоформатная печать:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"><a href="#">Широкоформатная печать:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/plotter.svg" alt="plotter"></div>
                             <ul class="subnav-list__links">
@@ -128,7 +131,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Наклейки и стикеры:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"><a href="#">Наклейки и стикеры:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/sticker.svg" alt="sticker"></div>
                             <ul class="subnav-list__links">
@@ -148,7 +151,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">POS-материалы:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">POS-материалы:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/flag.svg" alt="flag"></div>
                             <ul class="subnav-list__links">
@@ -167,7 +170,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Конверты:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"><a href="#">Конверты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/mail.svg" alt="mail"></div>
                             <ul class="subnav-list__links">
@@ -177,7 +180,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Блокноты:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Блокноты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/notebook.svg" alt="notebook"></div>
                             <ul class="subnav-list__links">
@@ -189,7 +192,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Визитки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"><a href="#">Визитки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/credit-card.svg" alt="credit-card"></div>
                             <ul class="subnav-list__links">
@@ -200,7 +203,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Календари 2018:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Календари 2018:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/calendar.svg" alt="calendar"></div>
                             <ul class="subnav-list__links">
@@ -214,7 +217,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Пакеты:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Пакеты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/bag.svg" alt="bag"></div>
                             <ul class="subnav-list__links">
@@ -227,7 +230,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Упаковка:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Упаковка:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/box.svg" alt="box"></div>
                             <ul class="subnav-list__links">
@@ -241,7 +244,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Папки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Папки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/folder.svg" alt="folder"></div>
                             <ul class="subnav-list__links">
@@ -253,7 +256,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">К мероприятию:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">К мероприятию:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/menu.svg" alt="menu"></div>
                             <ul class="subnav-list__links">
@@ -268,7 +271,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Многополосная продукция:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Многополосная продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/catalog.svg" alt="catalog"></div>
                             <ul class="subnav-list__links">
@@ -284,7 +287,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Листовая продукция:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Листовая продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/flyer.svg" alt="flyer"></div>
                             <ul class="subnav-list__links">
@@ -300,7 +303,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Таблички:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Таблички:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/emblem.svg" alt="emblem"></div>
                             <ul class="subnav-list__links">
@@ -317,7 +320,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Наградная продукция:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Наградная продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/certificate.svg" alt="certificate"></div>
                             <ul class="subnav-list__links">
@@ -331,7 +334,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Прочная продукция:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Прочная продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/price-tag.svg" alt="price-tag"></div>
                             <ul class="subnav-list__links">
@@ -350,7 +353,7 @@
                       <!-- begin subnav-list -->
                       <ul class="subnav-list">
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Сувениры к праздникам:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Сувениры к праздникам:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/confetti.svg" alt="confetti"></div>
                             <ul class="subnav-list__links">
@@ -381,7 +384,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Флешки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Флешки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/flash-drive.svg" alt="flash-drive"></div>
                             <ul class="subnav-list__links">
@@ -392,7 +395,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Промо:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Промо:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/lighter.svg" alt="lighter"></div>
                             <ul class="subnav-list__links">
@@ -407,7 +410,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Одежда:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Одежда:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -426,7 +429,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Дом:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Дом:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/house.svg" alt="house"></div>
                             <ul class="subnav-list__links">
@@ -444,7 +447,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Сувениры к новому году:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Сувениры к новому году:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/snow.svg" alt="snow"></div>
                             <ul class="subnav-list__links">
@@ -460,7 +463,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Упаковка:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Упаковка:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/supermarket-gift.svg" alt="supermarket-gift"></div>
                             <ul class="subnav-list__links">
@@ -472,7 +475,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Для офиса:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Для офиса:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/desk.svg" alt="desk"></div>
                             <ul class="subnav-list__links">
@@ -484,7 +487,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Ручки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Ручки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/pen.svg" alt="pen"></div>
                             <ul class="subnav-list__links">
@@ -498,7 +501,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Электрика:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Электрика:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/charging.svg" alt="charging"></div>
                             <ul class="subnav-list__links">
@@ -511,7 +514,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Футболки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Футболки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -526,7 +529,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Отдых:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"><a href="#">Отдых:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/thermo.svg" alt="thermo"></div>
                             <ul class="subnav-list__links">
@@ -546,7 +549,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Элитные подарки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Элитные подарки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/book.svg" alt="book"></div>
                             <ul class="subnav-list__links">
@@ -558,7 +561,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Подарочные наборы:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Подарочные наборы:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/spirits.svg" alt="spirits"></div>
                             <ul class="subnav-list__links">
@@ -569,7 +572,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Ежедневники и блокноты:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Ежедневники и блокноты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/notebook.svg" alt="notebook"></div>
                             <ul class="subnav-list__links">
@@ -582,7 +585,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Корпоративные:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Корпоративные:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/wallet-closed.svg" alt="wallet-closed"></div>
                             <ul class="subnav-list__links">
@@ -596,7 +599,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Часы:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Часы:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -609,7 +612,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Пледы и подушки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Пледы и подушки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -620,7 +623,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Сумки:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Сумки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/backpack.svg" alt="backpack"></div>
                             <ul class="subnav-list__links">
@@ -639,7 +642,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Зонты:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Зонты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/umbrella.svg" alt="umbrella"></div>
                             <ul class="subnav-list__links">
@@ -653,7 +656,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Посуда:</h5><i class="fas fa-angle-right"></i>
+                          <h5 class="subnav-list__heading"> <a href="#">Посуда:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/dishes.svg" alt="dishes"></div>
                             <ul class="subnav-list__links">
@@ -680,16 +683,6 @@
                 <div class="subnav subnav--service">
                   <ul class="dropdown__wrapper">
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Цифровая оперативная печать</a></li>
-                    <li class="dropdown__item"><a class="dropdown__link dropdown__link--service" href="#">Все виды постпечатной обработки тиражей:</a><i class="fas fa-angle-right"></i>
-                      <ul class="sublist">
-                        <li class="sublist__item"><a class="sublist__link" href="#">Ламинирование</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на пластиковую пружину</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на металлическую</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Установка люверсов</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Склейка, ручные работы</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Упаковка продукции</a></li>
-                      </ul>
-                    </li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Широкоформатная печать</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Шелкотрафаретная печать</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Термоперенос на одежду и ткань</a></li>
@@ -706,6 +699,16 @@
                     <li class="dropdown__item"><a class="dropdown__link" href="#">УФ-лакировка</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">УФ-печать</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Закатные значки</a></li>
+                    <li class="dropdown__item"><span class="dropdown__link dropdown__link--service">Все виды постпечатной обработки тиражей:</span>
+                      <ul class="sublist">
+                        <li class="sublist__item"><a class="sublist__link" href="#">Ламинирование</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на пластиковую пружину</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на металлическую</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Установка люверсов</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Склейка, ручные работы</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Упаковка продукции</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
                 <!-- end dropdown -->
@@ -716,22 +719,478 @@
               <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">Оплата и доставка</a></li>
               <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">Корзина</a></li>
             </ul>
-            <ul>
-              <li class="navigation__item navigation__item--mobile"><span class="navigation__link navigation__link--mobile">Контактная информация:</span><a class="navigation__link header__link navigation__link--mobile" href="tel:+78124934953"> <i class="fas fa-phone"></i><span>+7 (812) 493-49-53</span></a><a class="navigation__link header__link navigation__link--mobile" href="tel:+78127401397"> <i class="fas fa-phone"></i><span>+7 (812) 740-13-97</span></a>
-                <ul>
-                  <li><a class="header__link navigation__link navigation__link--mobile" href="#"><i class="fab fa-vk"> </i><span>Вконтакте</span></a></li>
-                  <li><a class="header__link navigation__link navigation__link--mobile" href="#"><i class="fab fa-instagram"> </i><span>Instagram</span></a></li>
-                  <li><a class="header__link navigation__link navigation__link--mobile" href="#"><i class="fab fa-facebook-f"> </i><span>Facebook</span></a></li>
-                </ul>
-              </li>
-              <li class="navigation__item navigation__item--mobile navigation__link--mobile"><a class="navigation__link header__link"><i class="fas fa-map-marker-alt"></i><span>Санкт-Петербург, ул. Швецова 12/2, корп. 2</span></a></li>
-              <li class="navigation__item navigation__item--mobile navigation__link--mobile"><a class="navigation__link header__link"> <i class="far fa-clock"></i><span>пн-пт: 09:00 - 18:00</span></a></li>
-            </ul>
             <form class="navigation-search">
               <input class="navigation-search__input" type="text" required="required" placeholder="Пример: печать визиток">
+              <select name="search">
+                <option class="navigation-search__link" value="print">Печатная продукция</option>
+                <option class="navigation-search__link" value="souvenir">Сувенирная продукция</option>
+              </select>
               <button class="navigation-search__button" type="button"><i class="fas fa-search"></i></button>
             </form>
           </div>
+        </nav>
+        <nav class="navigation--mobile">
+          <ul class="navigation__list navigation__list--mobile">
+            <li class="navigation__item"><a class="nav-button nav-button--orange navigation__link" href="#"> Каталог</a>
+              <ul class="dropdown__wrapper">
+                <li class="dropdown__item"> <a class="dropdown__link" href="#">Печатная продукция</a>
+                  <ul class="dropdown__wrapper">
+                    <li class="dropdown__item"> <a class="dropdown__link" href="#">Широкоформатная печать</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Баннеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Афиши</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Напольная графика</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Графика на окна</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Бэклит для световых коробов</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Постеры на пластике и пенокартоне</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Фотополотна для мобильных стендов</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Репродукции на холсте</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Информационные стенды</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Мобильные конструкции</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Печать на ткани</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Обои</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Флаги</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Наклейки и стикеры</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Стандартные стикеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Двусторонние стикеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Напольные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Фигурные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Полимерные наклейки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Зеркальные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Гарантийные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">На прозрачной пленке</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">На витрину/стекло</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">На авто</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Многоразовые</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Светоотражающие</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">POS-материалы</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Воблеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Шелфтокеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Стикеры напольные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Торцевые флаги</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Мобайлы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Диспенсеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Хенгеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Топперы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подвесные баннеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Ценникодержатели</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Тэйбл-тенты</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Конверты</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Конверты типовые</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Конверты эксклюзивные</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Блокноты</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">На пружине</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">На склейке</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">На скрепке</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Кубарики</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Визитки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Визитки личные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Визитки корпоративные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Визитки эксклюзивные</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Календари 2018</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Календари трио</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Календари моно</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Календари перекидные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Календари настольные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Календари карманные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Нестандартные календари</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Пакеты</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пакеты бумажные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пакеты ПВД</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пакеты крафт</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Гриппер пакеты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пакет с европодвесом/еврослотом</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Упаковка</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Коробки картонные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Коробки пластиковые</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Шуберы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Брендированная бумага</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Ленты с нанесением</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Нестандартная упаковка</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Папки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Бумажные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Папки-уголки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Папки с кнопкой</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Файлы-вкладыши А4</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">К мероприятию</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Открытки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Приглашения</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Карточки рассадки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Меню</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Топперы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наклейки на бутылки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Элементы оформления</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Многополосная продукция</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Каталоги</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Брошюры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Буклеты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Меню и винные карты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Журналы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Альбомы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Годовые отчеты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Издания в твердом переплете</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Листовая продукция</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Флаеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Листовки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Евробуклеты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Бланки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Лифлеты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Плакаты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Открытки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Приглашения</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Таблички</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Офисные таблички</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Таблички на металле</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Настольные таблички</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Номерки и бирки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Шильды</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Бэйджи</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наградные таблички</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Информационные стенды</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Нестандартные таблички</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Наградная продукция</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Грамоты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Сертификаты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Дипломы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Флажки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Вымпелы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наградные таблички</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Прочная продукция</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Бирки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Ценники</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Ярлыки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Этикетки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Самокопирующиеся бланки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Ланьярды</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown__item"> <a class="dropdown__link" href="#">Сувенирная продукция</a>
+                  <ul class="dropdown__wrapper">
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сувениры к праздникам</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки к 14 февраля</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки к 23 февраля</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки к 8 марта</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на день строителя</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на день металлурга</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на День шахтера</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на День знаний</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки ко Дню нефтяника</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на День учителя</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарок коллеге</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки начальнику</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на юбилей компании</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки военным</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки морякам</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки автомобилисту</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки банковскому работнику</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки ко Дню энергетика</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на 14 февраля</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Сувениры к 23 февраля</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Сувениры к 8 марта</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на День геолога</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки на День Победы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарки детям</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Флешки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Оригинальные флешки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Металлические флешки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пластиковые флешки</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Промо</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Светоотражатели</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Антистрессы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Брелки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Металлические брелки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Зажигалки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Зеркала</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Промопродукция</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Одежда</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Вертровки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Куртки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Толстовки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Шарфы, шапки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Трикотажные шапки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Кепки и бейсболки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Жилеты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Офисные рубашки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Джемперы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Спортивная одежда</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Аксессуары</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Дом</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Косметическая продукция</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Интерьерные подарки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Вазы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Шкатулки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Фоторамки и фотоальбомы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Инструменты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Кухонные приспособления</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Текстиль для кухни и ванной</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наборы для ухода за обувью</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Игрушки</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сувениры к новому году</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Символ года</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Новогодний стол</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Новогодние украшения</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Новогодняя упаковка</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Новогодние подушки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Новогодний офис</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Зимние подарки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Оригинальные календари</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Упаковка</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарочная упаковка</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарочные пакеты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Упаковка для новогодних подарков</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Жестяная упаковка</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Для офиса</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Настольные аксессуары</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пресс-папье</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наградная продукция</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Панно</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Ручки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пластиковые ручки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Металлические ручки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Деревянные ручки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Карандаши</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Футляры для ручек</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наборы с ручками</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Электрика</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Универсальные аккумуляторы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Компьютерные и мобильные аксессуары</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Потративные колонки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Зарядные устройства и адаптеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наушники</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Футболки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Мужские футболки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Женские футболки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Футболки для промо</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Футболки промо</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Футболки поло</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Детские футболки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Футболка T-bolka под нанесение</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Отдых</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Товары для путешествий</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Термокружка</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Термосы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Бутылки для воды</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наборы для пикника</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Складные ножи и мультитулы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Фляжки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Автомобильные аксессуары</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Туристические принадлежности</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Игры и головоломки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Спортивные товары</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пляжный отдых</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Элитные подарки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Знаки внимания</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарочные книги</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Музыкальные сувениры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Золотые символы</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Подарочные наборы</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Бизнес наборы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наборы для виски</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Подарочные продуктовые наборы</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Ежедневники и блокноты</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Ежедневники “Адьютант”</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Оригинальные ежедневники</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Блокноты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наборы с ежедневниками</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Упаковка для ежедневников</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Корпоративные</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Кошельки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Визитницы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Дорожные органайзеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Обложки для документов</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Зажимы для купюр</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Папки, портфели</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Часы</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Настольные часы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Настенные часы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Песочные часы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">VIP-часы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наручные часы</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Пледы и подушки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пледы для дома</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Пледы дорожные</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Декоративные подушки</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сумки</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Сумки для ноутбука</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Рюкзаки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Сумки для документов</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Сумки для покупок</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Дорожные сумки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Чемоданы</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Несессеры</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Сумки для пикника</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Портфели</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Чехлы для планшета</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Спортивные сумки</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Зонты</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Зонты трости</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Складные зонты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Необычные и оригинальные зонты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Элитные зонты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Мужские зонты</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Женские зонты</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#">Посуда</a>
+                      <ul class="dropdown__wrapper">
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Кружки</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Наборы посуды</a></li>
+                        <li class="subnav-list__links-item"><a class="subnav-list__link" href="#">Элитная посуда</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Новости и акции</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Требования к макетам</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Портфолио</a></li>
+            <li class="navigation__item"><a class="navigation__link nav-button nav-button--blue" href="#">
+                 Услуги</a>
+              <ul class="dropdown__wrapper">
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Цифровая оперативная печать</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Все виды постпечатной обработки тиражей</a>
+                  <ul class="dropdown__wrapper">
+                    <li class="sublist__item"><a class="sublist__link" href="#">Ламинирование</a></li>
+                    <li class="sublist__item"><a class="sublist__link" href="#">Сборка на пластиковую пружину</a></li>
+                    <li class="sublist__item"><a class="sublist__link" href="#">Сборка на металлическую</a></li>
+                    <li class="sublist__item"><a class="sublist__link" href="#">Установка люверсов</a></li>
+                    <li class="sublist__item"><a class="sublist__link" href="#">Склейка, ручные работы</a></li>
+                    <li class="sublist__item"><a class="sublist__link" href="#">Упаковка продукции</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Широкоформатная печать</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Шелкотрафаретная печать</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Термоперенос на одежду и ткань</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Обрамление в профиль</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Тиснение</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Вырубка</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Накат на основу, пвх-пластик и пенокартон</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Лазерная гравировка</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Офсетная печать</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Тампопечать</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Плоттерная резка</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Круговая печать на сувенирах</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Конгрев</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">УФ-лакировка</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">УФ-печать</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Закатные значки</a></li>
+              </ul>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Штампы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">WOW-эффекты</a></li>
+            <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">О компании</a></li>
+            <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">Оплата и доставка</a></li>
+            <li class="navigation__item navigation__item--mobile"><a class="navigation__link" href="#">Корзина</a></li>
+            <li class="navigation__item navigation__item--mobile"><span class="navigation__link navigation__link--mobile">Контактная информация:</span><a class="navigation__link header__link navigation__link--mobile" href="tel:+78124934953"> <i class="fas fa-phone"></i><span>+7 (812) 493-49-53</span></a><a class="navigation__link header__link navigation__link--mobile" href="tel:+78127401397"> <i class="fas fa-phone"></i><span>+7 (812) 740-13-97</span></a><a class="header__link navigation__link navigation__link--mobile" href="#"><i class="fab fa-vk"> </i><span>Вконтакте</span></a><a class="header__link navigation__link navigation__link--mobile" href="#"><i class="fab fa-instagram"> </i><span>Instagram</span></a><a class="header__link navigation__link navigation__link--mobile" href="#"><i class="fab fa-facebook-f"> </i><span>Facebook</span></a></li>
+            <li class="navigation__item navigation__item--mobile navigation__link--mobile"><a class="navigation__link header__link"><i class="fas fa-map-marker-alt"></i><span>Санкт-Петербург, ул. Швецова 12/2, корп. 2</span></a></li>
+            <li class="navigation__item navigation__item--mobile navigation__link--mobile"><a class="navigation__link header__link"> <i class="far fa-clock"></i><span>пн-пт: 09:00 - 18:00</span></a></li>
+          </ul>
         </nav>
         <!-- end navigation -->
       </header>
@@ -748,18 +1207,13 @@
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Новости и акции</a></li>
                 <li class="breadcrumbs__item"><span>Запуск нового оборудования</span></li>
               </ul>
-              <ul class="breadcrumbs__list breadrcrumbs__list--hidden">
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#"> <i class="fas fa-angle-left"></i> Назад</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">
-                      Следующая новость<i class="fas fa-angle-right"></i></a></li>
-              </ul>
             </div>
             <!-- end breadcrumbs -->
             <header class="heading page-section__header">
               <h1>Запуск нового оборудования</h1>
               <!-- begin breadcrumbs -->
               <div class="breadcrumbs">
-                <ul class="breadcrumbs__list">
+                <ul class="breadcrumbs__list breadcrumbs__list--hidden">
                   <li class="breadcrumbs__item breadcrumbs__item--card"><a class="breadcrumbs__link" href="#"> <i class="fas fa-angle-left"></i> Предыдущая новость</a></li>
                   <li class="breadcrumbs__item breadcrumbs__item--card"><a class="breadcrumbs__link" href="#">
                        Следующая новость<i class="fas fa-angle-right"></i></a></li>
@@ -781,13 +1235,6 @@
               </p>
             </div>
             <div class="news-card__down">
-              <!-- begin breadcrumbs -->
-              <div class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#"> <i class="fas fa-angle-left"></i> Возврат к списку</a></li>
-                </ul>
-              </div>
-              <!-- end breadcrumbs -->
               <time class="date" datetime="2018-07-25">25.07.2018</time>
             </div>
           </div>

@@ -1,6 +1,6 @@
 .pagination__list
     display: flex
-    align-items: center
+    align-items: baseline
 
 .pagination__item
     &:not(:last-child)
@@ -10,10 +10,21 @@
         font-size: 16px
         color: $gray
 
+    svg 
+        color: $gray
+        font-size: 16px
+
     a
         font-size: 16px
         color: $gray
 
-        &:hover, &:focus, &.active
+        &:hover, &:focus
             color: $accent
             text-decoration: underline
+
+            svg 
+                color: $accent
+
+    span.active
+        color: $accent
+        text-decoration: underline

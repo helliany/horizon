@@ -1,0 +1,26 @@
+.layout-list
+    h6
+        font-family: $main-bold
+        color: $accent
+        font-size: 16px
+        margin-bottom: 16px
+
+    p
+        color: $main-color
+
+.layout-list__item
+    padding-bottom: 30px
+
+    &:not(:first-child)
+        padding-top: 30px
+
+    &:not(:last-child)
+        border-bottom: 1px solid $light
+
+    .button
+        margin-top: 20px
+
+    @media #{$_xsm}
+        padding: 15px 12px
+        margin-bottom: 20px
+        background-color: $gainsboro

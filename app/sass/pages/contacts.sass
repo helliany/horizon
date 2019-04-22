@@ -3,6 +3,7 @@
     flex-wrap: wrap
     width: 855px
     margin: 0 0 80px
+    position: relative
 
     @media #{$_md}
        width: 720px 
@@ -64,14 +65,15 @@
 .contacts__img
     position: absolute
     z-index: -1
-    right: 0
-    top: 110px
+    right: -255px
+    top: 0
 
     img 
         padding: 0
 
     @media #{$_md}
        width: 490px 
+       right: -220px
 
     @media #{$_sm}
        display: none
@@ -79,9 +81,6 @@
 .contacts-wrapper
     @media #{$_md}
        position: relative
-
-    @media #{$_xsm}
-        margin: 0 0 60px
 
 .contacts-man
     display: flex

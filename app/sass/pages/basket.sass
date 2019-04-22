@@ -100,6 +100,7 @@
 
     @media #{$_xsm}
         width: 100%
+        padding-right: 25px
 
 .basket-product__img
     width: 35%
@@ -139,6 +140,10 @@
         text-decoration: underline
 
 .basket-vendor-code
+    textarea
+        display: block
+        width: 100%
+
     @media #{$_xsm}
         width: 100%
 
@@ -163,7 +168,6 @@
         font-size: 12px
 
     @media #{$_xsm}
-        margin-bottom: 35px
         display: block
         font-size: 14px
 
@@ -185,6 +189,7 @@
         justify-content: flex-start
         flex-wrap: wrap
         width: 50%
+        margin-top: 20px
 
         span 
             display: block
@@ -268,6 +273,7 @@
 
     @media #{$_xsm}
         width: 50%
+        margin-top: 20px
 
 .basket-sum__amount
     font-weight: 600
@@ -309,7 +315,7 @@
 
     @media #{$_xsm}
         position: absolute
-        top: 40%
+        top: 20px
         right: 6%
 
 .basket-clear__top
@@ -329,6 +335,7 @@
 .basket-total__info
     width: calc(66.6666% - 15px)
     display: flex
+    flex-wrap: wrap;
     align-items: flex-start
     justify-content: space-between
     font-size: 16px
@@ -355,9 +362,8 @@
         width: 33.3%
 
         &:last-child
-            position: absolute
-            top: 80px
             width: 100%
+            margin: 30px 0
             font-size: 16px
 
 .basket-total__item-wrapper
@@ -374,4 +380,3 @@
 
     @media #{$_xsm}
         width: 100%
-        margin: 90px 0 0

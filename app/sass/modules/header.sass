@@ -24,7 +24,7 @@
         +col(2.5)
 
     @media #{$_sm}
-        +col(3)
+        +col(2.5)
         margin: 0
 
     @media #{$_xsm}
@@ -92,7 +92,7 @@
         +col(5.5)
 
     @media #{$_sm}
-        +col(5.3)
+        +col(5.7)
         margin: 0
         font-size: 11.5px
 
@@ -153,20 +153,24 @@
             padding: 5.5px
             font-size: 11.5px
 
+.header__basket-wrapper 
+    margin-left: auto
+    margin-right: auto
+
+    @media #{$_sm}
+        margin: 0 0 0 auto
+
 .header__basket
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
-    margin-left: auto
-    margin-right: auto
 
     &:hover, &:focus
         .header__basket-goods
             text-decoration: none
 
     @media #{$_sm}
-        margin: 0 0 0 auto
         font-size: 12px
 
 .header__basket-left

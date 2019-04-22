@@ -5,54 +5,50 @@
         position: relative
         
         svg
-            position: absolute
-            right: 14px
             height: 12px
             width: 8.5px
+            color: #ffffff
             display: none
 
-        .fa-angle-down
-            bottom: 8px
+        .services-card__btn
+            position: absolute
+            display: none
+            right: 0px
+            height: 30px
+            width: 30px
+            padding: 0
+            bottom: 50%;
+            transform: translateY(50%)
+            background-color: transparent
+            border: none
 
-        .fa-angle-up
-            top: 8px
+            &.active
+                svg
+                    transform: rotate(-90deg)
+                    transition: 0.2s
 
-        a.active
+        span.active, a.active
             svg
                 display: block
 
-            &::after
-                position: absolute
-                right: 11px
-                top: 49%
-                content: ""
-                width: 14px
-                height: 1px
-                background-color: #ffffff
-
     @media #{$_xsm}
-        position: absolute
         display: block
         z-index: 1
-        width: 92.5%
-        margin-bottom: 40px
+        width: 100%
+        margin: 0
         background-color: #fff
         
         .services-card__item
             display: none
 
-            &.active
+            svg
+                display: inline-block
+
+            .services-card__btn
                 display: block
 
-        a.active
-            svg.fa-angle-up
-                display: none
-
-            svg.fa-angle-down
-                bottom: 18px
-
-            &::after
-                display: none
+            &.active
+                display: block
 
     @media #{$_xxs}
         width: 290px
@@ -74,9 +70,8 @@
             flex-direction: column
 
 .catalog-souvenir__filter-title
-    position: absolute
     display: none
-    width: 92.5%
+    width: 100%
     margin-top: 60px
     padding: 14px 16px
     font-family: $main-semibold
@@ -86,6 +81,7 @@
 
     @media #{$_xsm}
         display: block
+        margin-top: 20px
     
     @media #{$_xxs}
         width: 290px
@@ -98,40 +94,42 @@
         margin-bottom: 10px
         padding: 3px 10px
         border-radius: 16px
+        border-color: $accent
         background-color: #ffffff
+
+        @media #{$_md}
+            width: 150px
+            margin-right: 18px
+
+        @media #{$_xsm}
+            width: 210px
+            margin-right: 0
+
+        &:hover, &:focus 
+            outline: none
+            cursor: pointer
+            background-color: $alt-accent
+            border-color: $alt-accent
+            color: #ffffff
+
+            option 
+                background-color: #ffffff
 
     option 
         padding: 10px
 
-        a
-            .fa-times
-                display: none
-                color: #ffffff
-
-        a.active 
-            .fa-times
-                display: block
-
-            .fa-angle-down
-                display: none
-
         @media #{$_lg}
             width: 148px
 
-    @media #{$_xsm}
-        select
-            width: 210px
-
 .catalog-souvenir__filter-wrapper
     @media #{$_xsm}
-        position: absolute
-        z-index: 1
         width: 100%
         display: none
         flex-direction: column
         align-items: center
-        margin-top: 120px
+        margin-top: 20px
         background-color: #fff
+        border-bottom: 1px solid #eaeaea
 
         &.active 
             display: flex
@@ -186,7 +184,7 @@
                 text-decoration: none
 
     @media #{$_xsm}    
-        margin-top: 140px
+        margin-top: 30px
 
 .catalog-souvenir__filter-list
     display: flex
@@ -202,7 +200,7 @@
 
         &.active 
             top: -5px
-            border-radius: 12px
+            border-bottom: 1px solid #eaeaea
 
         li 
             display: none

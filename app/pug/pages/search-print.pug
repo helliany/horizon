@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -25,24 +24,17 @@ html(lang='ru')
                                     a.breadcrumbs__link(href="#") Главная
                                 li.breadcrumbs__item
                                     span Поиск
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
-                            h1.search-print__page-title Результаты поиска
-                                span.search-print__text  по запросу
-                                span : блокноты Адьютант
+                            h1 Результаты поиска по запросу: блокноты Адьютант
 
                         .catalog-print.services-card
                             .catalog-souvenir__filter.search-print__filter
                                 span Сортировать по:
                                 ul.catalog-souvenir__filter-list
                                     li.catalog-souvenir__filter-item
-                                        a.catalog-souvenir__filter-link(href="#") Популярности
+                                        a.catalog-souvenir__filter-link.active(href="#") Популярности
                                             i.fas.fa-angle-down
                                     li.catalog-souvenir__filter-item
                                         a.catalog-souvenir__filter-link(href="#") Названию
@@ -96,7 +88,7 @@ html(lang='ru')
                                             a.pagination__link(href="#")
                                                 i.fas.fa-angle-left
                                         li.pagination__item
-                                            a(href="#").pagination__link.active 01
+                                            span.active 01
                                         li.pagination__item
                                             a.pagination__link(href="#") 02
                                         li.pagination__item

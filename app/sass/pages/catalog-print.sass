@@ -1,7 +1,7 @@
 .catalog-print
     .catalog-print__list
         @media #{$_xsm}    
-            margin-top: 90px
+            margin-top: 40px
 
     .search-print__list,
     .search-souvenir__list
@@ -13,53 +13,49 @@
         position: relative
         
         svg
-            position: absolute
-            right: 14px
             height: 12px
             width: 8.5px
+            color: #ffffff
             display: none
 
-        .fa-angle-down
-            bottom: 8px
+        .services-card__btn
+            position: absolute
+            display: none
+            right: 0px
+            height: 30px
+            width: 30px
+            padding: 0
+            bottom: 50%;
+            transform: translateY(50%)
+            background-color: transparent
+            border: none
 
-        .fa-angle-up
-            top: 8px
+            &.active
+                svg
+                    transform: rotate(-90deg)
+                    transition: 0.2s
 
-        a.active
+        span.active, a.active
             svg
                 display: block
 
-            &::after
-                position: absolute
-                right: 11px
-                top: 49%
-                content: ""
-                width: 14px
-                height: 1px
-                background-color: #ffffff
-
     @media #{$_xsm}
-        position: absolute
         display: block
-        width: 92.5%
-        margin-bottom: 40px
+        width: 100%
+        margin: 0
         background-color: #fff
         
         .services-card__item
             display: none
 
-            &.active
+            svg
+                display: inline-block
+
+            .services-card__btn
                 display: block
 
-        a.active
-            svg.fa-angle-up
-                display: none
-
-            svg.fa-angle-down
-                bottom: 18px
-
-            &::after
-                display: none
+            &.active
+                display: block
 
     @media #{$_xxs}
         width: 290px
@@ -67,10 +63,7 @@
 .catalog-print__list
     display: flex
     flex-wrap: wrap
-    margin-bottom: 60px
-
-    @media #{$_xs}
-        margin-bottom: 30px
+    margin-bottom: 10px
 
 .catalog-print__item
     width: 33.3%

@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -25,11 +24,6 @@ html(lang='ru')
                                     a.breadcrumbs__link(href="#") Главная
                                 li.breadcrumbs__item
                                     span Отзывы
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
@@ -139,7 +133,7 @@ html(lang='ru')
                                     a.pagination__link(href="#")
                                         i.fas.fa-angle-left
                                 li.pagination__item
-                                    a.pagination__link(href="#").active 01
+                                    span.active 01
                                 li.pagination__item
                                     a.pagination__link(href="#") 02
                                 li.pagination__item
@@ -170,10 +164,17 @@ html(lang='ru')
             form(method="post")
                 input(type="text" required="required" placeholder="Ваше имя" name="name").form__input.form__input--testi
                 input(type="text" placeholder="Название компании" name="company-name").form__input.form__input--testi
-                .form__input.form__input--testi.form__input--file-wrapper Файл
-                    input(type="file" multiple="multiple" accept=".jpg, .png" id="file" name="company-name").form__input.form__input--file
-                    label(for="file").form__input.form__label Выбрать файл
-                textarea(required="required" placeholder="Текст отзыва" name="testimonial").form__input.form__input--testi.form__input--testi-text
+                .form__input.form__input--file-wrapper 
+                    span Файл
+                    span.form__input--file-name
+                    label.form__input.form__label Выбрать файл
+                        input(type="file" name="company-name").form__input.form__input--file
+                .form__input.form__input--file-wrapper 
+                    span Лого
+                    span.form__input--file-name
+                    label.form__input.form__label Выбрать файл
+                        input(type="file" name="company-name").form__input.form__input--file
+                textarea(required="required" placeholder="Текст отзыва" name="testimonial").form__input.form__input--testi-text
                 button(type="submit").form__btn.button.button--blue Отправить
             .form__offer Нажимая кнопку вы даете согласие на обработку своих персональных данных
             button(type="button").form__btn-close    

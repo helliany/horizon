@@ -36,9 +36,27 @@
         color: #ffffff
         background-color: $accent 
 
+    &.subactive
+        color: #ffffff
+        background-color: $alt-accent
+
+    @media #{$_xsm}
+        &.active
+            padding: 14px 36px 14px 16px
+
+.services-card__sublink
+    padding: 14px 36px
+    position: relative
+
+    &::before
+        content: "_"
+        position: absolute
+        left: 25px
+        top: 9px
+
 .services-card__card
-    display: flex;
-    flex-direction: column;
+    display: flex
+    flex-direction: column
     width: 73%
 
     @media #{$_lg}
@@ -53,10 +71,23 @@
 .services-card__text
     margin: 0 0 26px
 
+    @media #{$_xsm}
+        margin-top: 40px
+
+.services-card__text-link
+    display: block
+    position: relative
+    padding: 0 0 8px 10px
+
+    &::before
+        content: "-"
+        position: absolute
+        left: 0
+        top: 0
+
 .services-card__imgs
     display: flex
     flex-wrap: wrap
-    // justify-content: space-between
 
 .services-card__img
     width: 31.5%
@@ -82,15 +113,9 @@
 
 .services-card__price
     position: relative
-    margin: 29.5% 0 0
+    margin: 26% 0 0
     padding: 60px 24% 40px
     background-image: url(../img/services/bc.png)
-
-    @media #{$_lg}
-        margin: 36% 0 0
-
-    @media #{$_sm}
-        margin: 44% 0 0
 
     @media #{$_xsm}
         margin: 0

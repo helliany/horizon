@@ -80,6 +80,14 @@
 
             & + svg
                 display: none
+
+.subnav-list__item .subnav-list__heading a
+    color: #000
+    text-decoration: none
+
+    &:hover, &:focus
+        text-decoration: underline
+        color: #000
         
 .subnav-list__icon
     margin-right: 20px
@@ -117,7 +125,7 @@
 
     @media #{$_xsm}
         justify-content: flex-start
-        padding: 8px 0
+        padding: 8px 20px
         color: $main-color
         font-size: 12px
         font-family: $main-regular

@@ -44,6 +44,9 @@ header.header
                         i.fas.fa-search
                     form.mobile-search__form
                         input(type="text" required="required" placeholder="Поиск...")
+                        select(name="search")
+                            option.navigation-search__link(value="print") Печатная продукция
+                            option.navigation-search__link(value="souvenir") Сувенирная продукция
                         button(type="submit").mobile-search__form-btn
                             i.fas.fa-search
                 .mobile-basket
@@ -59,8 +62,8 @@ header.header
                         .header__contacts-icon
                             img(src="img/header/placeholder.svg", alt="Geo marker")
                         .header__links
-                            a.header__link(href="#") СПБ, ул. Швецова 12/2, корп. 2
-                            span.header__link пн-пт: 09:00 - 18:00
+                            a.header__link(href="#") Санкт-Петербург, ул. Швецова 12/2
+                            span.header__link пн-пт: 09:00 - 18:00<br>сб-вс: 10:00 - 16:00
                     .header__phones
                         .header__contacts-icon
                             img(src="img/header/phone.png", alt="Phone")
@@ -81,5 +84,5 @@ header.header
 
 
     include ../modules/navigation
-                    
+    
 // end header 

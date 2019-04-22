@@ -10,28 +10,17 @@
     display: flex
     flex-wrap: wrap
 
-    @media #{$_xsm}
-        display: none
-
-.breadrcrumbs__list--hidden
-    display: flex
-    justify-content: space-between
-
-    .breadcrumbs__item
-        &::before
-            display: none
-
-        &:last-child
-            .svg-inline--fa
-                margin-left: 5px
-
-    @media #{$xsm}
+.breadcrumbs__list--hidden
+    @media #{$_large-phone}
         display: none
     
 .breadcrumbs__item
     position: relative
 
     &:not(:first-child)
+        padding-left: 4px
+
+    @media #{$_large-phone}
         padding-left: 4px
 
     &:not(:last-child)

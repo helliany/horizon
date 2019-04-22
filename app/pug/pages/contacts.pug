@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-  title Горизонт
   include ../modules/head
 
   body
@@ -14,24 +13,20 @@ html(lang='ru')
       // begin page
       main
 
-        .container
+        // begin page-section 
+        section.page-section
         
-            // begin breadcrumbs 
-            .breadcrumbs
-                ul.breadcrumbs__list
-                    li.breadcrumbs__item
-                        a.breadcrumbs__link(href="#") Главная
-                    li.breadcrumbs__item
-                        span Контакты
-                ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                    li.breadcrumbs__item
-                        a.breadcrumbs__link(href="#") 
-                            i.fas.fa-angle-left
-                            |  Назад
-            // end breadcrumbs 
+            .container
 
-            // begin page-section 
-            section.page-section.page-section--template
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            span Контакты
+                // end breadcrumbs 
+
                 header.heading.page-section__header
                     h1 Наши контакты
                 .page-section__wrapper
@@ -72,35 +67,35 @@ html(lang='ru')
                         // begin contacts-managers
                         .contacts-man
                             .contacts-man__item
-                                img(src="img/contacts/photo/Юлия Кулакова.jpg", alt="Юлия Кулакова")
+                                img(src="img/contacts/photo/kulakova.jpg", alt="Юлия Кулакова")
                                 p.contacts-man__title Юлия Кулакова
                                 span руководитель отдела продаж
                                 p.contacts-man__tel Добавочный номер 707
                                 p
                                     a.contacts__link.contacts__link--orange(href="mailto:manager@gorizont-spb.ru") manager@gorizont-spb.ru
                             .contacts-man__item
-                                img(src="img/contacts/photo/Яна Беляева.jpg", alt="Яна Беляева")
+                                img(src="img/contacts/photo/belyaeva.jpg", alt="Яна Беляева")
                                 p.contacts-man__title Яна Беляева
                                 span менеджер
                                 p.contacts-man__tel Добавочный номер 703
                                 p
                                     a.contacts__link.contacts__link--orange(href="mailto:admin@gorizont-spb.ru") admin@gorizont-spb.ru
                             .contacts-man__item
-                                img(src="img/contacts/photo/Елизавета Веретнова.jpg", alt="Елизавета Веретнова")
+                                img(src="img/contacts/photo/veretnova.jpg", alt="Елизавета Веретнова")
                                 p.contacts-man__title Елизавета Веретнова
                                 span менеджер
                                 p.contacts-man__tel Добавочный номер 705
                                 p
                                     a.contacts__link.contacts__link--orange(href="mailto:manager2@gorizont-spb.ru") manager2@gorizont-spb.ru
                             .contacts-man__item
-                                img(src="img/contacts/photo/Ксения Енькова.jpg", alt="Ксения Енькова")
+                                img(src="img/contacts/photo/enkova.jpg", alt="Ксения Енькова")
                                 p.contacts-man__title Ксения Енькова
                                 span менеджер
                                 p.contacts-man__tel Добавочный номер 704
                                 p
                                     a.contacts__link.contacts__link--orange(href="mailto:office@gorizont-spb.ru") office@gorizont-spb.ru
                             .contacts-man__item
-                                img(src="img/contacts/photo/Елена Капаруллина.jpg", alt="Елена Капарулина")
+                                img(src="img/contacts/photo/caparulina.jpg", alt="Елена Капарулина")
                                 p.contacts-man__title Елена Капарулина
                                 span менеджер
                                 p.contacts-man__tel Добавочный номер 706

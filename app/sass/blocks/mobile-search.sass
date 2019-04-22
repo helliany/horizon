@@ -44,15 +44,24 @@
 
     input
         width: 100%
-        padding: 15px
+        padding: 15px 40% 15px 15px
         border: 0
+        outline: none
         background-color: darken($gainsboro, 5%)
 
         &::placeholder
             font-style: italic
-
-        &:focus
-            outline: 0
+            
+    select
+        position: absolute
+        right: 45px
+        top: 0
+        width: 25%
+        border: none
+        border-left: 1px solid #bfbebe
+        border-right: 1px solid #bfbebe
+        background-color: #e7e7e7
+        height: 100%
 
 .mobile-search__form-btn
     position: absolute

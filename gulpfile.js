@@ -52,6 +52,8 @@ gulp.task('js', () => {
 		'app/libs/superfish/superfish.min.js',
 		'app/libs/slick/slick.min.js',
 		'app/libs/magnific-popup/magnific-popup.min.js',
+		'app/libs/mmenu/jquery.mmenu.all.js',
+		'app/libs/mmenu/navbars/jquery.mmenu.navbars.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

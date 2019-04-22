@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-  title Горизонт
   include ../modules/head
 
   body
@@ -14,24 +13,21 @@ html(lang='ru')
       // begin page
       main
 
-        .container
-        
-            // begin breadcrumbs 
-            .breadcrumbs
-                ul.breadcrumbs__list
-                    li.breadcrumbs__item
-                        a.breadcrumbs__link(href="#") Главная
-                    li.breadcrumbs__item
-                        span Услуги
-                ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                    li.breadcrumbs__item
-                        a.breadcrumbs__link(href="#") 
-                            i.fas.fa-angle-left
-                            |  Назад
-            // end breadcrumbs 
+        // begin page-section 
+        section.page-section
 
-            // begin page-section 
-            section.page-section.page-section--template
+            .container
+        
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            span Услуги
+                // end breadcrumbs 
+
+            
                 header.heading.page-section__header
                     h1 Услуги
                 .page-section__wrapper
@@ -155,8 +151,8 @@ html(lang='ru')
                                     img(src="img/services/laser2.png", alt="Laser3").order__img
                                 .services__text
                                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        li.services__item.services__item--all
-                            a.services__link.services__link--all(href="#") 
+                        li.services__item
+                            a.services__link(href="#") 
                                 h2 Все виды постпечатной обработки тиражей
                                 .services__img
                                     img(src="img/services/catalog.png", alt="Catalog").order__img

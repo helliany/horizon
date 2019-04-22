@@ -31,7 +31,6 @@ p
 	margin: 0
 
 .wrapper 
-	min-height: 100%
 	position: relative
 	width: 100%
 	display: flex
@@ -130,6 +129,27 @@ h1, h2, h3, h4, h5, h6
 	@media #{$_xsm}
 		img
             width: 25px
+
+.mm-navbar > .header
+	padding: 0
+
+.mm-navbar:first-child
+	height: 50px
+
+.mm-menu_navbar_top-1 .mm-panels
+	top: 50px
+
+.mm-menu .navigation__link:hover, .mm-menu .navigation__link:focus
+	color: $accent
+
+.mm-menu .dropdown__link:hover, .mm-menu .dropdown__link:focus
+	color: $accent
+
+.mm-menu .subnav-list__link:hover, .mm-menu .subnav-list__link:focus
+	color: $accent
+
+.mm-menu .sublist__link:hover, .mm-menu .sublist__link:focus
+	color: $accent
 
 p
 	&:not(:last-child)

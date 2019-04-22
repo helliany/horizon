@@ -1,19 +1,6 @@
-.portfolio__menu
-    @media #{$_lg}
-        width: 22%
-
-    @media #{$_sm}
-        width: 24%
-
 .portfolio__card
-    @media #{$_lg}
-        width: 75%
-
-    @media #{$_sm}
-        width: 72%
-
     @media #{$_xsm}
-        width: 100%
+        margin-top: 40px
     
 .portfolio__item
     display: flex
@@ -28,12 +15,13 @@
     @media #{$_xsm}
         justify-content: center
         margin-bottom: 30px
-        padding: 16px 0
+        padding: 16px
         border: none
         background-color: $gainsboro
+        justify-content: space-between
 
         &:first-child
-            padding: 0 0 16px
+            padding: 16px
 
     .portfolio__title 
         margin-bottom: auto
@@ -50,32 +38,33 @@
     div
         display: flex
         flex-direction: column
+        width: 41%
 
         .button 
             width: 160px
 
         @media #{$_xsm}
-            width: 255px
+            width: 100%
     
 .portfolio__img
     display: flex
     flex-wrap: wrap
+    width: 59%
+
+    @media #{$_xsm}
+        width: 100%
 
     li 
-        width: 255px
+        width: 43%
         margin-right: 30px
 
-        @media #{$_lg}
-            width: 206px
-
-        @media #{$_sm}
-            width: 136px
+        @media #{$_md}
             margin-right: 20px
 
         @media #{$_xsm}
             display: none
-            width: 255px
             margin: 0
+            width: 100%
 
             &:first-child 
                 display: block

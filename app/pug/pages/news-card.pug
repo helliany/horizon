@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -27,15 +26,6 @@ html(lang='ru')
                                     a.breadcrumbs__link(href="#") Новости и акции
                                 li.breadcrumbs__item
                                     span Запуск нового оборудования
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        |  Следующая новость
-                                        i.fas.fa-angle-right
                         // end breadcrumbs 
 
                         header.heading.page-section__header
@@ -43,7 +33,7 @@ html(lang='ru')
 
                             // begin breadcrumbs 
                             .breadcrumbs
-                                ul.breadcrumbs__list
+                                ul.breadcrumbs__list.breadcrumbs__list--hidden
                                     li.breadcrumbs__item.breadcrumbs__item--card
                                         a.breadcrumbs__link(href="#") 
                                             i.fas.fa-angle-left
@@ -69,14 +59,6 @@ html(lang='ru')
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                             
                         .news-card__down
-                            // begin breadcrumbs 
-                            .breadcrumbs
-                                ul.breadcrumbs__list
-                                    li.breadcrumbs__item
-                                        a.breadcrumbs__link(href="#") 
-                                            i.fas.fa-angle-left
-                                            |  Возврат к списку
-                            // end breadcrumbs 
                             time(datetime="2018-07-25").date 25.07.2018
 
                 // end page-section 

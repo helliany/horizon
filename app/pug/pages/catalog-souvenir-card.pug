@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -31,11 +30,6 @@ html(lang='ru')
                                     a.breadcrumbs__link(href="#") Ежедневники и блокноты
                                 li.breadcrumbs__item
                                     span Ежедневник BRAND, недатированный, синий
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
@@ -45,41 +39,27 @@ html(lang='ru')
                             ul.catalog-souvenir__menu.services-card__menu 
                                 li.services-card__item
                                     a.services-card__link.active Ежедневники и блокноты
-                                        i.fas.fa-angle-up
+                                    button.services-card__btn
                                         i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Калькулятор ежедневника
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Ежедневник "Адъютант"
                                         sup 58 
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Оригинальные ежедневники
                                         sup 40 
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Блокноты
                                         sup 254
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Наборы с ежедневниками
                                         sup 30
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Упаковка для ежедневников
                                         sup 18
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Ежедневники на заказ
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
 
                             .catalog-print__card.services-card__card.catalog-souvenir__card 
                                 .catalog-print-card__wrapper
@@ -272,7 +252,9 @@ html(lang='ru')
                                             | Вес: 550 г
                                             br
                                             | На складе: 51 шт
-                                        a(href="#").basket-vendor-code__link Добавить нанесение
+                                        label.basket-vendor-code__link Добавить нанесение
+                                            input(type="file" name="catalog-file" multiple).form__input--file-catalog
+                                        .catalog-souvenir-card__file
                                         .basket-list__item.basket-quantity.catalog-souvenir-card__quantity
                                             span Тираж:
                                             button.basket-quantity__btn.basket-quantity__btn-min -
@@ -281,11 +263,6 @@ html(lang='ru')
                                         button.button.button--blue.catalog-print-add(type="button") В корзину
                                         button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
                                             i.fas.fa-check
-                                        .catalog-print-card__comment.catalog-souvenir-card__comment
-                                            i.fas.fa-caret-up
-                                            form(method="post")
-                                                h2 Добавьте комментарий к заказу
-                                                textarea(placeholder="Комментарий" name="catalog-print-comment")
 
                                 .catalog-print-card__text.catalog-souvenir-card__text
                                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

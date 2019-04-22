@@ -15,7 +15,6 @@
 .tabs__item
     font-size: 18px
     color: $gray
-    cursor: pointer
     transition: color .15s ease
     font-family: $main-bold
 
@@ -23,9 +22,13 @@
         color: $alt-accent
         outline: none
 
+    &.index
+        cursor: pointer
+
     &.active
         color: $alt-accent
         text-decoration: underline
+        cursor: auto
 
     @media #{$_xsm}
         &.active

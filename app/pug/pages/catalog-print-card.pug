@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -31,11 +30,6 @@ html(lang='ru')
                                     a.breadcrumbs__link(href="#") Блокноты
                                 li.breadcrumbs__item
                                     span Ежедневник BRAND, недатированный, синий
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
@@ -45,68 +39,51 @@ html(lang='ru')
                             ul.catalog-print__menu.services-card__menu 
                                 li.services-card__item
                                     a.services-card__link.active Блокноты
-                                        i.fas.fa-angle-up
+                                    button.services-card__btn
                                         i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") На пружине
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") На склейке
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") На скрепке
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Кубарики
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
 
                             .catalog-print__card.services-card__card 
                                 .catalog-print-card__wrapper
                                     .catalog-print-card__img
                                         div
-                                            img.catalog-souvenir-card__img-main(src="img/catalog/image1.jpg", alt="Catalog image") 
+                                            img.catalog-souvenir-card__img-main(src="img/catalog/print/nagradnie_tablichki.jpg", alt="Catalog image") 
                                     .catalog-print-card__slider-wrapper
                                         .catalog-print-card__arr.catalog-print-card__arr--prev.slick-nav-prev
                                             img(src="img/icons/left-arrow.svg", alt="Arrow icon")
                                         ul.catalog-print-card__slider
                                             li.catalog-print-card__slide
-                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                                img(src="img/catalog/print/nagradnie_tablichki.jpg", alt="Catalog slider image") 
                                             li.catalog-print-card__slide
                                                 img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
                                             li.catalog-print-card__slide
                                                 img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
                                             li.catalog-print-card__slide
-                                                img(src="img/basket/image.jpg", alt="Catalog slider image") 
-                                            li.catalog-print-card__slide
-                                                img(src="img/basket/image-s1.jpg", alt="Catalog slider image") 
+                                                img(src="img/catalog/print/nagradnie_tablichki.jpg", alt="Catalog slider image") 
                                             li.catalog-print-card__slide
                                                 img(src="img/basket/image-s2.jpg", alt="Catalog slider image") 
                                             li.catalog-print-card__slide
                                                 img(src="img/basket/image-s3.jpg", alt="Catalog slider image") 
-                                            li.catalog-print-card__slide
-                                                img(src="img/basket/image.jpg", alt="Catalog slider image") 
                                         .catalog-print-card__arr.catalog-print-card__arr--next.slick-nav-next
                                             img(src="img/icons/left-arrow.svg", alt="Arrow icon")
                                     .catalog-print-card__desc
                                         h2 Ежедневник BRAND, недатированный, синий
                                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        button.button.button--blue.catalog-print-add(type="button") В корзину
-                                        button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
-                                            i.fas.fa-check
-                                        .catalog-print-card__comment
-                                            i.fas.fa-caret-up
-                                            form(method="post")
-                                                h2 Добавьте комментарий к заказу
-                                                textarea(placeholder="Комментарий" name="catalog-print-comment")
+                                        .catalog-print-card__desc-btns
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
 
                                 .catalog-print-card__text
                                     p По желанию на товар производится нанесение логотипа, надписи или полноцветного изображения в короткие сроки, наши опытные дизайнеры выполнят макет бесплатно (кроме дизайна календарей и полиграфических макетов с нуля).
                                     p Наши курьеры бесплатно привезут образцы товара для ознакомления. Готовый заказ доставляется бесплатно* по Москве и Санкт-Петербургу до двери заказчика на нашем фирменном транспорте.
-                                    p.catalog-print-card__text-extra *при заказе от 10 000 руб
 
                                 table.catalog-print-card__table
                                     caption Тираж и стоимость нанесения УФ-печатью без учета ежедневников #[br](в руб. за одно место нанесения)

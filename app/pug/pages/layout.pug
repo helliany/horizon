@@ -1,0 +1,140 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main
+ 
+        section.page-section
+        
+            .container
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            span Требования к макетам
+                // end breadcrumbs 
+
+                header.heading.page-section__header
+                    h1 Требования к макетам
+                
+                // begin layouts-list 
+                ul.layout-list
+                    li.layout-list__item
+                        .layout-list__text
+                            h6 Общие требования верстки
+                            p.
+                                Располагайте макет по центру листа. Размер листа должен быть равен послеоб­резному формату (то есть не нужно класть, например, визитку 90 х 50 на листе А4 – положите её на лист 90 х 50 мм). Оборот кладите на следующий лист, а не рядом с лицом.
+                            p.  
+                                На макете с последующей вырубкой должен быть наложен контур вырубного штампа (на отдельном слое).
+                            p.    
+                                Выборочный лак, конгрев, тиснение и т.п. должны быть в векторном виде, окрашены 100% чёрного и находится на отдельном слое, точно над областью в макете, на кото­рую наносятся.
+                            p.    
+                                Если какой-либо элемент верстки вплотную подходит к краю, то он должен быть выпу­щен за обрез. Вынос за обрезной формат должен быть 3 мм, для многостраничных изданий под клей – 5 мм.
+                            p.    
+                                Располагайте значимую информацию не ближе 3 мм от реза, корешка или скругления, для многополосных изданий на скрепку – не менее 5 мм.
+                            p.    
+                                Мы печатаем лицо и оборот, исходя из расположения в вашем файле. Недопустимо предоставлять лицо и оборот в разных ориентациях (например, лицо календарика – в альбомной, а оборот – в книжной).
+                            p.    
+                                В CorelDraw недопустимо оставлять в макете объекты типа «symbol», нужно разбивать их на объекты. В противном случае не гарантируется корректная печать макета.
+                            a.button(href="#") Скачать требования к макетам
+                    li.layout-list__item
+                        .layout-list__text
+                            h6 Форматы файлов
+                            p.
+                                PDF/X-1a, совместимостью с Acrobat 4 (PDF 1.3). TIF (не рекомендуется для изображений, содержащих элементы малого разме­ра, в т.ч. мелкий текст);
+                            p.    
+                                Adobe Illustrator CC и ниже, Adobe InDesign CC и ниже, CorelDraw X8 и ниже.
+                            p.    
+                                Файлы обязательно должны иметь расширение той программы, в которой были сделаны (ai, cdr, indd и т.д.)
+                            a.button(href="#") Скачать требования к макетам
+                    li.layout-list__item
+                        .layout-list__text
+                            h6 Технические требования
+                            p.
+                                При приеме макетов осуществляется автоматическая проверка файлов, которая выявляет не все перечисленные ниже ошибки. В связи с этим мы не гарантируем их стопроцентное отслеживание.
+                            p.    
+                                Макеты, не соответствующие данным требованиям, могут быть доработаны типо­графией за дополнительную цену.
+                            p.    
+                                При возникновении брака ввиду несоблюдения технических требований, вся ответственность ложится на сторону, предоставившую некорректный макет!
+                            a.button(href="#") Скачать требования к макетам
+                    li.layout-list__item
+                        .layout-list__text
+                            h6 Выборочная УФ-лакировка
+                            p.
+                                Макеты должны быть выполнены в программах для работы с векторной графикой и предоставлены в соответствующих форматах: Adobe Illustrator до версии СС (ai или eps), CorelDraw до версии 18 (cdr) или же формате PDF.
+                            p.    
+                                Размер макета должен соответствовать реальному размеру изделия (т.е. в масштабе 1:1).
+                            p.    
+                                Области лакировки должны быть обозначены векторными объектами закрашенными любым цветом отличным от элементов основного макеты и расположены на отдель­ном верхнем слое.
+                            p.    
+                                У графических элементов совпадающих с краем изделия должен быть сделан вылет 2 мм за линию обрезного формата или вырубки.
+                            p.    
+                                Если область лакировки темнее чем фон, то её необходимо увеличить на 0,3 мм. Если область лакировки светлее фона, то её нужно сделать меньше на 0,3 мм.
+                            p.    
+                                Минимальная толщина линий и графических элементов – 0,2 мм. Для вывороток – 0,3 мм. Области лакировки должны быть обозначены векторными объектами закра­шенными любым цветом отличным от элементов основного макета и расположены на отдельном верхнем слое.
+                            a.button(href="#") Скачать требования к макетам
+                // end layouts-list 
+
+                // begin pagination 
+                .pagination
+                    ul.pagination__list
+                        li.pagination__item
+                            a.pagination__link(href="#")
+                                i.fas.fa-angle-left
+                        li.pagination__item
+                            span.active 01
+                        li.pagination__item
+                            a.pagination__link(href="#") 02
+                        li.pagination__item
+                            a.pagination__link(href="#") 03
+                        li.pagination__item
+                            a.pagination__link(href="#") 04
+                        li.pagination__item
+                            a.pagination__link(href="#") 05
+                        li.pagination__item
+                            span ...
+                        li.pagination__item
+                            a.pagination__link(href="#") 10
+                        li.pagination__item
+                            a.pagination__link(href="#")
+                                i.fas.fa-angle-right
+                // end pagination 
+
+        // begin question-section 
+        section.question-section(style="background-image: url(img/template-page/dots.png)")
+            .container
+                h2.question-section__title Остались вопросы?
+                form.question-form
+                    .question-form__wrapper
+                        input(type="text" name="name" required="required" placeholder="Ваше имя").question-form__item
+                        input(type="text" name="phone" required="required" placeholder="Ваш телефон").question-form__item
+                        button(type="submit").button.button--blue Позвоните мне
+                    .question-form__text
+                        | Нажимая кнопку вы даете согласие на обработку своих 
+                        a(href="#") персональных данных
+
+        // end question-section 
+
+      // end page
+
+    // end wrapper
+
+    .overlay
+
+    include ../modules/footer
+    include ../modules/form
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

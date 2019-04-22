@@ -15,17 +15,21 @@
         padding-bottom: 30px
     
 .hero__text
-    max-width: 490px
+    max-width: 50%
 
-    ul
+    @media #{$_lg}
+        max-width: 55%
+
+    @media #{$_xsm}
+        max-width: 100%
+
+    p
         margin-bottom: 30px
-
-    li
         font-size: 18px
         color: #000000
 
     @media #{$_sm}
-        li
+        p
             font-size: 14px
 
 .hero__img

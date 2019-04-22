@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -29,11 +28,6 @@ html(lang='ru')
                                     span Сувенирная продукция
                                 li.breadcrumbs__item
                                     span Ежедневники и блокноты
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
@@ -42,76 +36,62 @@ html(lang='ru')
                         .catalog-souvenir.services-card
                             ul.catalog-souvenir__menu.services-card__menu 
                                 li.services-card__item
-                                    a.services-card__link.active Ежедневники и блокноты
-                                        i.fas.fa-angle-up
+                                    span.services-card__link.active Ежедневники и блокноты
+                                    button.services-card__btn
                                         i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Калькулятор ежедневника
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Ежедневник "Адъютант"
                                         sup 58 
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Оригинальные ежедневники
                                         sup 40 
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Блокноты
                                         sup 254
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Наборы с ежедневниками
                                         sup 30
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Упаковка для ежедневников
                                         sup 18
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Ежедневники на заказ
-                                        i.fas.fa-angle-up
-                                        i.fas.fa-angle-down
 
                             .catalog-souvenir__card.services-card__card 
                                 button.button.button--orange.catalog-souvenir__filter-title Фильтр
                                 .catalog-souvenir__filter-wrapper
                                     .portfolio-card__menu.catalog-souvenir__filter-menu
-                                        select
+                                        select(name="brend")
                                             option.portfolio-card__link(value="") Бренд
                                             option.portfolio-card__link(value="") Бренд 1
                                             option.portfolio-card__link(value="") Бренд 2
                                             option.portfolio-card__link(value="") Бренд 3
-                                        select
+                                        select(name="color")
                                             option.portfolio-card__link(value="") Цвет
                                             option.portfolio-card__link(value="") Цвет 1
                                             option.portfolio-card__link(value="") Цвет 2
-                                        select
+                                        select(name="material")
                                             option.portfolio-card__link(value="") Материал
                                             option.portfolio-card__link(value="") Материал 1
                                             option.portfolio-card__link(value="") Материал 2
                                             option.portfolio-card__link(value="") Материал 3
                                             option.portfolio-card__link(value="") Материал 4
-                                        select
+                                        select(name="application")
                                             option.portfolio-card__link(value="") Вид нанесения
                                             option.portfolio-card__link(value="") Вид нанесения 1
                                             option.portfolio-card__link(value="") Вид нанесения 2
-                                        select
+                                        select(name="date")
                                             option.portfolio-card__link(value="") Датировка
                                             option.portfolio-card__link(value="") Датировка 1
-                                        select
+                                        select(name="type")
                                             option.portfolio-card__link(value="") Тип обложки
                                             option.portfolio-card__link(value="") Тип обложки 1
-                                        select
+                                        select(name="block-color")
                                             option.portfolio-card__link(value="") Цвет блока
                                             option.portfolio-card__link(value="") Цвет блока 1
-                                        select
+                                        select(name="block-size")
                                             option.portfolio-card__link(value="") Размер блока
                                             option.portfolio-card__link(value="") Размер блока 1
                                     button.button.catalog-souvenir__filter-btn Применить
@@ -119,7 +99,7 @@ html(lang='ru')
                                     span Сортировать по:
                                     ul.catalog-souvenir__filter-list
                                         li.catalog-souvenir__filter-item
-                                            a.catalog-souvenir__filter-link(href="#") Цене
+                                            a.catalog-souvenir__filter-link.active(href="#") Цене
                                                 i.fas.fa-angle-down 
                                         li.catalog-souvenir__filter-item
                                             a.catalog-souvenir__filter-link(href="#") Популярности
@@ -567,7 +547,7 @@ html(lang='ru')
                                             a.pagination__link(href="#")
                                                 i.fas.fa-angle-left
                                         li.pagination__item
-                                            a.pagination__link(href="#").active 01
+                                            span.active 01
                                         li.pagination__item
                                             a.pagination__link(href="#") 02
                                         li.pagination__item
@@ -583,7 +563,10 @@ html(lang='ru')
                                         li.pagination__item
                                             a.pagination__link(href="#")
                                                 i.fas.fa-angle-right
-                                // end pagination        
+                                // end pagination       
+                                .catalog__text.catalog__text--text
+                                    p Компания Горизонт работает на рынке с 2008 года. Типография по своей сути это отдельная компания, предприятие, производящее печатную продукцию различных форм и видов. Печать абсолютно на любой вкус. Процессы и технологии печати подразумевают несколько этапов по производству. Сначала подготовка до печати, затем сама печать и обработка после печати.
+                                    p Впервые обратились в типографию? Давно в деле? Вам будет одинаково просто и комфортно работать с нами. Парк новейшего оборудования, команда профессионалов и придирчивый отбор поставщиков сырья - всё это позволяет нам обещать наилучший результат работы в сжатые сроки. 
                 // end page-section 
 
             // end page

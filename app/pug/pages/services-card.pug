@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-    title Горизонт
     include ../modules/head
 
     body
@@ -27,20 +26,17 @@ html(lang='ru')
                                     a.breadcrumbs__link(href="#") Услуги
                                 li.breadcrumbs__item
                                     span Цифровая оперативная печать
-                            ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") 
-                                        i.fas.fa-angle-left
-                                        |  Назад
                         // end breadcrumbs 
 
                         header.heading.page-section__header
                             h1 Цифровая оперативная печать
 
                         .services-card
-                            ul.services-card__menu 
+                            ul.services-card__menu.catalog-print__menu
                                 li.services-card__item
-                                    a.services-card__link.active Цифровая оперативная печать
+                                    span.services-card__link.active Цифровая оперативная печать
+                                    button.services-card__btn
+                                        i.fas.fa-angle-down
                                 li.services-card__item
                                     a.services-card__link(href="#") Широкоформатная печать
                                 li.services-card__item
@@ -81,13 +77,16 @@ html(lang='ru')
                                     p Теперь эксклюзивно для наших новых и постоянных клиентов - еще больше возможностей для реализаций самых смелых и креативных идей с помощью УФ-печати!
                                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
                                     p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                                .services-card__imgs
-                                    .services-card__img
-                                        img(src="img/main-sections/last-news/1.jpg", alt="Services")
-                                    .services-card__img
-                                        img(src="img/main-sections/last-news/2.jpg", alt="Services")
-                                    .services-card__img
-                                        img(src="img/main-sections/last-news/3.jpg", alt="Services")
+                                ul.services-card__imgs.magnific-gallery
+                                    li.services-card__img
+                                        a(href="img/main-sections/last-news/1.jpg")
+                                            img(src="img/main-sections/last-news/1.jpg", alt="Services")
+                                    li.services-card__img
+                                        a(href="img/main-sections/last-news/2.jpg")
+                                            img(src="img/main-sections/last-news/2.jpg", alt="Services")
+                                    li.services-card__img
+                                        a(href="img/main-sections/last-news/3.jpg")
+                                            img(src="img/main-sections/last-news/3.jpg", alt="Services")
                                 .services-card__price
                                     h2 Прайс-лист
                                     a.button(href="#") Скачать прайс-лист

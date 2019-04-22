@@ -1,7 +1,6 @@
 doctype html
 html(lang='ru')
 
-  title Горизонт
   include ../modules/head
 
   body
@@ -24,11 +23,6 @@ html(lang='ru')
                             a.breadcrumbs__link(href="#") Главная
                         li.breadcrumbs__item
                             span Новости и акции
-                    ul.breadcrumbs__list.breadrcrumbs__list--hidden
-                        li.breadcrumbs__item
-                            a.breadcrumbs__link(href="#") 
-                                i.fas.fa-angle-left
-                                |  Назад
                 // end breadcrumbs 
 
                 header.heading.page-section__header
@@ -89,7 +83,7 @@ html(lang='ru')
                             a.pagination__link(href="#")
                                 i.fas.fa-angle-left
                         li.pagination__item
-                            a.pagination__link(href="#").active 01
+                            span.active 01
                         li.pagination__item
                             a.pagination__link(href="#") 02
                         li.pagination__item

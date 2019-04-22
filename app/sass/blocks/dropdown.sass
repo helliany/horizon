@@ -17,7 +17,7 @@
         padding: 32px 30px 60px;
 
     @media #{$_xsm}
-        padding: 0 15px
+        padding: 0
         column-count: 1
 
         .sublist
@@ -56,7 +56,7 @@
         text-decoration: underline
 
     @media #{$_xsm}
-        padding: 12px 0
+        padding: 12px 20px
         color: $main-color
         font-size: 12px
         font-family: $main-regular
@@ -68,11 +68,5 @@
             font-family: $main-semibold
             text-decoration: none
 
-        &.active
-            color: $accent
-            font-family: $main-semibold 
-
-            + svg
+            & + svg
                 display: none
-
-        
