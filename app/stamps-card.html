@@ -58,6 +58,10 @@
                 <button class="mobile-search__btn"><i class="fas fa-search"></i></button>
                 <form class="mobile-search__form">
                   <input type="text" required="required" placeholder="Поиск...">
+                  <select name="search">
+                    <option class="navigation-search__link" value="print">Печатная продукция</option>
+                    <option class="navigation-search__link" value="souvenir">Сувенирная продукция</option>
+                  </select>
                   <button class="mobile-search__form-btn" type="submit"><i class="fas fa-search"></i></button>
                 </form>
               </div>
@@ -68,7 +72,7 @@
               <div class="header__contacts">
                 <div class="header__location">
                   <div class="header__contacts-icon"><img src="img/header/placeholder.svg" alt="Geo marker"></div>
-                  <div class="header__links"><a class="header__link" href="#">СПБ, ул. Швецова 12/2, корп. 2</a><span class="header__link">пн-пт: 09:00 - 18:00</span></div>
+                  <div class="header__links"><a class="header__link" href="#">Санкт-Петербург, ул. Швецова 12/2</a><span class="header__link">пн-пт: 09:00 - 18:00<br>сб-вс: 10:00 - 16:00</span></div>
                 </div>
                 <div class="header__phones">
                   <div class="header__contacts-icon"><img src="img/header/phone.png" alt="Phone"></div>
@@ -97,16 +101,16 @@
                 <!-- begin subnav -->
                 <div class="subnav subnav--catalog">
                   <!-- begin tabs -->
-                  <div class="tabs tabs--mobile">
-                    <div class="tabs__item subnav-tab">Печатная продукция</div>
-                    <div class="tabs__item subnav-tab">Сувенирная продукция</div>
+                  <div class="tabs">
+                    <div class="tabs__item index subnav-tab">Печатная продукция</div>
+                    <div class="tabs__item index subnav-tab">Сувенирная продукция</div>
                   </div>
-                  <div class="tabs__wrapper tabs__wrapper--mobile">
+                  <div class="tabs__wrapper">
                     <div class="tabs__content">
                       <!-- begin subnav-list -->
                       <ul class="subnav-list">
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Широкоформатная печать:</h5>
+                          <h5 class="subnav-list__heading"><a href="#">Широкоформатная печать:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/plotter.svg" alt="plotter"></div>
                             <ul class="subnav-list__links">
@@ -127,7 +131,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Наклейки и стикеры:</h5>
+                          <h5 class="subnav-list__heading"><a href="#">Наклейки и стикеры:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/sticker.svg" alt="sticker"></div>
                             <ul class="subnav-list__links">
@@ -147,7 +151,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">POS-материалы:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">POS-материалы:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/flag.svg" alt="flag"></div>
                             <ul class="subnav-list__links">
@@ -166,7 +170,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Конверты:</h5>
+                          <h5 class="subnav-list__heading"><a href="#">Конверты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/mail.svg" alt="mail"></div>
                             <ul class="subnav-list__links">
@@ -176,7 +180,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Блокноты:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Блокноты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/notebook.svg" alt="notebook"></div>
                             <ul class="subnav-list__links">
@@ -188,7 +192,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Визитки:</h5>
+                          <h5 class="subnav-list__heading"><a href="#">Визитки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/credit-card.svg" alt="credit-card"></div>
                             <ul class="subnav-list__links">
@@ -199,7 +203,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Календари 2018:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Календари 2018:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/calendar.svg" alt="calendar"></div>
                             <ul class="subnav-list__links">
@@ -213,7 +217,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Пакеты:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Пакеты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/bag.svg" alt="bag"></div>
                             <ul class="subnav-list__links">
@@ -226,7 +230,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Упаковка:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Упаковка:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/box.svg" alt="box"></div>
                             <ul class="subnav-list__links">
@@ -240,7 +244,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Папки:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Папки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/folder.svg" alt="folder"></div>
                             <ul class="subnav-list__links">
@@ -252,7 +256,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">К мероприятию:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">К мероприятию:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/menu.svg" alt="menu"></div>
                             <ul class="subnav-list__links">
@@ -267,7 +271,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Многополосная продукция:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Многополосная продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/catalog.svg" alt="catalog"></div>
                             <ul class="subnav-list__links">
@@ -283,7 +287,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Листовая продукция:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Листовая продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/flyer.svg" alt="flyer"></div>
                             <ul class="subnav-list__links">
@@ -299,7 +303,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Таблички:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Таблички:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/emblem.svg" alt="emblem"></div>
                             <ul class="subnav-list__links">
@@ -316,7 +320,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Наградная продукция:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Наградная продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/certificate.svg" alt="certificate"></div>
                             <ul class="subnav-list__links">
@@ -330,7 +334,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Прочная продукция:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Прочная продукция:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/price-tag.svg" alt="price-tag"></div>
                             <ul class="subnav-list__links">
@@ -349,7 +353,7 @@
                       <!-- begin subnav-list -->
                       <ul class="subnav-list">
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Сувениры к праздникам:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Сувениры к праздникам:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/confetti.svg" alt="confetti"></div>
                             <ul class="subnav-list__links">
@@ -380,7 +384,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Флешки:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Флешки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/flash-drive.svg" alt="flash-drive"></div>
                             <ul class="subnav-list__links">
@@ -391,7 +395,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Промо:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Промо:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/lighter.svg" alt="lighter"></div>
                             <ul class="subnav-list__links">
@@ -406,7 +410,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Одежда:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Одежда:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -425,7 +429,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Дом:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Дом:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/house.svg" alt="house"></div>
                             <ul class="subnav-list__links">
@@ -443,7 +447,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Сувениры к новому году:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Сувениры к новому году:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/snow.svg" alt="snow"></div>
                             <ul class="subnav-list__links">
@@ -459,7 +463,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Упаковка:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Упаковка:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/supermarket-gift.svg" alt="supermarket-gift"></div>
                             <ul class="subnav-list__links">
@@ -471,7 +475,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Для офиса:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Для офиса:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/desk.svg" alt="desk"></div>
                             <ul class="subnav-list__links">
@@ -483,7 +487,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Ручки:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Ручки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/pen.svg" alt="pen"></div>
                             <ul class="subnav-list__links">
@@ -497,7 +501,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Электрика:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Электрика:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/charging.svg" alt="charging"></div>
                             <ul class="subnav-list__links">
@@ -510,7 +514,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Футболки:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Футболки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -525,7 +529,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Отдых:</h5>
+                          <h5 class="subnav-list__heading"><a href="#">Отдых:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/thermo.svg" alt="thermo"></div>
                             <ul class="subnav-list__links">
@@ -545,7 +549,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Элитные подарки:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Элитные подарки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/book.svg" alt="book"></div>
                             <ul class="subnav-list__links">
@@ -557,7 +561,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Подарочные наборы:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Подарочные наборы:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/spirits.svg" alt="spirits"></div>
                             <ul class="subnav-list__links">
@@ -568,7 +572,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Ежедневники и блокноты:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Ежедневники и блокноты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/notebook.svg" alt="notebook"></div>
                             <ul class="subnav-list__links">
@@ -581,7 +585,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Корпоративные:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Корпоративные:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/wallet-closed.svg" alt="wallet-closed"></div>
                             <ul class="subnav-list__links">
@@ -595,7 +599,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Часы:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Часы:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -608,7 +612,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Пледы и подушки:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Пледы и подушки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/jacket.svg" alt="jacket"></div>
                             <ul class="subnav-list__links">
@@ -619,7 +623,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Сумки:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Сумки:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/backpack.svg" alt="backpack"></div>
                             <ul class="subnav-list__links">
@@ -638,7 +642,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Зонты:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Зонты:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/umbrella.svg" alt="umbrella"></div>
                             <ul class="subnav-list__links">
@@ -652,7 +656,7 @@
                           </div>
                         </li>
                         <li class="subnav-list__item">
-                          <h5 class="subnav-list__heading">Посуда:</h5>
+                          <h5 class="subnav-list__heading"> <a href="#">Посуда:</a></h5>
                           <div class="subnav-list__body">
                             <div class="subnav-list__icon"><img src="img/icons/dishes.svg" alt="dishes"></div>
                             <ul class="subnav-list__links">
@@ -679,16 +683,6 @@
                 <div class="subnav subnav--service">
                   <ul class="dropdown__wrapper">
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Цифровая оперативная печать</a></li>
-                    <li class="dropdown__item"><a class="dropdown__link dropdown__link--service" href="#">Все виды постпечатной обработки тиражей:</a>
-                      <ul class="sublist">
-                        <li class="sublist__item"><a class="sublist__link" href="#">Ламинирование</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на пластиковую пружину</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на металлическую</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Установка люверсов</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Склейка, ручные работы</a></li>
-                        <li class="sublist__item"><a class="sublist__link" href="#">Упаковка продукции</a></li>
-                      </ul>
-                    </li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Широкоформатная печать</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Шелкотрафаретная печать</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Термоперенос на одежду и ткань</a></li>
@@ -705,6 +699,16 @@
                     <li class="dropdown__item"><a class="dropdown__link" href="#">УФ-лакировка</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">УФ-печать</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#">Закатные значки</a></li>
+                    <li class="dropdown__item"><span class="dropdown__link dropdown__link--service">Все виды постпечатной обработки тиражей:</span>
+                      <ul class="sublist">
+                        <li class="sublist__item"><a class="sublist__link" href="#">Ламинирование</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на пластиковую пружину</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Сборка на металлическую</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Установка люверсов</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Склейка, ручные работы</a></li>
+                        <li class="sublist__item"><a class="sublist__link" href="#">Упаковка продукции</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
                 <!-- end dropdown -->
@@ -717,6 +721,10 @@
             </ul>
             <form class="navigation-search">
               <input class="navigation-search__input" type="text" required="required" placeholder="Пример: печать визиток">
+              <select name="search">
+                <option class="navigation-search__link" value="print">Печатная продукция</option>
+                <option class="navigation-search__link" value="souvenir">Сувенирная продукция</option>
+              </select>
               <button class="navigation-search__button" type="button"><i class="fas fa-search"></i></button>
             </form>
           </div>
@@ -1183,246 +1191,47 @@
             <li class="navigation__item navigation__item--mobile navigation__link--mobile"><a class="navigation__link header__link"><i class="fas fa-map-marker-alt"></i><span>Санкт-Петербург, ул. Швецова 12/2, корп. 2</span></a></li>
             <li class="navigation__item navigation__item--mobile navigation__link--mobile"><a class="navigation__link header__link"> <i class="far fa-clock"></i><span>пн-пт: 09:00 - 18:00</span></a></li>
           </ul>
-          <form class="navigation-search">
-            <input class="navigation-search__input" type="text" required="required" placeholder="Пример: печать визиток">
-            <button class="navigation-search__button" type="button"><i class="fas fa-search">   </i></button>
-          </form>
         </nav>
         <!-- end navigation -->
       </header>
       <!-- end header -->
       <!-- begin page-->
       <main>
-        <!-- begin page-section -->
-        <section class="page-section catalog">
+        <section class="page-section">
           <div class="container">
             <!-- begin breadcrumbs -->
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
-                <li class="breadcrumbs__item"><span>Каталог</span></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Штампы</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Бумажные пакеты</a></li>
+                <li class="breadcrumbs__item"><span>Бумажный пакет</span></li>
               </ul>
             </div>
             <!-- end breadcrumbs -->
             <header class="heading page-section__header">
-              <h1>Каталог</h1>
+              <h1>Бумажный пакет</h1>
             </header>
-          </div>
-          <!-- begin production -->
-          <section class="production section">
-            <div class="container">
-              <div class="tabs">
-                <div class="slick-nav-prev production__arr production__prev"><img src="img/icons/left-arrow.svg" alt="Arrow icon"></div>
-                <div class="production-slider"><a class="tabs__item production-tab active" href="#">Печатная продукция</a><a class="tabs__item production-tab" href="#">Сувенирная продукция</a></div>
-                <div class="slick-nav-next production__arr production__next"><img src="img/icons/right-arrow.svg" alt="Arrow icon"></div>
-              </div>
-              <div class="tabs__wrapper tabs__wrapper--prod">
-                <div class="production-content active">
-                  <ul class="prods">
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Широкоформатная печать </h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/1.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/1-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Наклейки и стикеры</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/2.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/2-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Визитки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/3.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/3-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="catalog-print.html">
-                        <h5 class="headline">Блокноты</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/4.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/4-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">POS-материалы</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/5.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/5-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Конверты</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/6.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/6-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Календари 2018</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/7.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/7-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Пакеты</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/8.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/8-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Упаковка</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/9.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/9-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Папки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/10.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/10-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">К мероприятию</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/11.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/11-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Многополосная продукция</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/12.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/12-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Листовая продукция</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/13.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/13-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Таблички</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/14.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/14-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Наградная продукция</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/15.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/15-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Прочная продукция</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/16.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/16-hover.png" alt="hover production image"></div></a></li>
-                  </ul>
-                </div>
-                <div class="production-content">
-                  <ul class="prods">
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Сувениры к праздникам </h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/1.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/1-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Флешки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/2.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/2-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Сувениры к новому году</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/3.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/3-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Упаковка</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/4.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/4-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Для офиса</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/5.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/5-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Ручки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/6.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/6-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Электрика</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/7.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/7-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Одежда</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/8.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/8-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Дом</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/9.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/9-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Футболки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/10.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/10-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Отдых</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/11.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/11-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Элитные подарки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/12.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/12-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Подарочные наборы</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/13.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/13-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="catalog-souvenir.html">
-                        <h5 class="headline">Ежедневники и блокноты</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/14.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/14-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Корпоративные</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/15.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/15-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Часы</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/16.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/16-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Пледы и подушки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/17.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/17-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Сумки</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/18.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/18-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Зонты</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/19.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/19-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Посуда</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/20.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/20-hover.png" alt="hover production image"></div></a></li>
-                    <li class="product"><a class="product__body" href="#">
-                        <h5 class="headline">Промо</h5>
-                        <div class="product__price">от 100 руб</div>
-                        <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                        <div class="product__image"><img src="img/main-sections/production/souvenir/21.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/21-hover.png" alt="hover production image"></div></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- end production -->
-          <div class="container">
-            <div class="catalog__text">
-              <p>Компания Горизонт работает на рынке с 2008 года. Типография по своей сути это отдельная компания, предприятие, производящее печатную продукцию различных форм и видов. Печать абсолютно на любой вкус. Процессы и технологии печати подразумевают несколько этапов по производству. Сначала подготовка до печати, затем сама печать и обработка после печати.</p>
-              <p>Типография, на сегодняшний день, важная составляющая рекламного бизнеса. К сожалению многие типографии предлагают только лишь печать продукции. Мы предоставляем заказчику полный комплекс услуг: от разработки визитки до корпоративного стиля, от широкоформатной печати до офсетной. Полный цикл печатных услуг, оснащенность современным оборудованием, новейшие технологии, современный уровень всех полиграфических процессов — все это позволяет выполнять практически любые заказы в самые короткие сроки. Мы не только круто печатаем, но и занимаемся комплексным решением Ваших творческих и бизнес задач.</p>
-              <p>Впервые обратились в типографию? Давно в деле? Вам будет одинаково просто и комфортно работать с нами. Парк новейшего оборудования, команда профессионалов и придирчивый отбор поставщиков сырья - всё это позволяет нам обещать наилучший результат работы в сжатые сроки.</p>
+            <div class="stamps-card">
+              <div class="stamps-card__img magnific-gallery"><a href="img/stamps/box.jpg"><img src="img/stamps/box.jpg" alt="Stamps image"></a></div><a class="button" href="#">Скачать векторный файл</a>
             </div>
           </div>
         </section>
-        <!-- end page-section -->
+        <!-- begin question-section -->
+        <section class="question-section" style="background-image: url(img/template-page/dots.png)">
+          <div class="container">
+            <h2 class="question-section__title">Остались вопросы?</h2>
+            <form class="question-form">
+              <div class="question-form__wrapper">
+                <input class="question-form__item" type="text" name="name" required="required" placeholder="Ваше имя">
+                <input class="question-form__item" type="text" name="phone" required="required" placeholder="Ваш телефон">
+                <button class="button button--blue" type="submit">Позвоните мне</button>
+              </div>
+              <div class="question-form__text">Нажимая кнопку вы даете согласие на обработку своих <a href="#">персональных данных</a></div>
+            </form>
+          </div>
+        </section>
+        <!-- end question-section -->
       </main>
       <!-- end page-->
     </div>

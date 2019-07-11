@@ -32,7 +32,6 @@
 .portfolio-card__card
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
     margin: 30px 0 20px
 
     @media #{$_large-phone}
@@ -40,31 +39,42 @@
 
 .portfolio-card__item
     position: relative
-    width: 31.5%
+    width: calc(33.33% - 30px);
     height: 300px
-    margin-bottom: 30px
+    margin: 0 30px 30px 0
 
     @media #{$_lg}
         height: 260px
 
     @media #{$_sm}
-        width: 48%
+        width: calc(50% - 30px);
 
     @media #{$_large-phone}
         width: 290px
         height: 200px
+        margin: 0 0 30px 0
 
     &:hover, &:focus 
         div
             visibility: visible
             opacity: 1
             transition: .2s ease
+            max-height: 100%
+            overflow: hidden
 
     img 
         height: 100%
         width: 100%
         object-fit: cover
         padding: 0
+
+    p 
+        color: #ffffff
+        max-height: 100%
+        font-size: 14px
+
+        @media #{$_xsm}
+            font-size: 12px
 
     div 
         position: absolute
@@ -80,10 +90,12 @@
             font-size: 18px
             color: #ffffff
 
+            @media #{$_xsm}
+                font-size: 14px
+
         .button
             border-color: #ffffff
 
             &:hover, &:focus
                 background-color: #ffffff
                 color: $alt-accent
-

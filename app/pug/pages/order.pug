@@ -38,79 +38,58 @@ html(lang='ru')
                                     li.order__item
                                         input(type="radio" name="pay" value="pay-cash" id="pay-cash" required="required" hidden checked).order__input-radio
                                         label.order__label(for="pay-cash")
-                                            img(src="img/order/notes1.png", alt="Cash").order__img
-                                            img(src="img/order/notes.png", alt="Cash").order__img-active
+                                            img(src="img/order/notes.png", alt="Cash").order__img
                                             span Наличными
                                     li.order__item
                                         input(type="radio" name="pay" value="pay-online" id="pay-online" hidden).order__input-radio
                                         label.order__label(for="pay-online")
-                                            img(src="img/order/bank-card1.png", alt="Online").order__img
-                                            img(src="img/order/bank-card.png", alt="Online").order__img-active
+                                            img(src="img/order/bank-card.png", alt="Online").order__img
                                             span Онлайн
                                     li.order__item
                                         input(type="radio" name="pay" value="pay-transfer" id="pay-transfer" hidden).order__input-radio
                                         label.order__label(for="pay-transfer")
-                                            img(src="img/order/bill1.png", alt="Transfer").order__img
-                                            img(src="img/order/bill.png", alt="Transfer").order__img-active
+                                            img(src="img/order/bill.png", alt="Transfer").order__img
                                             span Переводом
-                            fieldset.order__form-fieldset.order__form-fieldset--delivery
-                                legend.order__form-title Выберите способ получения:*
-                                ul.order__list
-                                    li.order__item
-                                        input(type="radio" name="delivery" value="delivery-courier" id="delivery-courier" required="required" checked hidden).order__input-radio
-                                        label.order__label(for="delivery-courier") 
-                                            img(src="img/order/delivery-truck1.png", alt="Courier").order__img
-                                            img(src="img/order/delivery-truck.png", alt="Courier").order__img-active
-                                            span Курьером
-                                    li.order__item
-                                        input(type="radio" name="delivery" value="delivery-pickup" id="delivery-pickup" hidden).order__input-radio
-                                        label.order__label(for="delivery-pickup") 
-                                            img(src="img/order/trolley1.png", alt="Pickup").order__img
-                                            img(src="img/order/trolley.png", alt="Pickup").order__img-active
-                                            span Самовывоз
                             fieldset.order__form-fieldset.order__form-fieldset--extra
-                                legend.order__form-title Дополнительная услуга:*
+                                legend.order__form-title Выберите способ получения:*
                                 ul.order__list.order__list--extra
                                     li.order__item.order__item--extra
-                                        input(type="radio" name="extra" value="extra-spb" id="extra-spb" required="required" checked hidden).order__input-radio
-                                        label.order__label(for="extra-spb") 
-                                            img(src="img/order/delivery-truck1.png", alt="Delivery SPb").order__img
-                                            img(src="img/order/delivery-truck.png", alt="Delivery SPb").order__img-active
+                                        input(type="radio" name="delivery" value="delivery-pickup" id="radio3" checked hidden).order__input-radio
+                                        label.order__label(for="radio3") 
+                                            img(src="img/order/trolley.png", alt="Pickup").order__img
+                                            span Самовывоз
+                                    li.order__item.order__item--extra
+                                        input(type="radio" name="delivery" value="delivery-spb" id="radio2" required="required" hidden).order__input-radio
+                                        label.order__label(for="radio2") 
+                                            img(src="img/order/delivery-truck.png", alt="Delivery SPb").order__img
                                             span Оформить доставку по СПб
                                     li.order__item.order__item--extra
-                                        input(type="radio" name="extra" value="extra-russia" id="extra-russia" hidden).order__input-radio
-                                        label.order__label(for="extra-russia") 
-                                            img(src="img/order/location1.png", alt="Delivery Russia").order__img
-                                            img(src="img/order/location.png", alt="Delivery Russia").order__img-active
+                                        input(type="radio" name="delivery" value="delivery-russia" id="radio16" hidden).order__input-radio
+                                        label.order__label(for="radio16") 
+                                            img(src="img/order/location.png", alt="Delivery Russia").order__img
                                             span Доставка по России
                                 .order__text.order__text--extra
                                     p Доставка оплачивается отдельно. Наш менеджер уточнит адрес доставки при подтверждении заказа и рассчитает ее стоимость.
                                     p Стоимость доставки по городу фиксированная.
-                            fieldset.order__form-fieldset.order__form-fieldset--data.order__form-fieldset--spb.active
+                            fieldset.order__form-fieldset.order__form-fieldset--data
                                 legend.order__form-title Введите свои данные:*
-                                div
-                                    .order__form-wrapper--spb-left
+                                div.order__form-fieldset-wrapper
+                                    .order__form-wrapper--left
                                         input(type="text" required="required" placeholder="Ваше имя" name="order-name").order__input-data
                                         input(type="email" required="required" placeholder="Ваша почта" name="order-mail").order__input-data
                                         input(type="tel" required="required" placeholder="Ваш телефон" name="order-tel").order__input-data
-                                    .order__form-wrapper--spb-right  
-                                        input(type="tel" required="required" placeholder="Адрес доставки" name="order-address").order__input-data
-                                        textarea(placeholder="Комментарий" name="order-comment").order__input-data.order__input-data--comment
-                            fieldset.order__form-fieldset.order__form-fieldset--data.order__form-fieldset--russia
-                                legend.order__form-title Введите свои данные:*
-                                div
-                                    .order__form-wrapper--rus-left
-                                        input(type="text" required="required" placeholder="Ваше имя" name="order-name").order__input-data
-                                        input(type="email" required="required" placeholder="Ваша почта" name="order-mail").order__input-data
-                                        input(type="tel" required="required" placeholder="Ваш телефон" name="order-tel").order__input-data
+
+                                    .order__form-wrapper--right
                                         input(type="text" required="required" placeholder="Индекс" name="order-index").order__input-data
                                         input(type="text" required="required" placeholder="Ваш город" name="order-town").order__input-data
+
+                                    .order__form-wrapper--center
                                         input(type="text" required="required" placeholder="Улица" name="order-street").order__input-data
-                                    .order__form-wrapper--rus-right
                                         input(type="text" required="required" placeholder="Дом" name="order-house").order__input-data
                                         input(type="text" required="required" placeholder="Корпус" name="order-building").order__input-data
                                         input(type="text" required="required" placeholder="Подъезд" name="order-door").order__input-data
                                         input(type="text" required="required" placeholder="Этаж" name="order-floor").order__input-data
+                                   
                                     textarea(placeholder="Комментарий" name="order-comment").order__input-data.order__input-data--comment
 
                             .order__text
@@ -128,7 +107,7 @@ html(lang='ru')
                                 tr 
                                     td Общий вес:
                                     td 1 кг
-                                tr
+                                tr.order__table-delivery
                                     td Стоимость доставки:
                                     td 100 ₽
                                 tr

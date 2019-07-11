@@ -1,0 +1,115 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main
+ 
+        section.page-section
+        
+            .container
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Штампы
+                        li.breadcrumbs__item
+                            span Бумажные пакеты
+                // end breadcrumbs 
+
+                header.heading.page-section__header
+                    h1 Бумажные пакеты
+
+                .services-card
+                    ul.catalog-print__menu.services-card__menu 
+                        li.services-card__item
+                            a.services-card__link.active Бумажные пакеты
+                            button.services-card__btn
+                                i.fas.fa-angle-down
+                        li.services-card__item
+                            a.services-card__link(href="#") Бирки, ярлыки, воблеры
+                        li.services-card__item
+                            a.services-card__link(href="#") Папки
+                        li.services-card__item
+                            a.services-card__link(href="#") Фигуры
+                        li.services-card__item
+                            a.services-card__link(href="#") Коробки
+                        li.services-card__item
+                            a.services-card__link(href="#") Конверты, кармашки
+                        li.services-card__item
+                            a.services-card__link(href="#") Визитки, карточки, открытки
+                
+                    ul.stamps-list
+                        li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                            a.catalog-print__link(href="#")
+                                .stamps__img
+                                    img(src="img/catalog/print/beydj_1.jpg", alt="Catalog image") 
+                                span Бумажные пакеты
+                            p Размеры: 105x148 mm
+                            a.button(href="#") Скачать векторный файл
+                        li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                            a.catalog-print__link(href="#")
+                                .stamps__img
+                                    img(src="img/catalog/print/beydj_1.jpg", alt="Catalog image") 
+                                span Бумажные пакеты
+                            p Размеры: 105x148 mm
+                            a.button(href="#") Скачать векторный файл
+                        li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                            a.catalog-print__link(href="#")
+                                .stamps__img
+                                    img(src="img/catalog/print/beydj_1.jpg", alt="Catalog image") 
+                                span Бумажные пакеты
+                            p Размеры: 105x148 mm
+                            a.button(href="#") Скачать векторный файл
+                        li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                            a.catalog-print__link(href="#")
+                                .stamps__img
+                                    img(src="img/catalog/print/beydj_1.jpg", alt="Catalog image") 
+                                span Бумажные пакеты
+                            p Размеры: 105x148 mm
+                            a.button(href="#") Скачать векторный файл
+                        li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                            a.catalog-print__link(href="#")
+                                .stamps__img
+                                    img(src="img/catalog/print/beydj_1.jpg", alt="Catalog image") 
+                                span Бумажные пакеты
+                            p Размеры: 105x148 mm
+                            a.button(href="#") Скачать векторный файл
+
+        // begin question-section 
+        section.question-section(style="background-image: url(img/template-page/dots.png)")
+            .container
+                h2.question-section__title Остались вопросы?
+                form.question-form
+                    .question-form__wrapper
+                        input(type="text" name="name" required="required" placeholder="Ваше имя").question-form__item
+                        input(type="text" name="phone" required="required" placeholder="Ваш телефон").question-form__item
+                        button(type="submit").button.button--blue Позвоните мне
+                    .question-form__text
+                        | Нажимая кнопку вы даете согласие на обработку своих 
+                        a(href="#") персональных данных
+
+        // end question-section 
+
+      // end page
+
+    // end wrapper
+
+    .overlay
+
+    include ../modules/footer
+    include ../modules/form
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

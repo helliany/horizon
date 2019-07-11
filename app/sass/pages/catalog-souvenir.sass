@@ -140,7 +140,7 @@
     font-size: 12px
 
     a.active
-        .fa-angle-down
+        .svg-inline--fa
             display: block
 
     @media #{$_xs}
@@ -160,13 +160,12 @@
             padding: 0 14px 10px 0
 
     a 
-        padding: 0 20px 0 0
         color: $main-color
         position: relative
 
-        .fa-angle-down
+        .svg-inline--fa
             position: absolute
-            right: 10px
+            right: -12px
             top: 50%
             transform: translateY(-50%)
             display: none
@@ -178,6 +177,9 @@
         @media #{$_xs}
             display: inline-block
             width: 100%
+
+            .svg-inline--fa
+                right: 0
 
             &.active 
                 color: $main-color
@@ -191,27 +193,21 @@
     flex-wrap: wrap
 
     @media #{$_xs}
-        position: absolute
-        left: 44%
-        width: 60%
-        padding: 0 4%
-        margin-left: auto
-        background-color: #ffffff
+        justify-content: space-between
+        width: 100%
 
-        &.active 
-            top: -5px
-            border-bottom: 1px solid #eaeaea
+.catalog-souvenir__filter-item
+    padding: 0 26px 0 0
 
-        li 
-            display: none
-            width: 100%
-            margin-bottom: 10px
-            padding: 4px 14px
-            border: 1px solid $gray
-            border-radius: 16px
+    @media #{$_xs}
+        width: 48%
+        margin-bottom: 10px
+        padding: 4px 14px
+        border: 1px solid $gray
+        border-radius: 16px
 
-            &.active
-                display: block
+        &.active
+            display: block
 
 .catalog-souvenir__filter-menu-item
     @media #{$_xsm}
@@ -244,13 +240,7 @@
     margin-bottom: 16px
 
 .catalog-souvenir__img
-    width: 70%
-
-    @media #{$_xs}
-        width: 75%
-
-    @media #{$_xxs}
-        width: 70%
+    text-align: center
 
 .catalog-souvenir__list
     display: flex

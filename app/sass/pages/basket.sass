@@ -89,7 +89,7 @@
         flex-wrap: wrap
         order: -2
         width: 100%
-        margin: 0 0 20px
+        margin: 0 0 16px
 
 .basket-product__text
     width: 55%
@@ -243,7 +243,7 @@
         background-color: lighten($accent, 5%)
 
     @media #{$_xsm}
-        height: 50px
+        height: 44px
         width: 40px
         font-size: 24px
 
@@ -251,7 +251,7 @@
     height: 30px
     font-weight: 600
     font-family: $main-semibold
-    width: 30px
+    width: 40px
     border: 0
     border-top: 1px solid $light
     border-bottom: 1px solid $light
@@ -259,9 +259,9 @@
     text-align: center
 
     @media #{$_xsm}
-        height: 50px
+        height: 44px
         width: 60px
-        font-size: 24px
+        font-size: 22px
 
 .basket-sum
     display: flex
@@ -352,19 +352,16 @@
         font-size: 12px
 
 .basket-total__item
-    width: 25%
+    width: 50%
     
     b
         font-weight: 600
         font-family: $main-semibold
 
     @media #{$_xsm}
-        width: 33.3%
-
-        &:last-child
-            width: 100%
-            margin: 30px 0
-            font-size: 16px
+        width: 50%
+        font-size: 16px
+        margin: 0 0 25px
 
 .basket-total__item-wrapper
     width: 75%

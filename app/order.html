@@ -1220,41 +1220,32 @@
                     <ul class="order__list">
                       <li class="order__item">
                         <input class="order__input-radio" type="radio" name="pay" value="pay-cash" id="pay-cash" required="required" hidden checked>
-                        <label class="order__label" for="pay-cash"><img class="order__img" src="img/order/notes1.png" alt="Cash"><img class="order__img-active" src="img/order/notes.png" alt="Cash"><span>Наличными</span></label>
+                        <label class="order__label" for="pay-cash"><img class="order__img" src="img/order/notes.png" alt="Cash"><span>Наличными</span></label>
                       </li>
                       <li class="order__item">
                         <input class="order__input-radio" type="radio" name="pay" value="pay-online" id="pay-online" hidden>
-                        <label class="order__label" for="pay-online"><img class="order__img" src="img/order/bank-card1.png" alt="Online"><img class="order__img-active" src="img/order/bank-card.png" alt="Online"><span>Онлайн</span></label>
+                        <label class="order__label" for="pay-online"><img class="order__img" src="img/order/bank-card.png" alt="Online"><span>Онлайн</span></label>
                       </li>
                       <li class="order__item">
                         <input class="order__input-radio" type="radio" name="pay" value="pay-transfer" id="pay-transfer" hidden>
-                        <label class="order__label" for="pay-transfer"><img class="order__img" src="img/order/bill1.png" alt="Transfer"><img class="order__img-active" src="img/order/bill.png" alt="Transfer"><span>Переводом</span></label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <fieldset class="order__form-fieldset order__form-fieldset--delivery">
-                    <legend class="order__form-title">Выберите способ получения:*</legend>
-                    <ul class="order__list">
-                      <li class="order__item">
-                        <input class="order__input-radio" type="radio" name="delivery" value="delivery-courier" id="delivery-courier" required="required" checked hidden>
-                        <label class="order__label" for="delivery-courier"> <img class="order__img" src="img/order/delivery-truck1.png" alt="Courier"><img class="order__img-active" src="img/order/delivery-truck.png" alt="Courier"><span>Курьером</span></label>
-                      </li>
-                      <li class="order__item">
-                        <input class="order__input-radio" type="radio" name="delivery" value="delivery-pickup" id="delivery-pickup" hidden>
-                        <label class="order__label" for="delivery-pickup"> <img class="order__img" src="img/order/trolley1.png" alt="Pickup"><img class="order__img-active" src="img/order/trolley.png" alt="Pickup"><span>Самовывоз</span></label>
+                        <label class="order__label" for="pay-transfer"><img class="order__img" src="img/order/bill.png" alt="Transfer"><span>Переводом</span></label>
                       </li>
                     </ul>
                   </fieldset>
                   <fieldset class="order__form-fieldset order__form-fieldset--extra">
-                    <legend class="order__form-title">Дополнительная услуга:*</legend>
+                    <legend class="order__form-title">Выберите способ получения:*</legend>
                     <ul class="order__list order__list--extra">
                       <li class="order__item order__item--extra">
-                        <input class="order__input-radio" type="radio" name="extra" value="extra-spb" id="extra-spb" required="required" checked hidden>
-                        <label class="order__label" for="extra-spb"> <img class="order__img" src="img/order/delivery-truck1.png" alt="Delivery SPb"><img class="order__img-active" src="img/order/delivery-truck.png" alt="Delivery SPb"><span>Оформить доставку по СПб</span></label>
+                        <input class="order__input-radio" type="radio" name="delivery" value="delivery-pickup" id="radio3" checked hidden>
+                        <label class="order__label" for="radio3"> <img class="order__img" src="img/order/trolley.png" alt="Pickup"><span>Самовывоз</span></label>
                       </li>
                       <li class="order__item order__item--extra">
-                        <input class="order__input-radio" type="radio" name="extra" value="extra-russia" id="extra-russia" hidden>
-                        <label class="order__label" for="extra-russia"> <img class="order__img" src="img/order/location1.png" alt="Delivery Russia"><img class="order__img-active" src="img/order/location.png" alt="Delivery Russia"><span>Доставка по России</span></label>
+                        <input class="order__input-radio" type="radio" name="delivery" value="delivery-spb" id="radio2" required="required" hidden>
+                        <label class="order__label" for="radio2"> <img class="order__img" src="img/order/delivery-truck.png" alt="Delivery SPb"><span>Оформить доставку по СПб</span></label>
+                      </li>
+                      <li class="order__item order__item--extra">
+                        <input class="order__input-radio" type="radio" name="delivery" value="delivery-russia" id="radio16" hidden>
+                        <label class="order__label" for="radio16"> <img class="order__img" src="img/order/location.png" alt="Delivery Russia"><span>Доставка по России</span></label>
                       </li>
                     </ul>
                     <div class="order__text order__text--extra">
@@ -1262,32 +1253,20 @@
                       <p>Стоимость доставки по городу фиксированная.</p>
                     </div>
                   </fieldset>
-                  <fieldset class="order__form-fieldset order__form-fieldset--data order__form-fieldset--spb active">
+                  <fieldset class="order__form-fieldset order__form-fieldset--data">
                     <legend class="order__form-title">Введите свои данные:*</legend>
-                    <div>
-                      <div class="order__form-wrapper--spb-left">
+                    <div class="order__form-fieldset-wrapper">
+                      <div class="order__form-wrapper--left">
                         <input class="order__input-data" type="text" required="required" placeholder="Ваше имя" name="order-name">
                         <input class="order__input-data" type="email" required="required" placeholder="Ваша почта" name="order-mail">
                         <input class="order__input-data" type="tel" required="required" placeholder="Ваш телефон" name="order-tel">
                       </div>
-                      <div class="order__form-wrapper--spb-right"> 
-                        <input class="order__input-data" type="tel" required="required" placeholder="Адрес доставки" name="order-address">
-                        <textarea class="order__input-data order__input-data--comment" placeholder="Комментарий" name="order-comment"></textarea>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="order__form-fieldset order__form-fieldset--data order__form-fieldset--russia">
-                    <legend class="order__form-title">Введите свои данные:*</legend>
-                    <div>
-                      <div class="order__form-wrapper--rus-left">
-                        <input class="order__input-data" type="text" required="required" placeholder="Ваше имя" name="order-name">
-                        <input class="order__input-data" type="email" required="required" placeholder="Ваша почта" name="order-mail">
-                        <input class="order__input-data" type="tel" required="required" placeholder="Ваш телефон" name="order-tel">
+                      <div class="order__form-wrapper--right">
                         <input class="order__input-data" type="text" required="required" placeholder="Индекс" name="order-index">
                         <input class="order__input-data" type="text" required="required" placeholder="Ваш город" name="order-town">
-                        <input class="order__input-data" type="text" required="required" placeholder="Улица" name="order-street">
                       </div>
-                      <div class="order__form-wrapper--rus-right">
+                      <div class="order__form-wrapper--center">
+                        <input class="order__input-data" type="text" required="required" placeholder="Улица" name="order-street">
                         <input class="order__input-data" type="text" required="required" placeholder="Дом" name="order-house">
                         <input class="order__input-data" type="text" required="required" placeholder="Корпус" name="order-building">
                         <input class="order__input-data" type="text" required="required" placeholder="Подъезд" name="order-door">
@@ -1314,7 +1293,7 @@
                       <td>Общий вес:</td>
                       <td>1 кг</td>
                     </tr>
-                    <tr>
+                    <tr class="order__table-delivery">
                       <td>Стоимость доставки:</td>
                       <td>100 ₽</td>
                     </tr>
