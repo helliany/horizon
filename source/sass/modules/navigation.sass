@@ -1,0 +1,267 @@
+.navigation
+    background-color: $accent
+
+    @media #{$_xsm}
+        display: none
+        background-color: #ffffff
+        color: $main-color
+
+        &.active 
+            position: absolute
+            z-index: 2
+            display: block
+            width: 100%
+
+    &--mobile 
+        display: none
+    
+.navigation__container
+    display: flex
+    position: relative
+    flex-wrap: wrap
+    
+.navigation__list
+    flex-grow: 1
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+.navigation__item
+    flex-grow: 1
+
+    &--mobile
+        display: none
+
+    &--back 
+        display: none
+
+    .navigation__link:not(.nav-button--orange)
+        &:hover, &:focus, &.active
+            border-color: $alt-accent
+            outline: none
+
+        .dropdown
+            visibility: visible
+            opacity: 1
+
+    @media #{$_xsm}
+        width: 100%
+        border-bottom: 1px solid $light
+
+        &--mobile
+            display: block
+
+        .navigation__link:not(.nav-button--orange)
+            &:hover, &:focus, &.active
+                border-color: transparent
+
+.sfHover 
+    .subnav
+        display: block 
+
+.navigation__link
+    text-align: center
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    padding-top: 14px
+    padding-bottom: 11px
+    color: #ffffff
+    font-size: 16px
+    border-bottom: 3px solid transparent
+
+    .svg-inline--fa
+        margin-left: 6px
+
+    @media #{$_lg}
+        font-size: 14px
+
+    @media #{$_sm}
+        font-size: 11.5px
+
+    @media #{$_xsm}
+        justify-content: flex-start
+        padding: 12px 20px
+        color: $main-color
+        font-size: 12px
+        text-align: left
+        border: none
+
+        &:hover,
+        &:focus
+            color: $accent
+            font-family: $main-semibold
+
+        .svg-inline--fa
+            margin-left: 0
+            margin-right: 8px
+            
+            path
+                fill: $gray
+
+        .fa-angle-right
+            width: 6px
+            margin: 0 0 0 auto
+
+        &--mobile
+            .fa-phone
+                transform: rotate(90deg)
+
+.nav-button
+    background-color: $accent
+    font-family: $main-bold
+    border: 0
+    border-bottom: 3px solid transparent
+    cursor: pointer
+
+    svg
+        display: none
+
+    &:focus
+        outline: 0
+
+    &--orange
+        background-color: $alt-accent
+        &:hover, &:focus
+            background-color: darken($alt-accent, 5%)
+
+    &--blue 
+        font-family: $main-regular
+        background-color: $accent
+
+        svg
+            display: block
+            margin-top: 2px
+            transform: rotate(90deg)
+
+    @media #{$_xsm}
+        padding: 12px 20px
+        font-family: $main-regular
+        background-color: #fff
+
+        &--orange
+        background-color: #fff
+        &:hover, &:focus
+            background-color: #fff
+
+        svg
+            display: block
+
+        img 
+            display: none
+
+        &--back 
+            width: 100%
+            padding: 12px 0 9px 32px
+            color: $gray
+            text-align: left
+
+            .fa-arrow-left
+                position: absolute
+                left: 5%
+                top: 15px
+                width: 16px
+
+        &.active
+            svg
+                display: none
+
+        &--blue 
+            svg
+                transform: rotate(0deg)
+
+.navigation-search__input
+    position: absolute
+    height: 100%
+    border: 0
+    background-color: $light-accent
+    padding: 0 30px
+    color: #ffffff
+    font-family: $main-italic
+    letter-spacing: 0.5px
+    opacity: 0
+    visibility: hidden
+    width: 0
+    transition: width .3s ease, opacity .3s ease, visibility .3s ease
+
+    &::placeholder
+        opacity: 1
+
+    &:focus
+        outline: 0
+
+.navigation-search select
+    position: absolute
+    right: 65px
+    height: 100%
+    border: 0
+    border-left: 1px solid rgb(77, 144, 254)
+    border-right: 1px solid rgb(77, 144, 254)
+    outline: none
+    background-color: $light-accent
+    padding: 0 20px
+    color: #ffffff
+    font-family: $main-italic
+    letter-spacing: 0.5px
+    opacity: 0
+    visibility: hidden
+    width: 0
+
+.burger
+    width: 14px
+    margin-right: 12px
+
+.sublist
+    @media #{$_xsm}
+        border-top: 1px solid $light
+
+.sublist__item
+    @media #{$_xsm}
+        border-bottom: 1px solid $light
+
+.sublist__link
+    color: $main-color
+    display: inline-block
+    line-height: 1.8
+
+    &:hover, &:focus
+        text-decoration: underline
+
+    @media #{$_xsm}
+        padding: 8px 20px
+        font-size: 12px
+
+        &:hover,
+        &:focus
+            color: $accent
+            font-family: $main-semibold
+            text-decoration: none
+
+.navigation-search__form
+    height: 100%
+
+.navigation-search__button
+    height: 100%
+    width: 50px
+    background-color: $light-accent
+    border: 0
+    cursor: pointer
+    transition: background-color .15s ease
+
+    &:hover,
+    &:focus
+        background-color: lighten($light-accent, 3%)
+
+    &:focus
+        outline: 0
+
+    &:active
+        background-color: darken($light-accent, 3%)
+
+    .svg-inline--fa
+        color: #ffffff
+        font-size: 16px
+
+    @media #{$_xsm}
+        display: none

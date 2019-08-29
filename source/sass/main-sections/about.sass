@@ -1,0 +1,54 @@
+.about
+    padding-top: 18px
+    padding-bottom: 60px
+    
+.about__wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    @media #{$_lg}
+        margin-bottom: 20px
+
+.about__text
+    max-width: 710px
+
+    .heading
+        margin-bottom: 30px
+
+        h2
+            text-align: center
+
+    @media #{$_lg}
+        max-width: 515px
+
+    @media #{$_sm}
+        max-width: 100%
+
+.about__img
+    width: 350px
+    height: 300px
+    flex-shrink: 0
+    position: relative
+
+    img
+        height: 100%
+        width: 100%
+        object-fit: cover
+        padding: 0
+
+    &::before
+        content: ''
+        position: absolute
+        width: 80%
+        height: 100%
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        top: 35px
+        right: -34px
+        background-image: url(../img/main-sections/about/dots-orange.png)
+        z-index: -1
+
+    @media #{$_sm}
+        display: none

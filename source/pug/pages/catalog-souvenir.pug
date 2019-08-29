@@ -1,0 +1,395 @@
+doctype html
+html(lang='ru')
+
+    include ../modules/head
+
+    body
+
+        // begin wrapper
+        .wrapper
+
+            include ../modules/header
+
+            // begin page
+            main
+
+                // begin page-section 
+                section.page-section
+                    .container
+
+                        // begin breadcrumbs 
+                        .breadcrumbs
+                            ul.breadcrumbs__list
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="#") Главная
+                                li.breadcrumbs__item
+                                    a.breadcrumbs__link(href="#") Каталог
+                                li.breadcrumbs__item
+                                    span Сувенирная продукция
+                                li.breadcrumbs__item
+                                    span Ежедневники и блокноты
+                        // end breadcrumbs 
+
+                        header.heading.page-section__header
+                            h1 Ежедневники и блокноты
+
+                        .catalog-souvenir.services-card
+                            ul.catalog-souvenir__menu.services-card__menu 
+                                li.services-card__item
+                                    span.services-card__link.active Ежедневники и блокноты
+                                    button.services-card__btn
+                                        i.fas.fa-angle-down
+                                li.services-card__item
+                                    a.services-card__link(href="#") Калькулятор ежедневника
+                                li.services-card__item
+                                    a.services-card__link(href="#") Ежедневник "Адъютант"
+                                        sup 58 
+                                li.services-card__item
+                                    a.services-card__link(href="#") Оригинальные ежедневники
+                                        sup 40 
+                                li.services-card__item
+                                    a.services-card__link(href="#") Блокноты
+                                        sup 254
+                                li.services-card__item
+                                    a.services-card__link(href="#") Наборы с ежедневниками
+                                        sup 30
+                                li.services-card__item
+                                    a.services-card__link(href="#") Упаковка для ежедневников
+                                        sup 18
+                                li.services-card__item
+                                    a.services-card__link(href="#") Ежедневники на заказ
+
+                            .catalog-souvenir__card.services-card__card 
+                                button.button.button--orange.catalog-souvenir__filter-title Фильтр
+                                .catalog-souvenir__filter-wrapper
+                                    .portfolio-card__menu.catalog-souvenir__filter-menu
+                                        select(name="brend")
+                                            option.portfolio-card__link(value="") Бренд
+                                            option.portfolio-card__link(value="") Бренд 1
+                                            option.portfolio-card__link(value="") Бренд 2
+                                            option.portfolio-card__link(value="") Бренд 3
+                                        select(name="color")
+                                            option.portfolio-card__link(value="") Цвет
+                                            option.portfolio-card__link(value="") Цвет 1
+                                            option.portfolio-card__link(value="") Цвет 2
+                                        select(name="material")
+                                            option.portfolio-card__link(value="") Материал
+                                            option.portfolio-card__link(value="") Материал 1
+                                            option.portfolio-card__link(value="") Материал 2
+                                            option.portfolio-card__link(value="") Материал 3
+                                            option.portfolio-card__link(value="") Материал 4
+                                        select(name="application")
+                                            option.portfolio-card__link(value="") Вид нанесения
+                                            option.portfolio-card__link(value="") Вид нанесения 1
+                                            option.portfolio-card__link(value="") Вид нанесения 2
+                                        select(name="date")
+                                            option.portfolio-card__link(value="") Датировка
+                                            option.portfolio-card__link(value="") Датировка 1
+                                        select(name="type")
+                                            option.portfolio-card__link(value="") Тип обложки
+                                            option.portfolio-card__link(value="") Тип обложки 1
+                                        select(name="block-color")
+                                            option.portfolio-card__link(value="") Цвет блока
+                                            option.portfolio-card__link(value="") Цвет блока 1
+                                        select(name="block-size")
+                                            option.portfolio-card__link(value="") Размер блока
+                                            option.portfolio-card__link(value="") Размер блока 1
+                                    button.button.catalog-souvenir__filter-btn Применить
+                                .catalog-souvenir__filter
+                                    span Сортировать по:
+                                    ul.catalog-souvenir__filter-list
+                                        li.catalog-souvenir__filter-item
+                                            a.catalog-souvenir__filter-link.active(href="#") Цене
+                                                i.fas.fa-angle-down 
+                                        li.catalog-souvenir__filter-item
+                                            a.catalog-souvenir__filter-link(href="#") Популярности
+                                                i.fas.fa-angle-down
+                                        li.catalog-souvenir__filter-item
+                                            a.catalog-souvenir__filter-link(href="#") Названию
+                                                i.fas.fa-angle-down
+                                        li.catalog-souvenir__filter-item
+                                            a.catalog-souvenir__filter-link(href="#") Новинкам
+                                                i.fas.fa-angle-down
+                                ul.catalog-print__list
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#")
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            span Ежедневник BRAND, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 380 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                            br
+                                            | На складе: 51 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            span Ежедневник Lyric classic, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 499 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 500 г
+                                            br
+                                            | На складе: 200 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            span Ежедневник Tone, недатированный, черный с фиолетовым
+                                        .catalog-souvenir__price
+                                            span 598 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 416,67 г
+                                            br
+                                            | На складе: 100 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#")
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            span Ежедневник BRAND, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 380 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                            br
+                                            | На складе: 51 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            span Ежедневник Lyric classic, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 499 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 500 г
+                                            br
+                                            | На складе: 200 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            span Ежедневник Tone, недатированный, черный с фиолетовым
+                                        .catalog-souvenir__price
+                                            span 598 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 416,67 г
+                                            br
+                                            | На складе: 100 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#")
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            span Ежедневник BRAND, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 380 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                            br
+                                            | На складе: 51 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            span Ежедневник Lyric classic, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 499 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 500 г
+                                            br
+                                            | На складе: 200 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            span Ежедневник Tone, недатированный, черный с фиолетовым
+                                        .catalog-souvenir__price
+                                            span 598 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 416,67 г
+                                            br
+                                            | На складе: 100 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#")
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image1.jpg", alt="Catalog image")
+                                            span Ежедневник BRAND, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 380 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 550 г
+                                            br
+                                            | На складе: 51 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image2.jpg", alt="Catalog image")
+                                            span Ежедневник Lyric classic, недатированный, синий
+                                        .catalog-souvenir__price
+                                            span 499 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 500 г
+                                            br
+                                            | На складе: 200 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+                                    li.catalog-print__item.catalog-souvenir__item(tabindex="0")
+                                        a.catalog-print__link(href="#") 
+                                            .catalog-souvenir__imgs
+                                                .catalog-print__img.catalog-souvenir__img
+                                                    img(src="img/catalog/image3.jpg", alt="Catalog image")
+                                            span Ежедневник Tone, недатированный, черный с фиолетовым
+                                        .catalog-souvenir__price
+                                            span 598 ₽
+                                        .basket-vendor-code__text
+                                            | Артикул: 0000000
+                                            br
+                                            | Размер: 15х21 см
+                                            br
+                                            | Вес: 416,67 г
+                                            br
+                                            | На складе: 100 шт
+                                        .catalog-print-card__desc.catalog-souvenir__btn
+                                            button.button.button--blue.catalog-print-add(type="button") В корзину
+                                            button.button.button--orange.catalog-print-done.active(type="button") Товар в корзине
+                                                i.fas.fa-check
+
+                                // begin pagination 
+                                .pagination
+                                    ul.pagination__list
+                                        li.pagination__item
+                                            a.pagination__link(href="#")
+                                                i.fas.fa-angle-left
+                                        li.pagination__item
+                                            span.active 01
+                                        li.pagination__item
+                                            a.pagination__link(href="#") 02
+                                        li.pagination__item
+                                            a.pagination__link(href="#") 03
+                                        li.pagination__item
+                                            a.pagination__link(href="#") 04
+                                        li.pagination__item
+                                            a.pagination__link(href="#") 05
+                                        li.pagination__item
+                                            span ...
+                                        li.pagination__item
+                                            a.pagination__link(href="#") 10
+                                        li.pagination__item
+                                            a.pagination__link(href="#")
+                                                i.fas.fa-angle-right
+                                // end pagination       
+                                .catalog__text.catalog__text--text
+                                    p Компания Горизонт работает на рынке с 2008 года. Типография по своей сути это отдельная компания, предприятие, производящее печатную продукцию различных форм и видов. Печать абсолютно на любой вкус. Процессы и технологии печати подразумевают несколько этапов по производству. Сначала подготовка до печати, затем сама печать и обработка после печати.
+                                    p Впервые обратились в типографию? Давно в деле? Вам будет одинаково просто и комфортно работать с нами. Парк новейшего оборудования, команда профессионалов и придирчивый отбор поставщиков сырья - всё это позволяет нам обещать наилучший результат работы в сжатые сроки. 
+                // end page-section 
+
+            // end page
+
+        // end wrapper
+
+        .overlay
+
+        include ../modules/footer
+        include ../modules/form
+
+
+        // scripts 
+        script(src='js/scripts.min.js')

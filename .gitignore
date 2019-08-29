@@ -1,4 +1,4 @@
 node_modules/
 .txt
-dist/
-app/css/*.css
+build/
+source/css/*.css

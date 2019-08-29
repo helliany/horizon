@@ -1,0 +1,380 @@
+.basket-section
+    .heading
+        margin-bottom: 0
+    
+.basket-info
+    display: flex
+    align-items: center
+    padding-top: 8px
+
+    > *
+        &:not(:last-child)
+            margin-right: 30px
+
+    @media #{$_xsm}
+        display: none
+
+.basket-wrapper
+    margin: 30px 0 0
+
+.basket-wrapper__header
+    background-color: $light
+
+    @media #{$_sm}
+        margin-bottom: 30px
+
+    @media #{$_xsm}
+        display: none
+
+.basket-wrapper__header-container
+    display: flex
+    align-items: center
+
+.basket-wrapper__header-item
+    color: $gray
+    padding: 6px 0
+    width: 12.5%
+    text-align: center
+
+    &:first-child
+        width: 40%
+        text-align: left
+
+        @media #{$_sm}
+            width: 42%
+
+    &:nth-child(2)
+        width: 15.5%
+        text-align: left
+
+        @media #{$_sm}
+            width: 15%
+
+    &:last-child
+        width: 13%
+
+.basket-list
+    margin-bottom: 40px
+
+.basket-list__row
+    display: flex
+    padding: 30px 0
+    border-bottom: 1px solid $light
+
+    @media #{$_sm}
+        flex-wrap: wrap
+        margin-bottom: 30px
+
+    @media #{$_xsm}
+        position: relative
+        padding: 15px
+        box-shadow: 0 0 20px 0 rgba(#000, .3)
+        border: none
+
+.basket-list__item
+    width: 16.666666%
+
+    @media #{$_lg}
+        width: 16.25%
+
+.basket-product
+    width: 44%
+    display: flex
+    align-items: center
+
+    @media #{$_sm}
+        width: 42%
+
+    @media #{$_xsm}
+        flex-wrap: wrap
+        order: -2
+        width: 100%
+        margin: 0 0 16px
+
+.basket-product__text
+    width: 55%
+    padding-right: 10px
+
+    @media #{$_sm}
+        width: 58%
+
+    @media #{$_xsm}
+        width: 100%
+        padding-right: 25px
+
+.basket-product__img
+    width: 35%
+    max-height: 100px
+    display: flex
+    justify-content: center
+
+    img 
+        object-fit: contain
+        max-height: 100px
+        padding: 0
+
+    @media #{$_sm}
+        width: 38%
+
+    @media #{$_xsm}
+        order: -1
+        width: 35%
+        min-height: 200px
+        margin: 0 0 10px
+        justify-content: flex-start
+
+        img 
+            min-height: 200px
+
+    @media #{$_xs}
+        width: 60%
+
+.basket-product__number
+    margin-bottom: 10px
+
+.basket-product__title
+    font-family: $main-semibold
+    font-weight: 600
+    color: $main-color
+
+    &:hover, &:focus
+        text-decoration: underline
+
+.basket-vendor-code
+    textarea
+        display: block
+        width: 100%
+
+    @media #{$_xsm}
+        width: 100%
+
+.basket-vendor-code__text
+    font-size: 12px
+    font-family: $main-light
+    font-weight: 300
+    margin-bottom: 15px
+    line-height: 1.8
+
+.basket-vendor-code__link
+    color: $accent
+    transition: color .15s ease
+    font-weight: 500
+    font-family: $main-medium
+
+    &:hover, &:focus
+        text-decoration: underline
+        color: $alt-accent
+
+    @media #{$_lg}
+        font-size: 12px
+
+    @media #{$_xsm}
+        display: block
+        font-size: 14px
+
+.basket-price
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: 600
+    font-family: $main-semibold
+
+    span
+        &:first-child
+                display: none
+
+    @media #{$_sm}
+        width: 13%
+
+    @media #{$_xsm}
+        justify-content: flex-start
+        flex-wrap: wrap
+        width: 50%
+        margin-top: 20px
+
+        span 
+            display: block
+            width: 100%
+            font-size: 16px
+
+            &:first-child
+                display: block
+                font-family: $main-light
+
+.basket-quantity
+    display: flex
+    align-items: center
+
+    @media #{$_sm}
+        width: 16%
+
+    @media #{$_xsm}
+        order: -1
+        width: 100%
+        margin: 0 0 20px 
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button 
+        -webkit-appearance: none
+    
+    input[type='number']
+        -moz-appearance: textfield
+
+.basket-quantity__text
+    display: none
+
+    @media #{$_xsm}
+        display: block
+        margin-right: auto
+        font-size: 12px
+        font-family: $main-light
+    
+.basket-quantity__btn
+    width: 25px
+    height: 30px
+    background-color: $accent
+    border: 0
+    font-weight: 600
+    font-family: $main-semibold
+    color: #ffffff
+    cursor: pointer
+    transition: background-color .15s ease
+
+    &:hover, &:focus
+        background-color: lighten($accent, 5%)
+
+    @media #{$_xsm}
+        height: 44px
+        width: 40px
+        font-size: 24px
+
+.basket-quantity__number
+    height: 30px
+    font-weight: 600
+    font-family: $main-semibold
+    width: 40px
+    border: 0
+    border-top: 1px solid $light
+    border-bottom: 1px solid $light
+    display: flex
+    text-align: center
+
+    @media #{$_xsm}
+        height: 44px
+        width: 60px
+        font-size: 22px
+
+.basket-sum
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    @media #{$_sm}
+        width: 12%
+
+    @media #{$_xsm}
+        width: 50%
+        margin-top: 20px
+
+.basket-sum__amount
+    font-weight: 600
+    font-family: $main-semibold
+    width: 100%
+
+    span
+        &:first-child
+                display: none
+
+    @media #{$_xsm}    
+        span 
+            display: block
+            font-size: 16px
+
+            &:first-child
+                display: block
+                font-family: $main-light
+
+.basket-clear
+    position: relative
+    border: 0
+    width: 15px
+    height: 15px
+    background-color: transparent
+    cursor: pointer
+
+    span
+        display: block
+        background-color: $gray
+        width: 15px
+        height: 1px
+        position: absolute
+        top: 50%
+        left: 0
+
+    &:active
+        transform: translateY(2px)
+
+    @media #{$_xsm}
+        position: absolute
+        top: 20px
+        right: 6%
+
+.basket-clear__top
+    transform: rotate(45deg) translateY(-50%)
+
+.basket-clear__bottom
+    transform: rotate(-45deg) translateY(-50%)
+
+.basket-total
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    @media #{$_xsm}
+        flex-wrap: wrap
+
+.basket-total__info
+    width: calc(66.6666% - 15px)
+    display: flex
+    flex-wrap: wrap;
+    align-items: flex-start
+    justify-content: space-between
+    font-size: 16px
+
+    @media #{$_sm}
+        width: calc(70% - 15px)
+        font-size: 14px
+
+    @media #{$_xsm}
+        position: relative
+        width: 100%
+
+    @media #{$_xxs}
+        font-size: 12px
+
+.basket-total__item
+    width: 50%
+    
+    b
+        font-weight: 600
+        font-family: $main-semibold
+
+    @media #{$_xsm}
+        width: 50%
+        font-size: 16px
+        margin: 0 0 25px
+
+.basket-total__item-wrapper
+    width: 75%
+
+    @media #{$_sm}
+        width: 100%
+
+.basket-checkout
+    width: calc(33.3333% - 10px)
+
+    @media #{$_sm}
+        width: calc(30% - 15px)
+
+    @media #{$_xsm}
+        width: 100%

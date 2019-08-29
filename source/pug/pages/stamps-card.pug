@@ -1,0 +1,68 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main
+ 
+        section.page-section
+        
+            .container
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Штампы
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Бумажные пакеты
+                        li.breadcrumbs__item
+                            span Бумажный пакет
+                // end breadcrumbs 
+
+                header.heading.page-section__header
+                    h1 Бумажный пакет
+                
+                .stamps-card
+                    p.stamps-card__text Размеры: 515x412мм
+                    .stamps-card__img.magnific-gallery
+                        a(href="img/stamps/box.jpg")
+                            img(src="img/stamps/box.jpg", alt="Stamps image")
+                    a.button(href="#") Скачать векторный файл
+                            
+        // begin question-section 
+        section.question-section(style="background-image: url(img/template-page/dots.png)")
+            .container
+                h2.question-section__title Остались вопросы?
+                form.question-form
+                    .question-form__wrapper
+                        input(type="text" name="name" required="required" placeholder="Ваше имя").question-form__item
+                        input(type="text" name="phone" required="required" placeholder="Ваш телефон").question-form__item
+                        button(type="submit").button.button--blue Позвоните мне
+                    .question-form__text
+                        | Нажимая кнопку вы даете согласие на обработку своих 
+                        a(href="#") персональных данных
+
+        // end question-section 
+
+      // end page
+
+    // end wrapper
+
+    .overlay
+
+    include ../modules/footer
+    include ../modules/form
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

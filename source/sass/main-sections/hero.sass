@@ -1,0 +1,74 @@
+.hero__slider
+    padding-top: 35px
+    padding-bottom: 20px
+
+.hero__item
+    position: relative
+    user-select: text
+
+.hero__item-wrapper
+    padding-top: 100px
+    padding-bottom: 100px
+
+    @media #{$_sm}
+        padding-top: 30px
+        padding-bottom: 30px
+    
+.hero__text
+    max-width: 40%
+
+    @media #{$_sm}
+        max-width: 45%
+
+    @media #{$_xsm}
+        max-width: 100%
+
+    p
+        margin-bottom: 30px
+        font-size: 18px
+        color: #000000
+
+    @media #{$_sm}
+        p
+            font-size: 14px
+
+.hero__img
+    display: flex
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 60%
+    
+    img
+        padding: 0
+        margin: auto
+
+    @media #{$_sm}
+        top: 50%
+        width: 55%
+        transform: translateY(-50%)
+
+    @media #{$_xsm}
+        position: static
+        +container()
+        transform: translateY(0)
+
+    @media #{$_xsm}
+        padding: 0
+
+.hero__nav
+    +container
+
+.hero__buttons
+    .button
+        padding-right: 43px
+        padding-left: 43px
+        
+        &:hover, &:focus
+            background-color: $accent
+            color: #ffffff
+
+        &:active
+            color: $accent
+            background-color: transparent

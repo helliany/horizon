@@ -1,0 +1,104 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin page
+      main
+ 
+        section.page-section
+        
+            .container
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            span Штампы
+                // end breadcrumbs 
+
+                header.heading.page-section__header
+                    h1 Штампы
+
+                .stamps__text
+                    p Компания Горизонт работает на рынке с 2008 года. Типография по своей сути это отдельная компания, предприятие, производящее печатную продукцию различных форм и видов. Печать абсолютно на любой вкус. Процессы и технологии печати подразумевают несколько этапов по производству. Сначала подготовка до печати, затем сама печать и обработка после печати.
+                    p Впервые обратились в типографию? Давно в деле? Вам будет одинаково просто и комфортно работать с нами. Парк новейшего оборудования, команда профессионалов и придирчивый отбор поставщиков сырья - всё это позволяет нам обещать наилучший результат работы в сжатые сроки.
+                
+                ul.stamps
+                    li.product
+                        a.product__body(href="#")
+                            h5.headline Бумажные пакеты
+                            .product__next
+                                img(src="img/icons/arrow.svg", alt="Next image")
+                            .product__image
+                                img(src="img/stamps/pack.png", alt="Stamps image")
+                                img.hidden-img(src="img/stamps/pack2.png", alt="hover stamps image")
+                    li.product
+                        a.product__body(href="#")
+                            h5.headline Бирки, ярлыки, воблеры
+                            .product__next
+                                img(src="img/icons/arrow.svg", alt="Next image")
+                            .product__image
+                                img(src="img/stamps/label.png", alt="Stamps image")
+                                img.hidden-img(src="img/stamps/label2.png", alt="hover production image")
+                    li.product
+                        a.product__body(href="#")
+                            h5.headline Папки
+                            .product__next
+                                img(src="img/icons/arrow.svg", alt="Next image")
+                            .product__image
+                                img(src="img/stamps/folder.png", alt="Stamps image")
+                                img.hidden-img(src="img/stamps/folder2.png", alt="hover production image")
+                    li.product
+                        a.product__body(href="#")
+                            h5.headline Фигуры
+                            .product__next
+                                img(src="img/icons/arrow.svg", alt="Next image")
+                            .product__image
+                                img(src="img/stamps/figures.png", alt="Stamps image")
+                                img.hidden-img(src="img/stamps/figures2.png", alt="hover production image")
+                    li.product
+                        a.product__body(href="#")
+                            h5.headline Коробки
+                            .product__next
+                                img(src="img/icons/arrow.svg", alt="Next image")
+                            .product__image
+                                img(src="img/stamps/box.png", alt="Stamps image")
+                                img.hidden-img(src="img/stamps/box2.png", alt="hover production image")
+                    li.product
+                        a.product__body(href="#")
+                            h5.headline Визитки, карточки, открытки
+                            .product__next
+                                img(src="img/icons/arrow.svg", alt="Next image")
+                            .product__image
+                                img(src="img/stamps/card.png", alt="Stamps image")
+                                img.hidden-img(src="img/stamps/card2.png", alt="hover production image")
+                    li.product
+                        a.product__body(href="#")
+                            h5.headline Конверты, кармашки
+                            .product__next
+                                img(src="img/icons/arrow.svg", alt="Next image")
+                            .product__image
+                                img(src="img/stamps/envelope.png", alt="Stamps image")
+                                img.hidden-img(src="img/stamps/envelope2.png", alt="hover production image")
+
+      // end page
+
+    // end wrapper
+
+    .overlay
+
+    include ../modules/footer
+    include ../modules/form
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

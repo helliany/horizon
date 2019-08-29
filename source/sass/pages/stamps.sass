@@ -1,0 +1,80 @@
+.stamps
+    display: flex
+    flex-wrap: wrap
+    margin-right: -30px
+
+    .product
+        &::before
+            display: none
+
+    @media #{$_xsm}
+        justify-content: center
+
+.stamps__text
+    margin-bottom: 40px
+
+.stamps-list__card
+    width: 73%
+
+    @media #{$_lg}
+        width: 71%
+
+    @media #{$_sm}
+        width: 68%
+
+    @media #{$_xsm}
+        width: 100%
+
+.stamps-list
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 10px
+
+    .catalog-souvenir__item
+        min-height: auto
+
+    .button
+        width: 100%
+        padding: 5.5px 14px
+
+    @media #{$_xsm}
+        margin-top: 40px
+
+.stamps__img img
+    padding: 0
+
+.stamps-card
+    &__img
+        display: flex
+        flex-wrap: wrap
+
+    &__text
+        margin-bottom: 30px
+        font-size: 16px
+
+        @media #{$_xsm}
+            font-size: 14px
+
+    a
+        margin: 0 auto
+
+    img 
+        padding: 0
+        object-fit: contain
+
+    .button
+        margin-top: 30px
+
+.stamps__item
+    width: 25%
+    margin-bottom: 20px
+
+    @media #{$_sm}
+        width: 33.3333%
+
+    @media #{$_xsm}
+        width: 50%
+        border: 1px solid $gainsboro
+
+    @media #{$_large-phone}
+        width: 100%
