@@ -1,22 +1,37 @@
-.hero__slider
-    padding-top: 20px
-    padding-bottom: 20px
-
+.hero 
+    overflow-x: hidden
+    
 .hero__wrapper
     display: flex
 
 .hero__item
     position: relative
+    max-height: 380px
+    padding: 30px 0 40px
     user-select: text
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+    @media #{$_xsm}
+        max-height: none
+
+    @media #{$_sm}
+        padding: 30px 0 10px
 
 .hero__item-wrapper
-    width: 50%
+    width: 40%
     padding-top: 30px
     padding-bottom: 30px
+
+    @media #{$_xsm}
+        width: 100%
     
 .hero__text
+    max-height: 200px
+    overflow-y: hidden
+
     p
-        margin-bottom: 30px
         font-size: 18px
         color: #000000
 
@@ -24,38 +39,73 @@
         p
             font-size: 14px
 
+    @media #{$_xsm}
+        max-height: none
+
 .hero__next,
 .hero__prev
-    background-color: #88888852
+    display: flex
+    width: 50%
+    font-size: 28px
+
+.hero__next
+    justify-content: flex-end
+
+.hero__next-wrap,
+.hero__prev-wrap
+    background-color: rgba(136, 136, 136, 0.3)
     width: 32px
-    text-align: center
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
     font-size: 28px
 
 .hero__img
     display: flex
+    align-items: center
+    position: absolute
+    top: 0
+    right: 0;
     height: 100%
-    width: 50%
+    width: 58%
+    padding: 30px 0 40px
+    overflow: hidden
     
     img
         padding: 0
-        margin: auto
+        margin: auto auto auto 0
+
+        @media #{$sm}
+            max-width: 850px
 
     @media #{$_xsm}
-        +container()
+        position: static
+        width: 100%
         transform: translateY(0)
-
-    @media #{$_xsm}
         padding: 0
+
+    @media (min-width: 1400px)
+        width: 56%
+
+    @media (min-width: 2100px)
+        width: 53%
 
 .hero__nav
     +container
     position: absolute
-    top: 5px
+    bottom: 0
     left: 50%
+    height: 40px
     transform: translateX(-50%)
     z-index: 1
 
+    @media #{$_xsm}
+        top: 5px
+
 .hero__buttons
+    padding: 30px 0 10px
+
     .button
         padding-right: 43px
         padding-left: 43px

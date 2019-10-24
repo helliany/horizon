@@ -213,7 +213,8 @@ $(document).ready(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             prevArrow: $('.hero__prev'),
-            nextArrow: $('.hero__next')
+            nextArrow: $('.hero__next'),
+            autoplay: true
         });
     });
 
@@ -362,11 +363,24 @@ $(document).ready(function () {
                 }
             ]
         });
-        $('.catalog-print-card__slider').css('height', $('.catalog-print-card__img > div').height()*0.85);
-        $('.catalog-souvenir-card__img-main').css('height', $('.catalog-souvenir-card__img-main').height());
 
-        if ($(window).width() <= 767) {
-            $('.catalog-souvenir-card__list').css('max-height', $('.catalog-souvenir-card__img-main').height());
+        $('.catalog-souvenir-card__img-main').each(function() {   
+            if (this.complete || this.readyState === 4) {
+                setCardHeight();
+            } else {
+                $(this).on('load', function(){
+                    setCardHeight()
+                }); 
+            }
+        });
+
+        function setCardHeight() {
+            $('.catalog-print-card__slider').css('height', $('.catalog-print-card__img > div').height()*0.85);  
+            $('.catalog-souvenir-card__img-main').css('height', $('.catalog-souvenir-card__img-main').height());
+         
+            if ($(window).width() <= 767) {
+                $('.catalog-souvenir-card__list').css('max-height', $('.catalog-souvenir-card__img-main').height());
+            }
         }
     });
 

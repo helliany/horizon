@@ -4,15 +4,34 @@ section.hero(style="background-image: url(img/main-sections/hero/background.png)
         .hero__nav
             .slick-nav
                 .slick-nav-prev.hero__prev
-                    img(src="img/icons/left-arrow.svg", alt="Arrow icon")
+                    .hero__prev-wrap
+                        img(src="img/icons/left-arrow.svg", alt="Arrow icon")
                 .slick-nav-next.hero__next
-                    img(src="img/icons/right-arrow.svg", alt="Arrow icon")
+                    .hero__next-wrap
+                        img(src="img/icons/right-arrow.svg", alt="Arrow icon")
         ul.hero__slider-list
-            li.hero__item
-                .container.hero__wrapper
+            li.hero__item(style="background-image: url(img/main-sections/hero/background.png);")
+                .container
                     .hero__item-wrapper
                         .hero__text
-                            h5.headline Новое оборудование
+                            h5.headline
+                            h2.title УФ-Принтер
+                            p.
+                                - Отличная цветопередача и четкость изображения<br>
+                                - Возможность выборочной лакировки<br>
+                                - Полноценная печать на сувенирах<br>
+                                - Отличная цветопередача и четкость изображения<br>
+                                - Возможность выборочной лакировки<br>
+                                - Полноценная печать на сувенирах
+                        .hero__buttons
+                            a.button(href="#") Подробнее
+                .hero__img
+                    img(src="img/main-sections/hero/slide-1.png", alt="Hero image")
+            li.hero__item(style="background-image: url(img/main-sections/hero/background.png);")
+                .container
+                    .hero__item-wrapper
+                        .hero__text
+                            h5.headline
                             h2.title УФ-Принтер
                             p.
                                 - Отличная цветопередача и четкость изображения<br>
@@ -20,23 +39,7 @@ section.hero(style="background-image: url(img/main-sections/hero/background.png)
                                 - Полноценная печать на сувенирах
                         .hero__buttons
                             a.button(href="#") Подробнее
-                    .hero__img
-                        img(src="img/main-sections/hero/slide-1.png", alt="Hero image")
-            li.hero__item
-                .container.hero__wrapper
-                    .hero__item-wrapper
-                        .hero__text
-                            h5.headline Новое оборудование
-                            h2.title УФ-Принтер
-                            p.
-                                - Отличная цветопередача и четкость изображения<br>
-                                - Возможность выборочной лакировки<br>
-                                - Полноценная печать на сувенирах
-                        .hero__buttons
-                            a.button(href="#") Подробнее
-                    .hero__img
-                        img(src="img/main-sections/hero/slide-2.png", alt="Hero image")
+                .hero__img
+                    img(src="img/main-sections/hero/slide-2.png", alt="Hero image")
 
-            
-    
 // end hero 
